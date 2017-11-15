@@ -6,8 +6,8 @@
     "bootstrap": "^3.3.7",
     "history": "^4.7.2",
     "lodash": "^4.17.4",
+    "raw-loader": "^0.5.1",
     "react": "^16.0.0",
-    "react-bootstrap": "^0.31.5",
     "react-dock": "^0.2.4",
     "react-dom": "^16.0.0",
     "react-lazy-hero": "^0.2.1",
@@ -16,6 +16,7 @@
     "react-scripts": "1.0.17",
     "react-sidebar": "^2.3.2",
     "react-split-pane": "^0.1.70",
+    "reactstrap": "^5.0.0-alpha.3",
     "sg-example": "^1.1.0"
   },
   "scripts": {
