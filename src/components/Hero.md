@@ -1,0 +1,5 @@
+Hero example:
+
+```jsx
+<Hero  />
+```
