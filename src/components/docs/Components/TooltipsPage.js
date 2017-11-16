@@ -7,10 +7,10 @@ import TooltipAutoHideExample from '../examples/TooltipAutoHide';
 import TooltipExampleMulti from '../examples/TooltipMulti';
 import TooltipExampleUncontrolled from '../examples/TooltipUncontrolled';
 
-const TooltipExampleSource = require('!!raw!../examples/Tooltip');
-const TooltipExampleAutoHideSource = require('!!raw!../examples/TooltipAutoHide');
-const TooltipExampleMultiSource = require('!!raw!../examples/TooltipMulti');
-const TooltipExampleUncontrolledSource = require('!!raw!../examples/TooltipUncontrolled');
+const TooltipExampleSource = require('raw-loader!../examples/Tooltip');
+const TooltipExampleAutoHideSource = require('raw-loader!../examples/TooltipAutoHide');
+const TooltipExampleMultiSource = require('raw-loader!../examples/TooltipMulti');
+const TooltipExampleUncontrolledSource = require('raw-loader!../examples/TooltipUncontrolled');
 
 export default class TooltipsPage extends React.Component {
   render() {

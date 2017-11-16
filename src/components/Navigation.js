@@ -1,8 +1,30 @@
 import React, { Component } from 'react';
-import { Nav, Navbar, DropdownButton, NavDropdown, NavItem, MenuItem, Button } from 'react-bootstrap';
+import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, DropdownButton, NavDropdown, NavItem, ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem, Button } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 
 class Navigation extends Component {
+  constructor(props) {
+    super(props)
+
+    this.toggleDropdown = this.toggleDropdown.bind(this);
+    this.toggleNav = this.toggleNav.bind(this);
+    this.state = {
+      navOpen: false,
+      dropdownOpen: false
+    }
+  }
+
+  toggleNav() {
+    this.setState({
+      navOpen: !this.state.navOpen
+    })
+  }
+  toggleDropdown() {
+    this.setState({
+      dropdownOpen: !this.state.dropdownOpen
+    })
+  }
+
   render() {
     var navStyle = {
       marginBottom: 0,
@@ -13,42 +35,39 @@ class Navigation extends Component {
     }
     return (
 
-      <Navbar style={navStyle}  collapseOnSelect>
-        <Navbar.Header>
-          <Navbar.Brand>
+      <Navbar color="light" light style={navStyle}  collapseOnSelect>
+          <NavbarBrand>
             <NavLink to="/"><a href="#">Open City Design System</a></NavLink>
-          </Navbar.Brand>
-          <Navbar.Toggle />
-        </Navbar.Header>
-        <Navbar.Collapse>
+          </NavbarBrand>
+          <NavbarToggler onClick={this.toggleNav} />
+        <Collapse>
           <Nav>
-          <MenuItem >
-          <DropdownButton title="Select City" id="bg-nested-dropdown">
-          <MenuItem eventKey="1">Helsinki</MenuItem>
-          <MenuItem eventKey="2">Turku</MenuItem>
-          <MenuItem eventKey="2">Tampere</MenuItem>
-          
-        </DropdownButton>
-        </MenuItem >
+          <ButtonDropdown isOpen={this.state.dropdownOpen} toggle={this.toggleDropdown}>
+            <DropdownToggle caret>
+              Select City
+            </DropdownToggle>
+            <DropdownMenu>
+              <DropdownItem>Helsinki</DropdownItem>
+              <DropdownItem>Turku</DropdownItem>
+              <DropdownItem>Tampere</DropdownItem>
+            </DropdownMenu>
+          </ButtonDropdown>
 
-            <MenuItem><Button><NavLink to="/Design" activeStyle={{
+
+            <NavItem><Button><NavLink to="/Design" activeStyle={{
             fontWeight: 'bold',
             color: 'red'
           }}>Design</NavLink>
-          </Button></MenuItem>
-          <MenuItem>
+          </Button></NavItem>
+          <NavItem>
           <Button><NavLink to="/Development" activeStyle={{
             fontWeight: 'bold',
             color: 'red'
           }}>Development</NavLink>
           </Button>
-          </MenuItem>
+          </NavItem>
           </Nav>
-          <Nav pullRight>
-            <NavItem eventKey={1} href="#">Link Right</NavItem>
-            <NavItem eventKey={2} href="#">Link Right</NavItem>
-          </Nav>
-        </Navbar.Collapse>
+        </Collapse>
       </Navbar>
 
 

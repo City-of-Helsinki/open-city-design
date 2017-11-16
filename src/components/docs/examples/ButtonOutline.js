@@ -10,7 +10,9 @@ export default class Example extends React.Component {
         <Button outline color="success">success</Button>{' '}
         <Button outline color="info">info</Button>{' '}
         <Button outline color="warning">warning</Button>{' '}
-        <Button outline color="danger">danger</Button>
+        <Button outline color="danger">danger</Button>{' '}
+        <Button outline color="light">light</Button>{' '}
+        <Button outline color="dark">dark</Button>
       </div>
     );
   }

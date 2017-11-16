@@ -7,15 +7,15 @@ import ModalBackdropExample from '../examples/ModalBackdrop';
 import ModalNestedExample from '../examples/ModalNested';
 import ModalCustomTimeoutExample from '../examples/ModalCustomTimeout';
 import ModalFadelessExample from '../examples/ModalFadeless';
-const ModalExampleSource = require('!!raw!../examples/Modal');
+const ModalExampleSource = require('raw-loader!../examples/Modal');
 
-const ModalBackdropExampleSource = require('!!raw!../examples/ModalBackdrop');
+const ModalBackdropExampleSource = require('raw-loader!../examples/ModalBackdrop');
 
-const ModalNestedExampleSource = require('!!raw!../examples/ModalNested');
+const ModalNestedExampleSource = require('raw-loader!../examples/ModalNested');
 
-const ModalCustomTimeoutExampleSource = require('!!raw!../examples/ModalCustomTimeout');
+const ModalCustomTimeoutExampleSource = require('raw-loader!../examples/ModalCustomTimeout');
 
-const ModalFadelessExampleSource = require('!!raw!../examples/ModalFadeless');
+const ModalFadelessExampleSource = require('raw-loader!../examples/ModalFadeless');
 
 export default class ModalsPage extends React.Component {
   render() {

@@ -8,13 +8,13 @@ import PaginationStateExample from '../examples/PaginationState';
 import PaginationSizingLargeExample from '../examples/PaginationSizingLarge';
 import PaginationSizingSmallExample from '../examples/PaginationSizingSmall';
 
-const PaginationExampleSource = require('!!raw!../examples/Pagination');
+const PaginationExampleSource = require('raw-loader!../examples/Pagination');
 
-const PaginationStateExampleSource = require('!!raw!../examples/PaginationState');
+const PaginationStateExampleSource = require('raw-loader!../examples/PaginationState');
 
-const PaginationSizingLargeExampleSource = require('!!raw!../examples/PaginationSizingLarge');
+const PaginationSizingLargeExampleSource = require('raw-loader!../examples/PaginationSizingLarge');
 
-const PaginationSizingSmallExampleSource = require('!!raw!../examples/PaginationSizingSmall');
+const PaginationSizingSmallExampleSource = require('raw-loader!../examples/PaginationSizingSmall');
 
 export default class PaginationPage extends React.Component {
   render() {

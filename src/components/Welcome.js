@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar, NavDropdown, NavItem, MenuItem } from 'react-bootstrap';
+import { Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar } from 'reactstrap';
 
 
 class Welcome extends Component {
@@ -15,7 +15,7 @@ class Welcome extends Component {
                               <Jumbotron style={welcomeStyle}>
                                 <h1>{this.props.welcome.heading}</h1>
                                 <p>{this.props.welcome.paragraph}</p>
-                                <p><Button bsStyle="primary">Learn more</Button></p>
+                                <p><Button color="primary">Learn more</Button></p>
                               </Jumbotron>
                             </div>
                   

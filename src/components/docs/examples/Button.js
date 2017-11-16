@@ -11,6 +11,8 @@ export default class Example extends React.Component {
         <Button color="info">info</Button>{' '}
         <Button color="warning">warning</Button>{' '}
         <Button color="danger">danger</Button>{' '}
+        <Button color="light">light</Button>{' '}
+        <Button color="dark">dark</Button>{' '}
         <Button color="link">link</Button>
       </div>
     );

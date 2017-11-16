@@ -11,13 +11,13 @@ import ProgressStripedExample from '../examples/ProgressStriped';
 import ProgressMultiExample from '../examples/ProgressMulti';
 import ProgressMaxExample from '../examples/ProgressMax';
 
-const ProgressExampleSource = require('!!raw!../examples/Progress');
-const ProgressColorExampleSource = require('!!raw!../examples/ProgressColor');
-const ProgressLabelsExampleSource = require('!!raw!../examples/ProgressLabels');
-const ProgressAnimatedExampleSource = require('!!raw!../examples/ProgressAnimated');
-const ProgressStripedExampleSource = require('!!raw!../examples/ProgressStriped');
-const ProgressMultiExampleSource = require('!!raw!../examples/ProgressMulti');
-const ProgressMaxExampleSource = require('!!raw!../examples/ProgressMax');
+const ProgressExampleSource = require('raw-loader!../examples/Progress');
+const ProgressColorExampleSource = require('raw-loader!../examples/ProgressColor');
+const ProgressLabelsExampleSource = require('raw-loader!../examples/ProgressLabels');
+const ProgressAnimatedExampleSource = require('raw-loader!../examples/ProgressAnimated');
+const ProgressStripedExampleSource = require('raw-loader!../examples/ProgressStriped');
+const ProgressMultiExampleSource = require('raw-loader!../examples/ProgressMulti');
+const ProgressMaxExampleSource = require('raw-loader!../examples/ProgressMax');
 
 export default class ProgressPage extends React.Component {
   render() {

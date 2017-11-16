@@ -6,10 +6,10 @@ import NavsExample from '../examples/Navs';
 import NavVerticalExample from '../examples/NavVertical';
 import NavTabsExample from '../examples/NavTabs';
 import NavPillsExample from '../examples/NavPills';
-const NavsExampleSource = require('!!raw!../examples/Navs');
-const NavVerticalExampleSource = require('!!raw!../examples/NavVertical');
-const NavTabsExampleSource = require('!!raw!../examples/NavTabs');
-const NavPillsExampleSource = require('!!raw!../examples/NavPills');
+const NavsExampleSource = require('raw-loader!../examples/Navs');
+const NavVerticalExampleSource = require('raw-loader!../examples/NavVertical');
+const NavTabsExampleSource = require('raw-loader!../examples/NavTabs');
+const NavPillsExampleSource = require('raw-loader!../examples/NavPills');
 
 export default class NavssPage extends React.Component {
   render() {

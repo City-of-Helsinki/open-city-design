@@ -6,11 +6,11 @@ import Helmet from 'react-helmet';
 import ButtonExample from '../examples/Button';
 import ButtonOutline from '../examples/ButtonOutline';
 import ButtonStateful from '../examples/ButtonStateful';
-const ButtonExampleSource = require('!!raw!../examples/Button');
+const ButtonExampleSource = require('raw-loader!../examples/Button');
 
-const ButtonOutlineSource = require('!!raw!../examples/ButtonOutline');
+const ButtonOutlineSource = require('raw-loader!../examples/ButtonOutline');
 
-const ButtonStatefulSource = require('!!raw!../examples/ButtonStateful');
+const ButtonStatefulSource = require('raw-loader!../examples/ButtonStateful');
 
 export default class ButtonsPage extends React.Component {
   render() {

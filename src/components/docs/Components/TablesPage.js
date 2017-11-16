@@ -12,14 +12,14 @@ import TableResponsiveExample from '../examples/TableResponsive';
 import TableSizingExample from '../examples/TableSizing';
 import TableStripedExample from '../examples/TableStriped';
 
-const TableExampleSource = require('!!raw!../examples/Table');
-const TableBorderedExampleSource = require('!!raw!../examples/TableBordered');
-const TableHoverExampleSource = require('!!raw!../examples/TableHover');
-const TableInverseExampleSource = require('!!raw!../examples/TableInverse');
-const TableReflowExampleSource = require('!!raw!../examples/TableReflow');
-const TableResponsiveExampleSource = require('!!raw!../examples/TableResponsive');
-const TableSizingExampleSource = require('!!raw!../examples/TableSizing');
-const TableStripedExampleSource = require('!!raw!../examples/TableStriped');
+const TableExampleSource = require('raw-loader!../examples/Table');
+const TableBorderedExampleSource = require('raw-loader!../examples/TableBordered');
+const TableHoverExampleSource = require('raw-loader!../examples/TableHover');
+const TableInverseExampleSource = require('raw-loader!../examples/TableInverse');
+const TableReflowExampleSource = require('raw-loader!../examples/TableReflow');
+const TableResponsiveExampleSource = require('raw-loader!../examples/TableResponsive');
+const TableSizingExampleSource = require('raw-loader!../examples/TableSizing');
+const TableStripedExampleSource = require('raw-loader!../examples/TableStriped');
 
 export default class TablesPage extends React.Component {
   render() {

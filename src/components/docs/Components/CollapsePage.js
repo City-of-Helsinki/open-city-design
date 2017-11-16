@@ -5,9 +5,9 @@ import Helmet from 'react-helmet';
 
 import CollapseExample from '../examples/Collapse';
 import CollapseEventsExample from '../examples/CollapseEvents';
-const CollapseExampleSource = require('!!raw!../examples/Collapse');
+const CollapseExampleSource = require('raw-loader!../examples/Collapse');
 
-const CollapseEventsExampleSource = require('!!raw!../examples/CollapseEvents');
+const CollapseEventsExampleSource = require('raw-loader!../examples/CollapseEvents');
 
 export default class CollapsePage extends React.Component {
   render() {

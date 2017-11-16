@@ -8,11 +8,11 @@ import AddonSizingExample from '../examples/InputGroupSizing';
 import ButtonExample from '../examples/InputGroupButton';
 import ButtonShorthandExample from '../examples/InputGroupButtonShorthand';
 
-const OverviewExampleSource = require('!!raw!../examples/InputGroupOverview');
-const AddonExampleSource = require('!!raw!../examples/InputGroupAddon');
-const AddonSizingExampleSource = require('!!raw!../examples/InputGroupSizing');
-const ButtonExampleSource = require('!!raw!../examples/InputGroupButton');
-const ButtonShorthandExampleSource = require('!!raw!../examples/InputGroupButtonShorthand');
+const OverviewExampleSource = require('raw-loader!../examples/InputGroupOverview');
+const AddonExampleSource = require('raw-loader!../examples/InputGroupAddon');
+const AddonSizingExampleSource = require('raw-loader!../examples/InputGroupSizing');
+const ButtonExampleSource = require('raw-loader!../examples/InputGroupButton');
+const ButtonShorthandExampleSource = require('raw-loader!../examples/InputGroupButtonShorthand');
 
 export default class InputGroupPage extends React.Component {
   constructor(props) {

@@ -5,8 +5,8 @@ import { PrismCode } from 'react-prism';
 import Helmet from 'react-helmet';
 import NavbarExample from '../examples/Navbar';
 import NavbarTogglerExample from '../examples/NavbarToggler';
-const NavbarExampleSource = require('!!raw!../examples/Navbar');
-const NavbarTogglerExampleSource = require('!!raw!../examples/NavbarToggler');
+const NavbarExampleSource = require('raw-loader!../examples/Navbar');
+const NavbarTogglerExampleSource = require('raw-loader!../examples/NavbarToggler');
 
 export default class NavsPage extends React.Component {
   render() {

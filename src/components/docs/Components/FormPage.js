@@ -12,23 +12,23 @@ import InlineCheckboxesExample from '../examples/InlineCheckboxes';
 import InputSizingExample from '../examples/InputSizing';
 import InputGridSizingExample from '../examples/InputGridSizing';
 import LabelHiddenExample from '../examples/LabelHidden';
-const FormExampleSource = require('!!raw!../examples/Form');
+const FormExampleSource = require('raw-loader!../examples/Form');
 
-const FormGridExampleSource = require('!!raw!../examples/FormGrid');
+const FormGridExampleSource = require('raw-loader!../examples/FormGrid');
 
-const FormInlineExampleSource = require('!!raw!../examples/FormInline');
+const FormInlineExampleSource = require('raw-loader!../examples/FormInline');
 
-const FormFeedbackExampleSource = require('!!raw!../examples/FormFeedback');
+const FormFeedbackExampleSource = require('raw-loader!../examples/FormFeedback');
 
-const InputTypeExampleSource = require('!!raw!../examples/InputType');
+const InputTypeExampleSource = require('raw-loader!../examples/InputType');
 
-const InlineCheckboxesExampleSource = require('!!raw!../examples/InlineCheckboxes');
+const InlineCheckboxesExampleSource = require('raw-loader!../examples/InlineCheckboxes');
 
-const InputSizingExampleSource = require('!!raw!../examples/InputSizing');
+const InputSizingExampleSource = require('raw-loader!../examples/InputSizing');
 
-const InputGridSizingExampleSource = require('!!raw!../examples/InputGridSizing');
+const InputGridSizingExampleSource = require('raw-loader!../examples/InputGridSizing');
 
-const LabelHiddenExampleSource = require('!!raw!../examples/LabelHidden');
+const LabelHiddenExampleSource = require('raw-loader!../examples/LabelHidden');
 
 export default class FormPage extends React.Component {
   render() {

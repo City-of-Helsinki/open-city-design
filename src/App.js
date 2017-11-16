@@ -8,32 +8,32 @@ import Components from './routes/Components';
 import Modules from './routes/Modules';
 import Patterns from './routes/Patterns';
 import PageTemplates from './routes/PageTemplates';
-import LayoutPage from './components/docs/Components/LayoutPage';
-import NavsPage from './components/docs/Components/NavsPage';
-import NavbarPage from './components/docs/Components/NavbarPage';
-import BreadcrumbsPage from './components/docs/Components/BreadcrumbsPage';
-import ButtonsPage from './components/docs/Components/ButtonsPage';
-import ButtonGroupPage from './components/docs/Components/ButtonGroupPage';
-import ButtonDropdownPage from './components/docs/Components/ButtonDropdownPage';
-import DropdownsPage from './components/docs/Components/DropdownsPage';
-import FadePage from './components/docs/Components/FadePage';
-import FormPage from './components/docs/Components/FormPage';
-import InputGroupPage from './components/docs/Components/InputGroupPage';
-import PopoversPage from './components/docs/Components/PopoversPage';
-import ProgressPage from './components/docs/Components/ProgressPage';
-import TooltipsPage from './components/docs/Components/TooltipsPage';
-import BadgePage from './components/docs/Components/BadgePage';
-import MediaPage from './components/docs/Components/MediaPage';
-import ModalsPage from './components/docs/Components/ModalsPage';
-import CardPage from './components/docs/Components/CardPage';
-import TablesPage from './components/docs/Components/TablesPage';
-import PaginationPage from './components/docs/Components/PaginationPage';
-import TabsPage from './components/docs/Components/TabsPage';
-import JumbotronPage from './components/docs/Components/JumbotronPage';
-import AlertsPage from './components/docs/Components/AlertsPage';
-import CollapsePage from './components/docs/Components/CollapsePage';
-import CarouselPage from './components/docs/Components/CarouselPage';
-import ListGroupPage from './components/docs/Components/ListGroupPage';
+import LayoutPage from './routes/LayoutPage';
+import NavsPage from './routes/NavsPage';
+import NavbarPage from './routes/NavbarPage';
+import BreadcrumbsPage from './routes/BreadcrumbsPage';
+import ButtonsPage from './routes/ButtonsPage';
+import ButtonGroupPage from './routes/ButtonGroupPage';
+import ButtonDropdownPage from './routes/ButtonDropdownPage';
+import DropdownsPage from './routes/DropdownsPage';
+import FadePage from './routes/FadePage';
+import FormPage from './routes/FormPage';
+import InputGroupPage from './routes/InputGroupPage';
+import PopoversPage from './routes/PopoversPage';
+import ProgressPage from './routes/ProgressPage';
+import TooltipsPage from './routes/TooltipsPage';
+import BadgePage from './routes/BadgePage';
+import MediaPage from './routes/MediaPage';
+import ModalsPage from './routes/ModalsPage';
+import CardPage from './routes/CardPage';
+import TablesPage from './routes/TablesPage';
+import PaginationPage from './routes/PaginationPage';
+import TabsPage from './routes/TabsPage';
+import JumbotronPage from './routes/JumbotronPage';
+import AlertsPage from './routes/AlertsPage';
+import CollapsePage from './routes/CollapsePage';
+import CarouselPage from './routes/CarouselPage';
+import ListGroupPage from './routes/ListGroupPage';
 // import ClearfixPage from './Utilities/ClearfixPage';
 // import ColorsPage from './Utilities/ColorsPage';
 
@@ -51,33 +51,35 @@ class App extends Component {
             <Route path="/" exact component={Home} />
             <Route path="/Design" component={Design} />
             <Route path="/Development" component={Development} />
-            <Route path="/components" component={Components}>
-                  <Route path="breadcrumbs/" component={BreadcrumbsPage} />
-                  <Route path="buttons/" component={ButtonsPage} />
-                  <Route path="button-group/" component={ButtonGroupPage} />
-                  <Route path="button-dropdown/" component={ButtonDropdownPage} />
-                  <Route path="dropdowns/" component={DropdownsPage} />
-                  <Route path="fade/" component={FadePage} />
-                  <Route path="form/" component={FormPage} />
-                  <Route path="input-group/" component={InputGroupPage} />
-                  <Route path="popovers/" component={PopoversPage} />
-                  <Route path="progress/" component={ProgressPage} />
-                  <Route path="tooltips/" component={TooltipsPage} />
-                  <Route path="badge/" component={BadgePage} />
-                  <Route path="card/" component={CardPage} />
-                  <Route path="tables/" component={TablesPage} />
-                  <Route path="modals/" component={ModalsPage} />
-                  <Route path="layout/" component={LayoutPage} />
-                  <Route path="navs/" component={NavsPage} />
-                  <Route path="navbar/" component={NavbarPage} />
-                  <Route path="media/" component={MediaPage} />
-                  <Route path="pagination/" component={PaginationPage} />
-                  <Route path="tabs/" component={TabsPage} />
-                  <Route path="alerts/" component={AlertsPage} />
-                  <Route path="jumbotron/" component={JumbotronPage} />
-                  <Route path="collapse/" component={CollapsePage} />
-                  <Route path="carousel/" component={CarouselPage} />
-                  <Route path="listgroup/" component={ListGroupPage} />
+            <Route path="/Components">
+                <Components>
+                      <Route path="/components/breadcrumbs/" component={BreadcrumbsPage} />
+                      <Route path="/components/buttons/" component={ButtonsPage} />
+                      <Route path="/components/button-group/" component={ButtonGroupPage} />
+                      <Route path="/components/button-dropdown/" component={ButtonDropdownPage} />
+                      <Route path="/components/dropdowns/" component={DropdownsPage} />
+                      <Route path="/components/fade/" component={FadePage} />
+                      <Route path="/components/form/" component={FormPage} />
+                      <Route path="/components/input-group/" component={InputGroupPage} />
+                      <Route path="/components/popovers/" component={PopoversPage} />
+                      <Route path="/components/progress/" component={ProgressPage} />
+                      <Route path="/components/tooltips/" component={TooltipsPage} />
+                      <Route path="/components/badge/" component={BadgePage} />
+                      <Route path="/components/card/" component={CardPage} />
+                      <Route path="/components/tables/" component={TablesPage} />
+                      <Route path="/components/modals/" component={ModalsPage} />
+                      <Route path="/components/layout/" component={LayoutPage} />
+                      <Route path="/components/navs/" component={NavsPage} />
+                      <Route path="/components/navbar/" component={NavbarPage} />
+                      <Route path="/components/media/" component={MediaPage} />
+                      <Route path="/components/pagination/" component={PaginationPage} />
+                      <Route path="/components/tabs/" component={TabsPage} />
+                      <Route path="/components/alerts/" component={AlertsPage} />
+                      <Route path="/components/jumbotron/" component={JumbotronPage} />
+                      <Route path="/components/collapse/" component={CollapsePage} />
+                      <Route path="/components/carousel/" component={CarouselPage} />
+                      <Route path="/components/listgroup/" component={ListGroupPage} />
+                </Components>
             </Route>
             <Route path="/Patterns" component={Patterns} />
             <Route path="/PageTemplates" component={PageTemplates} />

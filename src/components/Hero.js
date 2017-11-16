@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import LazyHero from 'react-lazy-hero';
 import { NavLink } from 'react-router-dom';
-import { Button } from 'react-bootstrap';
+import { Button } from 'reactstrap';
 import Sidebar from '../components/Sidebar';
 
 
@@ -30,8 +30,8 @@ class Hero extends Component {
                         <LazyHero style={bannerStyle} imageSrc="https://images.unsplash.com/photo-1463171379579-3fdfb86d6285?auto=format&fit=crop&w=1350&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
                               {/* <img style={logoStyle} src={'http://c2xdexdv.c2.suncomet.fi/wp-content/uploads/2017/05/Helsinki_logo_black_rgb.png'} responsive className="App-logo" alt="logo" /> */}
                               <h1>Open City Design System</h1>
-                              <Button ><NavLink to="Design" >Design </NavLink></Button>
-                              <Button ><NavLink to="Development" >Development </NavLink></Button>
+                              <NavLink to="Design" ><Button color="primary">Design </Button></NavLink>
+                              <NavLink to="Development" ><Button color="primary" >Development </Button></NavLink>
 
 
                         </LazyHero>

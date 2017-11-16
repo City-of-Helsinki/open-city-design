@@ -7,13 +7,13 @@ import MediaExample from '../examples/Media';
 import MediaNestedExample from '../examples/MediaNested';
 import MediaAlignmentExample from '../examples/MediaAlignment';
 import MediaListExample from '../examples/MediaList';
-const MediaExampleSource = require('!!raw!../examples/Media');
+const MediaExampleSource = require('raw-loader!../examples/Media');
 
-const MediaNestedExampleSource = require('!!raw!../examples/MediaNested');
+const MediaNestedExampleSource = require('raw-loader!../examples/MediaNested');
 
-const MediaAlignmentExampleSource = require('!!raw!../examples/MediaAlignment');
+const MediaAlignmentExampleSource = require('raw-loader!../examples/MediaAlignment');
 
-const MediaListExampleSource = require('!!raw!../examples/MediaList');
+const MediaListExampleSource = require('raw-loader!../examples/MediaList');
 
 export default class MediaPage extends React.Component {
   render() {

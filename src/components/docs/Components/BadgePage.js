@@ -8,15 +8,15 @@ import BadgeButtonExample from '../examples/BadgeButton';
 import BadgePillsExample from '../examples/BadgePills';
 import BadgeVariationsExample from '../examples/BadgeVariations';
 import BadgeLinksExample from '../examples/BadgeLinks';
-const BadgeExampleSource = require('!!raw!../examples/Badge');
+const BadgeExampleSource = require('raw-loader!../examples/Badge');
 
-const BadgeButtonExampleSource = require('!!raw!../examples/BadgeButton');
+const BadgeButtonExampleSource = require('raw-loader!../examples/BadgeButton');
 
-const BadgePillsExampleSource = require('!!raw!../examples/BadgePills');
+const BadgePillsExampleSource = require('raw-loader!../examples/BadgePills');
 
-const BadgeVariationsExampleSource = require('!!raw!../examples/BadgeVariations');
+const BadgeVariationsExampleSource = require('raw-loader!../examples/BadgeVariations');
 
-const BadgeLinksExampleSource = require('!!raw!../examples/BadgeLinks');
+const BadgeLinksExampleSource = require('raw-loader!../examples/BadgeLinks');
 
 export default class BadgesPage extends React.Component {
   render() {
