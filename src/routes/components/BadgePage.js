@@ -3,20 +3,20 @@ import React from 'react';
 import { PrismCode } from 'react-prism';
 import Helmet from 'react-helmet';
 
-import BadgeExample from '../components/docs/examples/Badge';
-import BadgeButtonExample from '../components/docs/examples/BadgeButton';
-import BadgePillsExample from '../components/docs/examples/BadgePills';
-import BadgeVariationsExample from '../components/docs/examples/BadgeVariations';
-import BadgeLinksExample from '../components/docs/examples/BadgeLinks';
-const BadgeExampleSource = require('!!raw-loader!../components/docs/examples/Badge');
+import BadgeExample from '../../components/docs/examples/Badge';
+import BadgeButtonExample from '../../components/docs/examples/BadgeButton';
+import BadgePillsExample from '../../components/docs/examples/BadgePills';
+import BadgeVariationsExample from '../../components/docs/examples/BadgeVariations';
+import BadgeLinksExample from '../../components/docs/examples/BadgeLinks';
+const BadgeExampleSource = require('!!raw-loader!../../components/docs/examples/Badge');
 
-const BadgeButtonExampleSource = require('!!raw-loader!../components/docs/examples/BadgeButton');
+const BadgeButtonExampleSource = require('!!raw-loader!../../components/docs/examples/BadgeButton');
 
-const BadgePillsExampleSource = require('!!raw-loader!../components/docs/examples/BadgePills');
+const BadgePillsExampleSource = require('!!raw-loader!../../components/docs/examples/BadgePills');
 
-const BadgeVariationsExampleSource = require('!!raw-loader!../components/docs/examples/BadgeVariations');
+const BadgeVariationsExampleSource = require('!!raw-loader!../../components/docs/examples/BadgeVariations');
 
-const BadgeLinksExampleSource = require('!!raw-loader!../components/docs/examples/BadgeLinks');
+const BadgeLinksExampleSource = require('!!raw-loader!../../components/docs/examples/BadgeLinks');
 
 export default class BadgesPage extends React.Component {
   render() {

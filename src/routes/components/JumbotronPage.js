@@ -3,11 +3,11 @@ import React from 'react';
 import { PrismCode } from 'react-prism';
 import Helmet from 'react-helmet';
 
-import JumbotronExample from '../components/docs/examples/Jumbotron';
-import JumbotronFluidExample from "../components/docs/examples/JumbotronFluid";
+import JumbotronExample from '../../components/docs/examples/Jumbotron';
+import JumbotronFluidExample from '../../components/docs/examples/JumbotronFluid';
 
-const JumbotronExampleSource = require('!!raw-loader!../components/docs/examples/Jumbotron');
-const JumbotronFluidExampleSource = require('!!raw-loader!../components/docs/examples/JumbotronFluid');
+const JumbotronExampleSource = require('!!raw-loader!../../components/docs/examples/Jumbotron');
+const JumbotronFluidExampleSource = require('!!raw-loader!../../components/docs/examples/JumbotronFluid');
 
 export default class JumbotronPage extends React.Component {
   render() {

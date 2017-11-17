@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import LazyHero from 'react-lazy-hero';
 import { NavLink } from 'react-router-dom';
 import { Button } from 'reactstrap';
-import Sidebar from '../components/Sidebar';
 
 
 class Hero extends Component {

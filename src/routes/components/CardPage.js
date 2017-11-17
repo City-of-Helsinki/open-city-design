@@ -3,31 +3,31 @@ import React from 'react';
 import { PrismCode } from 'react-prism';
 import Helmet from 'react-helmet';
 
-import CardExample from '../components/docs/examples/Card';
-import CardContentExample from '../components/docs/examples/CardContentTypes';
-import CardSizingExample from '../components/docs/examples/CardSizing';
-import CardAlignmentExample from '../components/docs/examples/CardAlignment';
-import CardHeaderFooterExample from '../components/docs/examples/CardHeaderFooter';
-import CardImageCapsExample from '../components/docs/examples/CardImageCaps';
-import CardImageOverlayExample from '../components/docs/examples/CardImageOverlay';
-import CardBackgroundsExample from '../components/docs/examples/CardBackgrounds';
-import CardOutlineExample from '../components/docs/examples/CardOutline';
-import CardGroupsExample from '../components/docs/examples/CardGroups';
-import CardDecksExample from '../components/docs/examples/CardDecks';
-import CardColumnsExample from '../components/docs/examples/CardColumns';
+import CardExample from '../../components/docs/examples/Card';
+import CardContentExample from '../../components/docs/examples/CardContentTypes';
+import CardSizingExample from '../../components/docs/examples/CardSizing';
+import CardAlignmentExample from '../../components/docs/examples/CardAlignment';
+import CardHeaderFooterExample from '../../components/docs/examples/CardHeaderFooter';
+import CardImageCapsExample from '../../components/docs/examples/CardImageCaps';
+import CardImageOverlayExample from '../../components/docs/examples/CardImageOverlay';
+import CardBackgroundsExample from '../../components/docs/examples/CardBackgrounds';
+import CardOutlineExample from '../../components/docs/examples/CardOutline';
+import CardGroupsExample from '../../components/docs/examples/CardGroups';
+import CardDecksExample from '../../components/docs/examples/CardDecks';
+import CardColumnsExample from '../../components/docs/examples/CardColumns';
 
-const CardExampleSource = require('!!raw-loader!../components/docs/examples/Card');
-const CardContentExampleSource = require('!!raw-loader!../components/docs/examples/CardContentTypes');
-const CardSizingExampleSource = require('!!raw-loader!../components/docs/examples/CardSizing');
-const CardAlignmentExampleSource = require('!!raw-loader!../components/docs/examples/CardAlignment');
-const CardHeaderFooterExampleSource = require('!!raw-loader!../components/docs/examples/CardHeaderFooter');
-const CardImageCapsExampleSource = require('!!raw-loader!../components/docs/examples/CardImageCaps');
-const CardImageOverlayExampleSource = require('!!raw-loader!../components/docs/examples/CardImageOverlay');
-const CardBackgroundsExampleSource = require('!!raw-loader!../components/docs/examples/CardBackgrounds');
-const CardOutlineExampleSource = require('!!raw-loader!../components/docs/examples/CardOutline');
-const CardGroupsExampleSource = require('!!raw-loader!../components/docs/examples/CardGroups');
-const CardDecksExampleSource = require('!!raw-loader!../components/docs/examples/CardDecks');
-const CardColumnsExampleSource = require('!!raw-loader!../components/docs/examples/CardColumns');
+const CardExampleSource = require('!!raw-loader!../../components/docs/examples/Card');
+const CardContentExampleSource = require('!!raw-loader!../../components/docs/examples/CardContentTypes');
+const CardSizingExampleSource = require('!!raw-loader!../../components/docs/examples/CardSizing');
+const CardAlignmentExampleSource = require('!!raw-loader!../../components/docs/examples/CardAlignment');
+const CardHeaderFooterExampleSource = require('!!raw-loader!../../components/docs/examples/CardHeaderFooter');
+const CardImageCapsExampleSource = require('!!raw-loader!../../components/docs/examples/CardImageCaps');
+const CardImageOverlayExampleSource = require('!!raw-loader!../../components/docs/examples/CardImageOverlay');
+const CardBackgroundsExampleSource = require('!!raw-loader!../../components/docs/examples/CardBackgrounds');
+const CardOutlineExampleSource = require('!!raw-loader!../../components/docs/examples/CardOutline');
+const CardGroupsExampleSource = require('!!raw-loader!../../components/docs/examples/CardGroups');
+const CardDecksExampleSource = require('!!raw-loader!../../components/docs/examples/CardDecks');
+const CardColumnsExampleSource = require('!!raw-loader!../../components/docs/examples/CardColumns');
 
 export default class CardPage extends React.Component {
   render() {

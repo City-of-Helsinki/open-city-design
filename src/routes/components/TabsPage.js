@@ -2,9 +2,9 @@
 import React from 'react';
 import { PrismCode } from 'react-prism';
 import Helmet from 'react-helmet';
-import TabsExample from '../components/docs/examples/Tabs';
+import TabsExample from '../../components/docs/examples/Tabs';
 
-const TabsExampleSource = require('!!raw-loader!../components/docs/examples/Tabs');
+const TabsExampleSource = require('!!raw-loader!../../components/docs/examples/Tabs');
 
 export default function TabsPage() {
   return (

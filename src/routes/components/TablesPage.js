@@ -3,23 +3,23 @@ import React from 'react';
 import { PrismCode } from 'react-prism';
 import Helmet from 'react-helmet';
 
-import TableExample from '../components/docs/examples/Table';
-import TableBorderedExample from '../components/docs/examples/TableBordered';
-import TableHoverExample from '../components/docs/examples/TableHover';
-import TableInverseExample from '../components/docs/examples/TableInverse';
-import TableReflowExample from '../components/docs/examples/TableReflow';
-import TableResponsiveExample from '../components/docs/examples/TableResponsive';
-import TableSizingExample from '../components/docs/examples/TableSizing';
-import TableStripedExample from '../components/docs/examples/TableStriped';
+import TableExample from '../../components/docs/examples/Table';
+import TableBorderedExample from '../../components/docs/examples/TableBordered';
+import TableHoverExample from '../../components/docs/examples/TableHover';
+import TableInverseExample from '../../components/docs/examples/TableInverse';
+import TableReflowExample from '../../components/docs/examples/TableReflow';
+import TableResponsiveExample from '../../components/docs/examples/TableResponsive';
+import TableSizingExample from '../../components/docs/examples/TableSizing';
+import TableStripedExample from '../../components/docs/examples/TableStriped';
 
-const TableExampleSource = require('!!raw-loader!../components/docs/examples/Table');
-const TableBorderedExampleSource = require('!!raw-loader!../components/docs/examples/TableBordered');
-const TableHoverExampleSource = require('!!raw-loader!../components/docs/examples/TableHover');
-const TableInverseExampleSource = require('!!raw-loader!../components/docs/examples/TableInverse');
-const TableReflowExampleSource = require('!!raw-loader!../components/docs/examples/TableReflow');
-const TableResponsiveExampleSource = require('!!raw-loader!../components/docs/examples/TableResponsive');
-const TableSizingExampleSource = require('!!raw-loader!../components/docs/examples/TableSizing');
-const TableStripedExampleSource = require('!!raw-loader!../components/docs/examples/TableStriped');
+const TableExampleSource = require('!!raw-loader!../../components/docs/examples/Table');
+const TableBorderedExampleSource = require('!!raw-loader!../../components/docs/examples/TableBordered');
+const TableHoverExampleSource = require('!!raw-loader!../../components/docs/examples/TableHover');
+const TableInverseExampleSource = require('!!raw-loader!../../components/docs/examples/TableInverse');
+const TableReflowExampleSource = require('!!raw-loader!../../components/docs/examples/TableReflow');
+const TableResponsiveExampleSource = require('!!raw-loader!../../components/docs/examples/TableResponsive');
+const TableSizingExampleSource = require('!!raw-loader!../../components/docs/examples/TableSizing');
+const TableStripedExampleSource = require('!!raw-loader!../../components/docs/examples/TableStriped');
 
 export default class TablesPage extends React.Component {
   render() {

@@ -3,21 +3,21 @@ import React from 'react';
 import { PrismCode } from 'react-prism';
 import Helmet from 'react-helmet';
 import { Card, CardText } from 'reactstrap';
-import ProgressExample from '../components/docs/examples/Progress';
-import ProgressColorExample from '../components/docs/examples/ProgressColor';
-import ProgressLabelsExample from '../components/docs/examples/ProgressLabels';
-import ProgressAnimatedExample from '../components/docs/examples/ProgressAnimated';
-import ProgressStripedExample from '../components/docs/examples/ProgressStriped';
-import ProgressMultiExample from '../components/docs/examples/ProgressMulti';
-import ProgressMaxExample from '../components/docs/examples/ProgressMax';
+import ProgressExample from '../../components/docs/examples/Progress';
+import ProgressColorExample from '../../components/docs/examples/ProgressColor';
+import ProgressLabelsExample from '../../components/docs/examples/ProgressLabels';
+import ProgressAnimatedExample from '../../components/docs/examples/ProgressAnimated';
+import ProgressStripedExample from '../../components/docs/examples/ProgressStriped';
+import ProgressMultiExample from '../../components/docs/examples/ProgressMulti';
+import ProgressMaxExample from '../../components/docs/examples/ProgressMax';
 
-const ProgressExampleSource = require('!!raw-loader!../components/docs/examples/Progress');
-const ProgressColorExampleSource = require('!!raw-loader!../components/docs/examples/ProgressColor');
-const ProgressLabelsExampleSource = require('!!raw-loader!../components/docs/examples/ProgressLabels');
-const ProgressAnimatedExampleSource = require('!!raw-loader!../components/docs/examples/ProgressAnimated');
-const ProgressStripedExampleSource = require('!!raw-loader!../components/docs/examples/ProgressStriped');
-const ProgressMultiExampleSource = require('!!raw-loader!../components/docs/examples/ProgressMulti');
-const ProgressMaxExampleSource = require('!!raw-loader!../components/docs/examples/ProgressMax');
+const ProgressExampleSource = require('!!raw-loader!../../components/docs/examples/Progress');
+const ProgressColorExampleSource = require('!!raw-loader!../../components/docs/examples/ProgressColor');
+const ProgressLabelsExampleSource = require('!!raw-loader!../../components/docs/examples/ProgressLabels');
+const ProgressAnimatedExampleSource = require('!!raw-loader!../../components/docs/examples/ProgressAnimated');
+const ProgressStripedExampleSource = require('!!raw-loader!../../components/docs/examples/ProgressStriped');
+const ProgressMultiExampleSource = require('!!raw-loader!../../components/docs/examples/ProgressMulti');
+const ProgressMaxExampleSource = require('!!raw-loader!../../components/docs/examples/ProgressMax');
 
 export default class ProgressPage extends React.Component {
   render() {

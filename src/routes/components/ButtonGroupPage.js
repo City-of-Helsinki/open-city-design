@@ -11,11 +11,11 @@ import {
   DropdownMenu } from 'reactstrap';
 import { Link } from 'react-router';
 
-import ButtonGroupExample from '../components/docs/examples/ButtonGroup';
-import ButtonToolbarExample from '../components/docs/examples/ButtonToolbar';
-const ButtonGroupExampleSource = require('!!raw-loader!../components/docs/examples/ButtonGroup');
+import ButtonGroupExample from '../../components/docs/examples/ButtonGroup';
+import ButtonToolbarExample from '../../components/docs/examples/ButtonToolbar';
+const ButtonGroupExampleSource = require('!!raw-loader!../../components/docs/examples/ButtonGroup');
 
-const ButtonToolbarExampleSource = require('!!raw-loader!../components/docs/examples/ButtonToolbar');
+const ButtonToolbarExampleSource = require('!!raw-loader!../../components/docs/examples/ButtonToolbar');
 
 
 export default class ButtonGroupPage extends React.Component {

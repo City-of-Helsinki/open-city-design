@@ -8,10 +8,10 @@ import {
   DropdownToggle,
   DropdownItem,
   DropdownMenu } from 'reactstrap';
-import Example from '../components/docs/examples/ButtonDropdownMulti';
-import ExampleSplit from '../components/docs/examples/ButtonDropdownMultiSplit';
-import ButtonDropdownExample from '../components/docs/examples/ButtonDropdown';
-const ButtonDropdownExampleSource = require('!!raw-loader!../components/docs/examples/ButtonDropdown');
+import Example from '../../components/docs/examples/ButtonDropdownMulti';
+import ExampleSplit from '../../components/docs/examples/ButtonDropdownMultiSplit';
+import ButtonDropdownExample from '../../components/docs/examples/ButtonDropdown';
+const ButtonDropdownExampleSource = require('!!raw-loader!../../components/docs/examples/ButtonDropdown');
 
 export default class ButtonDropdownPage extends React.Component {
   constructor(props) {

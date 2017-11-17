@@ -3,18 +3,18 @@ import React from 'react';
 import { PrismCode } from 'react-prism';
 import Helmet from 'react-helmet';
 
-import PaginationExample from '../components/docs/examples/Pagination';
-import PaginationStateExample from '../components/docs/examples/PaginationState';
-import PaginationSizingLargeExample from '../components/docs/examples/PaginationSizingLarge';
-import PaginationSizingSmallExample from '../components/docs/examples/PaginationSizingSmall';
+import PaginationExample from '../../components/docs/examples/Pagination';
+import PaginationStateExample from '../../components/docs/examples/PaginationState';
+import PaginationSizingLargeExample from '../../components/docs/examples/PaginationSizingLarge';
+import PaginationSizingSmallExample from '../../components/docs/examples/PaginationSizingSmall';
 
-const PaginationExampleSource = require('!!raw-loader!../components/docs/examples/Pagination');
+const PaginationExampleSource = require('!!raw-loader!../../components/docs/examples/Pagination');
 
-const PaginationStateExampleSource = require('!!raw-loader!../components/docs/examples/PaginationState');
+const PaginationStateExampleSource = require('!!raw-loader!../../components/docs/examples/PaginationState');
 
-const PaginationSizingLargeExampleSource = require('!!raw-loader!../components/docs/examples/PaginationSizingLarge');
+const PaginationSizingLargeExampleSource = require('!!raw-loader!../../components/docs/examples/PaginationSizingLarge');
 
-const PaginationSizingSmallExampleSource = require('!!raw-loader!../components/docs/examples/PaginationSizingSmall');
+const PaginationSizingSmallExampleSource = require('!!raw-loader!../../components/docs/examples/PaginationSizingSmall');
 
 export default class PaginationPage extends React.Component {
   render() {

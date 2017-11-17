@@ -3,17 +3,17 @@ import React from 'react';
 import { PrismCode } from 'react-prism';
 import Helmet from 'react-helmet';
 
-import MediaExample from '../components/docs/examples/Media';
-import MediaNestedExample from '../components/docs/examples/MediaNested';
-import MediaAlignmentExample from '../components/docs/examples/MediaAlignment';
-import MediaListExample from '../components/docs/examples/MediaList';
-const MediaExampleSource = require('!!raw-loader!../components/docs/examples/Media');
+import MediaExample from '../../components/docs/examples/Media';
+import MediaNestedExample from '../../components/docs/examples/MediaNested';
+import MediaAlignmentExample from '../../components/docs/examples/MediaAlignment';
+import MediaListExample from '../../components/docs/examples/MediaList';
+const MediaExampleSource = require('!!raw-loader!../../components/docs/examples/Media');
 
-const MediaNestedExampleSource = require('!!raw-loader!../components/docs/examples/MediaNested');
+const MediaNestedExampleSource = require('!!raw-loader!../../components/docs/examples/MediaNested');
 
-const MediaAlignmentExampleSource = require('!!raw-loader!../components/docs/examples/MediaAlignment');
+const MediaAlignmentExampleSource = require('!!raw-loader!../../components/docs/examples/MediaAlignment');
 
-const MediaListExampleSource = require('!!raw-loader!../components/docs/examples/MediaList');
+const MediaListExampleSource = require('!!raw-loader!../../components/docs/examples/MediaList');
 
 export default class MediaPage extends React.Component {
   render() {

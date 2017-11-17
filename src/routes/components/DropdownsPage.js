@@ -8,14 +8,14 @@ import {
   DropdownToggle,
   DropdownItem,
   DropdownMenu } from 'reactstrap';
-import DropdownExample from '../components/docs/examples/Dropdown';
-import DropdownSizingExample from '../components/docs/examples/DropdownSizing';
-import CustomDropdownExample from '../components/docs/examples/CustomDropdown';
-import DropdownUncontrolledExample from '../components/docs/examples/DropdownUncontrolled';
+import DropdownExample from '../../components/docs/examples/Dropdown';
+import DropdownSizingExample from '../../components/docs/examples/DropdownSizing';
+import CustomDropdownExample from '../../components/docs/examples/CustomDropdown';
+import DropdownUncontrolledExample from '../../components/docs/examples/DropdownUncontrolled';
 
-const DropdownExampleSource = require('!!raw-loader!../components/docs/examples/Dropdown');
-const CustomDropdownExampleSource = require('!!raw-loader!../components/docs/examples/CustomDropdown');
-const DropdownUncontrolledExampleSource = require('!!raw-loader!../components/docs/examples/DropdownUncontrolled');
+const DropdownExampleSource = require('!!raw-loader!../../components/docs/examples/Dropdown');
+const CustomDropdownExampleSource = require('!!raw-loader!../../components/docs/examples/CustomDropdown');
+const DropdownUncontrolledExampleSource = require('!!raw-loader!../../components/docs/examples/DropdownUncontrolled');
 
 export default class DropdownPage extends React.Component {
   constructor(props) {

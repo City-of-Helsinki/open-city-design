@@ -3,32 +3,32 @@ import React from 'react';
 import { PrismCode } from 'react-prism';
 import Helmet from 'react-helmet';
 
-import FormExample from '../components/docs/examples/Form';
-import FormGridExample from '../components/docs/examples/FormGrid';
-import FormInlineExample from '../components/docs/examples/FormInline';
-import FormFeedbackExample from '../components/docs/examples/FormFeedback';
-import InputTypeExample from '../components/docs/examples/InputType';
-import InlineCheckboxesExample from '../components/docs/examples/InlineCheckboxes';
-import InputSizingExample from '../components/docs/examples/InputSizing';
-import InputGridSizingExample from '../components/docs/examples/InputGridSizing';
-import LabelHiddenExample from '../components/docs/examples/LabelHidden';
-const FormExampleSource = require('!!raw-loader!../components/docs/examples/Form');
+import FormExample from '../../components/docs/examples/Form';
+import FormGridExample from '../../components/docs/examples/FormGrid';
+import FormInlineExample from '../../components/docs/examples/FormInline';
+import FormFeedbackExample from '../../components/docs/examples/FormFeedback';
+import InputTypeExample from '../../components/docs/examples/InputType';
+import InlineCheckboxesExample from '../../components/docs/examples/InlineCheckboxes';
+import InputSizingExample from '../../components/docs/examples/InputSizing';
+import InputGridSizingExample from '../../components/docs/examples/InputGridSizing';
+import LabelHiddenExample from '../../components/docs/examples/LabelHidden';
+const FormExampleSource = require('!!raw-loader!../../components/docs/examples/Form');
 
-const FormGridExampleSource = require('!!raw-loader!../components/docs/examples/FormGrid');
+const FormGridExampleSource = require('!!raw-loader!../../components/docs/examples/FormGrid');
 
-const FormInlineExampleSource = require('!!raw-loader!../components/docs/examples/FormInline');
+const FormInlineExampleSource = require('!!raw-loader!../../components/docs/examples/FormInline');
 
-const FormFeedbackExampleSource = require('!!raw-loader!../components/docs/examples/FormFeedback');
+const FormFeedbackExampleSource = require('!!raw-loader!../../components/docs/examples/FormFeedback');
 
-const InputTypeExampleSource = require('!!raw-loader!../components/docs/examples/InputType');
+const InputTypeExampleSource = require('!!raw-loader!../../components/docs/examples/InputType');
 
-const InlineCheckboxesExampleSource = require('!!raw-loader!../components/docs/examples/InlineCheckboxes');
+const InlineCheckboxesExampleSource = require('!!raw-loader!../../components/docs/examples/InlineCheckboxes');
 
-const InputSizingExampleSource = require('!!raw-loader!../components/docs/examples/InputSizing');
+const InputSizingExampleSource = require('!!raw-loader!../../components/docs/examples/InputSizing');
 
-const InputGridSizingExampleSource = require('!!raw-loader!../components/docs/examples/InputGridSizing');
+const InputGridSizingExampleSource = require('!!raw-loader!../../components/docs/examples/InputGridSizing');
 
-const LabelHiddenExampleSource = require('!!raw-loader!../components/docs/examples/LabelHidden');
+const LabelHiddenExampleSource = require('!!raw-loader!../../components/docs/examples/LabelHidden');
 
 export default class FormPage extends React.Component {
   render() {

@@ -1,5 +1,0 @@
-Hero example:
-
-```jsx
-<Hero  />
-```

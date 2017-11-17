@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar } from 'reactstrap';
 import './Home.css';
-import Sidebar from '../components/Sidebar';
+import Sidebar from '../components/Sidebar/Sidebar';
 import Hero from '../components/Hero';
-import Content from '../components/Content';
 import Welcome from '../components/Welcome';
 import Image from '../components/Image';
 import helsinki from '../images/helsinki.png';
@@ -31,7 +30,7 @@ class Design extends Component {
     return (
       <div className="row">
            <Col xs={6} md={4}>
-                 <Sidebar sidebarLinks={sidebarLinks} />
+                 <Sidebar />
            </Col>
            <Col xs={6} md={8}>
            <Welcome welcome={welcome} />

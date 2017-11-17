@@ -2,12 +2,12 @@
 import React from 'react';
 import { PrismCode } from 'react-prism';
 import Helmet from 'react-helmet';
-import CarouselExample from '../components/docs/examples/Carousel';
-import CarouselUncontrolledExample from '../components/docs/examples/CarouselUncontrolled';
-import CarouselCustomTagExample from '../components/docs/examples/CarouselCustomTag';
-const CarouselExampleSource = require('!!raw-loader!../components/docs/examples/Carousel');
-const CarouselUncontrolledExampleSource = require('!!raw-loader!../components/docs/examples/CarouselUncontrolled');
-const CarouselCustomTagExampleSource = require('!!raw-loader!../components/docs/examples/CarouselCustomTag');
+import CarouselExample from '../../components/docs/examples/Carousel';
+import CarouselUncontrolledExample from '../../components/docs/examples/CarouselUncontrolled';
+import CarouselCustomTagExample from '../../components/docs/examples/CarouselCustomTag';
+const CarouselExampleSource = require('!!raw-loader!../../components/docs/examples/Carousel');
+const CarouselUncontrolledExampleSource = require('!!raw-loader!../../components/docs/examples/CarouselUncontrolled');
+const CarouselCustomTagExampleSource = require('!!raw-loader!../../components/docs/examples/CarouselCustomTag');
 
 export default class CarouselPage extends React.Component {
   render() {

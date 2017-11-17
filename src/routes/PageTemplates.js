@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar} from 'reactstrap';
 import './Home.css';
-import Sidebar from '../components/Sidebar';
+import Sidebar from '../components/Sidebar/Sidebar';
 import Welcome from '../components/Welcome';
 
 
@@ -14,17 +14,12 @@ class PageTemplates extends Component {
                   heading: "Page Templates",
                   paragraph: "From here you can see possible modules"
             };
-            const sidebarLinks = [
-                  { link: "Components", URL: 'Components' },
-                  { link: "Modules", URL: 'Modules' },
-                  { link: "Patterns", URL: 'Patterns' },
-                  { link: "Page Templates", URL: 'PageTemplates' },
-            ];
+
 
             return (
                   <div className="row">
                         <Col xs={6} md={4}>
-                              <Sidebar sidebarLinks={sidebarLinks} />
+                              <Sidebar />
                         </Col>
                         <Col xs={6} md={8}>
                               <Welcome welcome={welcome} />

@@ -2,14 +2,14 @@
 import React from 'react';
 import { PrismCode } from 'react-prism';
 import Helmet from 'react-helmet';
-import NavsExample from '../components/docs/examples/Navs';
-import NavVerticalExample from '../components/docs/examples/NavVertical';
-import NavTabsExample from '../components/docs/examples/NavTabs';
-import NavPillsExample from '../components/docs/examples/NavPills';
-const NavsExampleSource = require('!!raw-loader!../components/docs/examples/Navs');
-const NavVerticalExampleSource = require('!!raw-loader!../components/docs/examples/NavVertical');
-const NavTabsExampleSource = require('!!raw-loader!../components/docs/examples/NavTabs');
-const NavPillsExampleSource = require('!!raw-loader!../components/docs/examples/NavPills');
+import NavsExample from '../../components/docs/examples/Navs';
+import NavVerticalExample from '../../components/docs/examples/NavVertical';
+import NavTabsExample from '../../components/docs/examples/NavTabs';
+import NavPillsExample from '../../components/docs/examples/NavPills';
+const NavsExampleSource = require('!!raw-loader!../../components/docs/examples/Navs');
+const NavVerticalExampleSource = require('!!raw-loader!../../components/docs/examples/NavVertical');
+const NavTabsExampleSource = require('!!raw-loader!../../components/docs/examples/NavTabs');
+const NavPillsExampleSource = require('!!raw-loader!../../components/docs/examples/NavPills');
 
 export default class NavssPage extends React.Component {
   render() {

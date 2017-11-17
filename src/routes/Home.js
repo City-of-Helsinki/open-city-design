@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar,} from 'reactstrap';
 import './Home.css';
-import Sidebar from '../components/Sidebar';
+import Sidebar from '../components/Sidebar/Sidebar';
 import Hero from '../components/Hero';
-import Content from '../components/Content';
 
 /**
  * The only true button.

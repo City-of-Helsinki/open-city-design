@@ -2,15 +2,15 @@
 import React from 'react';
 import { PrismCode } from 'react-prism';
 import Helmet from 'react-helmet';
-import TooltipExample from '../components/docs/examples/Tooltip';
-import TooltipAutoHideExample from '../components/docs/examples/TooltipAutoHide';
-import TooltipExampleMulti from '../components/docs/examples/TooltipMulti';
-import TooltipExampleUncontrolled from '../components/docs/examples/TooltipUncontrolled';
+import TooltipExample from '../../components/docs/examples/Tooltip';
+import TooltipAutoHideExample from '../../components/docs/examples/TooltipAutoHide';
+import TooltipExampleMulti from '../../components/docs/examples/TooltipMulti';
+import TooltipExampleUncontrolled from '../../components/docs/examples/TooltipUncontrolled';
 
-const TooltipExampleSource = require('!!raw-loader!../components/docs/examples/Tooltip');
-const TooltipExampleAutoHideSource = require('!!raw-loader!../components/docs/examples/TooltipAutoHide');
-const TooltipExampleMultiSource = require('!!raw-loader!../components/docs/examples/TooltipMulti');
-const TooltipExampleUncontrolledSource = require('!!raw-loader!../components/docs/examples/TooltipUncontrolled');
+const TooltipExampleSource = require('!!raw-loader!../../components/docs/examples/Tooltip');
+const TooltipExampleAutoHideSource = require('!!raw-loader!../../components/docs/examples/TooltipAutoHide');
+const TooltipExampleMultiSource = require('!!raw-loader!../../components/docs/examples/TooltipMulti');
+const TooltipExampleUncontrolledSource = require('!!raw-loader!../../components/docs/examples/TooltipUncontrolled');
 
 export default class TooltipsPage extends React.Component {
   render() {

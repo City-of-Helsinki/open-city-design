@@ -4,15 +4,15 @@ import { PrismCode } from 'react-prism';
 import classnames from 'classnames';
 import { Button, Nav, NavItem, NavLink, TabContent, TabPane } from 'reactstrap';
 import Helmet from 'react-helmet';
-import ButtonExample from '../components/docs/examples/Button';
-import ButtonOutline from '../components/docs/examples/ButtonOutline';
-import ButtonStateful from '../components/docs/examples/ButtonStateful';
-const ButtonExampleSource = require('!!raw-loader!../components/docs/examples/Button.html');
-const ButtonExampleReactSource = require('!!raw-loader!../components/docs/examples/Button');
+import ButtonExample from '../../components/docs/examples/Button';
+import ButtonOutline from '../../components/docs/examples/ButtonOutline';
+import ButtonStateful from '../../components/docs/examples/ButtonStateful';
+const ButtonExampleSource = require('!!raw-loader!../../components/docs/examples/Button.html');
+const ButtonExampleReactSource = require('!!raw-loader!../../components/docs/examples/Button');
 
-const ButtonOutlineSource = require('!!raw-loader!../components/docs/examples/ButtonOutline.html');
+const ButtonOutlineSource = require('!!raw-loader!../../components/docs/examples/ButtonOutline.html');
 
-const ButtonStatefulSource = require('!!raw-loader!../components/docs/examples/ButtonStateful');
+const ButtonStatefulSource = require('!!raw-loader!../../components/docs/examples/ButtonStateful');
 
 export default class ButtonsPage extends React.Component {
   constructor(props) {

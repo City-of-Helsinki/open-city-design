@@ -4,8 +4,8 @@ import { PrismCode } from 'react-prism';
 import { Alert } from 'reactstrap';
 import Helmet from 'react-helmet';
 
-import FadeExample from '../components/docs/examples/Fade';
-const FadeExampleSource = require('!!raw-loader!../components/docs/examples/Fade');
+import FadeExample from '../../components/docs/examples/Fade';
+const FadeExampleSource = require('!!raw-loader!../../components/docs/examples/Fade');
 
 export default class FadePage extends React.Component {
   render() {

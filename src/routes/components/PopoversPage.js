@@ -2,11 +2,11 @@
 import React from 'react';
 import { PrismCode } from 'react-prism';
 import Helmet from 'react-helmet';
-import PopoverExample from '../components/docs/examples/Popover';
-import PopoverExampleMulti from '../components/docs/examples/PopoverMulti';
+import PopoverExample from '../../components/docs/examples/Popover';
+import PopoverExampleMulti from '../../components/docs/examples/PopoverMulti';
 
-const PopoverExampleSource = require('!!raw-loader!../components/docs/examples/Popover');
-const PopoverExampleMultiSource = require('!!raw-loader!../components/docs/examples/PopoverMulti');
+const PopoverExampleSource = require('!!raw-loader!../../components/docs/examples/Popover');
+const PopoverExampleMultiSource = require('!!raw-loader!../../components/docs/examples/PopoverMulti');
 
 export default class PopoversPage extends React.Component {
   render() {

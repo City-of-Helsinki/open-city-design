@@ -3,11 +3,11 @@ import React from 'react';
 import { PrismCode } from 'react-prism';
 import Helmet from 'react-helmet';
 
-import BreadcrumbExample from '../components/docs/examples/Breadcrumb';
-import BreadcrumbNoListExample from '../components/docs/examples/BreadcrumbNoList';
-const BreadcrumbExampleSource = require('!!raw-loader!../components/docs/examples/Breadcrumb');
+import BreadcrumbExample from '../../components/docs/examples/Breadcrumb';
+import BreadcrumbNoListExample from '../../components/docs/examples/BreadcrumbNoList';
+const BreadcrumbExampleSource = require('!!raw-loader!../../components/docs/examples/Breadcrumb');
 
-const BreadcrumbNoListExampleSource = require('!!raw-loader!../components/docs/examples/BreadcrumbNoList');
+const BreadcrumbNoListExampleSource = require('!!raw-loader!../../components/docs/examples/BreadcrumbNoList');
 
 export default class BreadcrumbsPage extends React.Component {
   render() {

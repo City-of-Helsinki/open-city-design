@@ -3,11 +3,11 @@ import React from 'react';
 import { PrismCode } from 'react-prism';
 import Helmet from 'react-helmet';
 
-import CollapseExample from '../components/docs/examples/Collapse';
-import CollapseEventsExample from '../components/docs/examples/CollapseEvents';
-const CollapseExampleSource = require('!!raw-loader!../components/docs/examples/Collapse');
+import CollapseExample from '../../components/docs/examples/Collapse';
+import CollapseEventsExample from '../../components/docs/examples/CollapseEvents';
+const CollapseExampleSource = require('!!raw-loader!../../components/docs/examples/Collapse');
 
-const CollapseEventsExampleSource = require('!!raw-loader!../components/docs/examples/CollapseEvents');
+const CollapseEventsExampleSource = require('!!raw-loader!../../components/docs/examples/CollapseEvents');
 
 export default class CollapsePage extends React.Component {
   render() {

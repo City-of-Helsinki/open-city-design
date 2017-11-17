@@ -2,17 +2,17 @@
 import React from 'react';
 import { PrismCode } from 'react-prism';
 import Helmet from 'react-helmet';
-import OverviewExample from '../components/docs/examples/InputGroupOverview';
-import AddonExample from '../components/docs/examples/InputGroupAddon';
-import AddonSizingExample from '../components/docs/examples/InputGroupSizing';
-import ButtonExample from '../components/docs/examples/InputGroupButton';
-import ButtonShorthandExample from '../components/docs/examples/InputGroupButtonShorthand';
+import OverviewExample from '../../components/docs/examples/InputGroupOverview';
+import AddonExample from '../../components/docs/examples/InputGroupAddon';
+import AddonSizingExample from '../../components/docs/examples/InputGroupSizing';
+import ButtonExample from '../../components/docs/examples/InputGroupButton';
+import ButtonShorthandExample from '../../components/docs/examples/InputGroupButtonShorthand';
 
-const OverviewExampleSource = require('!!raw-loader!../components/docs/examples/InputGroupOverview');
-const AddonExampleSource = require('!!raw-loader!../components/docs/examples/InputGroupAddon');
-const AddonSizingExampleSource = require('!!raw-loader!../components/docs/examples/InputGroupSizing');
-const ButtonExampleSource = require('!!raw-loader!../components/docs/examples/InputGroupButton');
-const ButtonShorthandExampleSource = require('!!raw-loader!../components/docs/examples/InputGroupButtonShorthand');
+const OverviewExampleSource = require('!!raw-loader!../../components/docs/examples/InputGroupOverview');
+const AddonExampleSource = require('!!raw-loader!../../components/docs/examples/InputGroupAddon');
+const AddonSizingExampleSource = require('!!raw-loader!../../components/docs/examples/InputGroupSizing');
+const ButtonExampleSource = require('!!raw-loader!../../components/docs/examples/InputGroupButton');
+const ButtonShorthandExampleSource = require('!!raw-loader!../../components/docs/examples/InputGroupButtonShorthand');
 
 export default class InputGroupPage extends React.Component {
   constructor(props) {

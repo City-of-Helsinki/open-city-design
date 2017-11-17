@@ -5,21 +5,21 @@ import { PrismCode } from 'react-prism';
 import { Alert } from 'reactstrap';
 import Helmet from 'react-helmet';
 
-import AlertExample from '../components/docs/examples/Alert';
-import AlertLinkExample from '../components/docs/examples/AlertLink';
-import AlertContentExample from '../components/docs/examples/AlertContent';
-import AlertDismissExample from '../components/docs/examples/AlertDismiss';
-import AlertUncontrolledDismissExample from '../components/docs/examples/AlertUncontrolledDismiss';
+import AlertExample from '../../components/docs/examples/Alert';
+import AlertLinkExample from '../../components/docs/examples/AlertLink';
+import AlertContentExample from '../../components/docs/examples/AlertContent';
+import AlertDismissExample from '../../components/docs/examples/AlertDismiss';
+import AlertUncontrolledDismissExample from '../../components/docs/examples/AlertUncontrolledDismiss';
 
-const AlertExampleSource = require('!!raw-loader!../components/docs/examples/Alert.html');
+const AlertExampleSource = require('!!raw-loader!../../components/docs/examples/Alert.html');
 
-const AlertLinkExampleSource = require('!!raw-loader!../components/docs/examples/AlertLink');
+const AlertLinkExampleSource = require('!!raw-loader!../../components/docs/examples/AlertLink');
 
-const AlertContentExampleSource = require('!!raw-loader!../components/docs/examples/AlertContent');
+const AlertContentExampleSource = require('!!raw-loader!../../components/docs/examples/AlertContent');
 
-const AlertDismissExampleSource = require('!!raw-loader!../components/docs/examples/AlertDismiss');
+const AlertDismissExampleSource = require('!!raw-loader!../../components/docs/examples/AlertDismiss');
 
-const AlertUncontrolledDismissExampleSource = require('!!raw-loader!../components/docs/examples/AlertUncontrolledDismiss');
+const AlertUncontrolledDismissExampleSource = require('!!raw-loader!../../components/docs/examples/AlertUncontrolledDismiss');
 
 export default class AlertsPage extends React.Component {
   render() {
