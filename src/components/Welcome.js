@@ -11,13 +11,11 @@ class Welcome extends Component {
                   backgroundColor: 'transparent',
                 }
             return(
-                            <div>
                               <Jumbotron style={welcomeStyle}>
                                 <h1>{this.props.welcome.heading}</h1>
                                 <p>{this.props.welcome.paragraph}</p>
                                 <p><Button color="primary">Learn more</Button></p>
                               </Jumbotron>
-                            </div>
                   
             );
       }

@@ -12,7 +12,7 @@ class SketchDocumentation extends Component {
                   heading: "Sketch Documentation",
                   paragraph: "How to apply Sketch files in your design process"
             };
-            
+
             const welcomeStyle = {
                   marginBottom: 0,
                   borderRadius: 0,
@@ -20,14 +20,9 @@ class SketchDocumentation extends Component {
                   backgroundColor: 'transparent',
             }
             return (
-                  <div className="row">
-                        <Col xs={6} md={4}>
-                              <Sidebar />
-                        </Col>
-                        <Col xs={6} md={8}>
-                              <Welcome welcome={welcome} />
-                              <Button>Download Sketch Library<Image image={image} imageStyle={imageStyle} /></Button>
-                        </Col>
+                  <div>
+                        <Welcome welcome={welcome} />
+                        <Button>Download Sketch Library<Image image={image} imageStyle={imageStyle} /></Button>
                   </div>
             );
       }

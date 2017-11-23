@@ -18,16 +18,17 @@ class Components extends Component {
                   heading: "Components",
                   paragraph: "From here you can see possible componenets"
             };
+            const SidebarStyle = {
+                  borderRight: 'solid #dddddd 1px',
+                  margin: 'none',
+                  padding: '20px',
+                  backgroundColor: '#fbfbfb'
+                }
             
             
             return (
                   <div className="row">
-                  <Col xs={6} md={3}>
-                  <Sidebar />
-                  </Col>
-                  <Col xs={6} md={9}>
-                 {this.props.children}
-                  </Col>
+               
                   </div>
                   
             );

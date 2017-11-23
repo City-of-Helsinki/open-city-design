@@ -30,7 +30,7 @@ class Hero extends Component {
                               {/* <img style={logoStyle} src={'http://c2xdexdv.c2.suncomet.fi/wp-content/uploads/2017/05/Helsinki_logo_black_rgb.png'} responsive className="App-logo" alt="logo" /> */}
                               <h1>Open City Design System</h1>
                               <NavLink to="Design" ><Button color="primary">Design </Button></NavLink>
-                              <NavLink to="Development" ><Button color="primary" >Development </Button></NavLink>
+                              <NavLink to="/development/developmentoverview" ><Button color="primary" >Development </Button></NavLink>
 
 
                         </LazyHero>
