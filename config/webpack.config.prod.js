@@ -153,6 +153,40 @@ module.exports = {
               compact: true,
             },
           },
+
+          {
+            test: /\.(scss)$/,
+            use: [{
+              loader: 'style-loader', // inject CSS to page
+            }, {
+              loader: 'css-loader', options: {
+                sourceMap: true
+              } // translates CSS into CommonJS modules
+            }, {
+              loader: 'postcss-loader', // Run post css actions
+              options: {
+                sourceMap: true,
+                plugins: function () { // post css plugins, can be exported to postcss.config.js
+                  return [
+                    autoprefixer({
+                      browsers: [
+                        '>1%',
+                        'last 4 versions',
+                        'Firefox ESR',
+                        'not ie < 10', // React doesn't support IE8 anyway
+                      ],
+                      flexbox: 'no-2009',
+                    }),
+                  ];
+                }
+              }
+            }, {
+              loader: 'sass-loader', options: {
+                  sourceMap: true
+              } // compiles SASS to CSS
+            }]
+          },
+
           // The notation here is somewhat confusing.
           // "postcss" loader applies autoprefixer to our CSS.
           // "css" loader resolves paths in CSS and adds assets as dependencies.

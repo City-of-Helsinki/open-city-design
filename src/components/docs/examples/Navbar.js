@@ -1,5 +1,6 @@
 import React from 'react';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, InputGroup, InputGroupAddon, Input } from 'reactstrap';
+import Logo from '../../../images/logo-white-hki.svg';
 
 export default class Example extends React.Component {
   constructor(props) {
@@ -18,8 +19,28 @@ export default class Example extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="faded" light expand="md">
-          <NavbarBrand href="/">reactstrap</NavbarBrand>
+        <Navbar color="dark" light expand="md">
+          <NavbarBrand src={Logo}href="/"></NavbarBrand>
+          <img src={Logo} width='80px' />
+
+
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Nav className="ml-auto" navbar>
+              <NavItem>
+              <InputGroup color="dark">
+        <InputGroupAddon>@</InputGroupAddon>
+        <Input placeholder="Search" />
+      </InputGroup>
+              </NavItem>
+              <NavItem>
+                <NavLink href="https://github.com/reactstrap/reactstrap">Github</NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Navbar>
+        <Navbar color="info" light expand="md">
+          <NavbarBrand href="/">Palvelun nimi</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>

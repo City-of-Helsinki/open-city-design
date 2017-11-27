@@ -96,20 +96,9 @@ h1,h2,h3 {
 .docs-example {
       position: relative;
       padding: 3em 1em 1em;
-      border: 1px solid #d8d8d8;
-      margin: 1.5rem 0 0;
+      margin: 3rem 1rem 5rem 1rem;
 }
 
-.docs-example::before {
-      position: absolute;
-      left: 0;
-      top: 0;
-      padding: 1em;
-      color: #aaa;
-      font-size: smaller;
-      font-weight: 500;
-      content: 'EXAMPLE';
-}
 
 .docs-example::after {
       clear: both;

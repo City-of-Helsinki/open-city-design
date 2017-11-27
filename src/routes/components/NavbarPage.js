@@ -10,10 +10,13 @@ const NavbarTogglerExampleSource = require('!!raw-loader!../../components/docs/e
 
 export default class NavsPage extends React.Component {
   render() {
+    const HelmetStyle = {
+      marginLeft: '30rem',
+    }
     return (
       <div>
-        <Helmet title="Navbar Components" />
-        <h3>Navbar</h3>
+        <Helmet style={HelmetStyle} title="Navbar Components" />
+        <h3>Navigation</h3>
         <div className="docs-example">
           <NavbarExample />
         </div>

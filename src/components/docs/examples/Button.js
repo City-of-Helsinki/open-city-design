@@ -3,17 +3,21 @@ import { Button } from 'reactstrap';
 
 export default class Example extends React.Component {
   render() {
+    const BtnStyle ={
+      margin: '10px',
+      width: '400px',
+    }
     return (
       <div>
-        <Button color="primary">primary</Button>{' '}
-        <Button color="secondary">secondary</Button>{' '}
-        <Button color="success">success</Button>{' '}
-        <Button color="info">info</Button>{' '}
-        <Button color="warning">warning</Button>{' '}
-        <Button color="danger">danger</Button>{' '}
-        <Button color="light">light</Button>{' '}
-        <Button color="dark">dark</Button>{' '}
-        <Button color="link">link</Button>
+        <Button btn-sm style={BtnStyle} color="primary">primary</Button>{' '}
+        <Button style={BtnStyle} color="secondary">secondary</Button>{' '}
+        <Button style={BtnStyle} color="success">success</Button>{' '}
+        <Button style={BtnStyle} color="info">info</Button>{' '}
+        <Button style={BtnStyle} color="warning">warning</Button>{' '}
+        <Button style={BtnStyle} color="danger">danger</Button>{' '}
+        <Button style={BtnStyle} color="light">light</Button>{' '}
+        <Button style={BtnStyle} color="dark">dark</Button>{' '}
+        <Button style={BtnStyle} color="link">link</Button>
       </div>
     );
   }

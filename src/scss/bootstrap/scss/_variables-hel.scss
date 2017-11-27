@@ -82,7 +82,8 @@ $hel-grotesk: "HelsinkiGrotesk", Arial, -apple-system, BlinkMacSystemFont,
 // Brand colors
 
 $hel-white:         #ffffff;
-$hel-black:         #000000;
+// Not brand loyal $hel-black (#000000) –optimized for digital use.
+$hel-black:         #231f20;
 $hel-copper:        #00d7a7;
 $hel-bus:           #0000bf;
 $hel-coat:          #0072c6;
@@ -104,7 +105,7 @@ $font-family-base: $hel-grotesk;
 
 // Application color mappings:
 $theme-colors: (
-  primary: $hel-bus,
+  primary: $hel-black,
   secondary: $hel-coat,
   success: $hel-tram,
   info: $hel-copper,

@@ -26,31 +26,31 @@ class SidebarModules extends Component {
       paddingLeft: '25px'
     }
     const sidebarLinks = {
-      'components': [
+      'modules': [
    
         {
           link: 'Navbar',
-          URL: '/components/navbar/'
+          URL: '/development/modules/navbar/'
         },
         {
           link: 'Footer',
-          URL: '/modules/footer/'
+          URL: '/development/modules/footer/'
         },
         {
           link: 'Loginmodal',
-          URL: '/modules/loginmodal/'
+          URL: '/development/modules/loginmodal/'
         },
         {
           link: 'Tables',
-          URL: '/components/TablesPage/'
+          URL: '/development/modules/TablesPage/'
         },
         {
           link: 'Hero',
-          URL: '/modules/Hero/'
+          URL: '/development/modules/Hero/'
         },
         {
           link: 'Cards',
-          URL: '/components/CardPage/'
+          URL: '/development/modules/CardPage/'
         },
         
       ],
@@ -62,7 +62,7 @@ class SidebarModules extends Component {
       <div className="list-group">
         <h3 style={sidebarStyles} className="list-group-item" onClick={this.toggle}><a href="#">Modules</a></h3>
         <Collapse isOpen={this.state.modules}>
-          {sidebarLinks.components.map((sidebarLink, i) => <a key={i} href="#" style={sidebarStyles && linkStyle} className="list-group-item">
+          {sidebarLinks.modules.map((sidebarLink, i) => <a key={i} href="#" style={sidebarStyles && linkStyle} className="list-group-item">
             <NavLink to={sidebarLink.URL} activeStyle={{
               color: 'red'
             }}>{sidebarLink.link}</NavLink>

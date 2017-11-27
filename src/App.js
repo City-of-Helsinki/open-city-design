@@ -41,60 +41,74 @@ import DevelopmentOverview from './routes/DevelopmentOverview'
 
 import Navigation from './components/Navigation';
 import Sidebar from './components/Sidebar/Sidebar';
-import { Container,  Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar, NavDropdown, NavItem, MenuItem } from 'reactstrap';
+import { Container, Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar, NavDropdown, NavItem, MenuItem } from 'reactstrap';
 
 class App extends Component {
   render() {
-  const SidebarStyle = {
-    borderRight: 'solid #dddddd 1px',
-    height: '90vh'
-  }
+    const SidebarStyle = {
+      // borderRight: 'solid #dddddd 1px',
+      // height: '90%'
+    }
     return (
       <Router>
         <div>
-        <Navigation />
-        <Row>
-        <Col style={SidebarStyle} xs={6} md={3}>
-        <Sidebar />
-        </Col>
-        <Col xs={6} md={9}>
-        <Route path="/" exact component={Home} />
-        <Route path="/design" exact component={Design} />
-        <Route path="/design/sketchDocumentation" component={SketchDocumentation} />
-        <Route path="/development/components/development" component={Development} />
-        <Route path="/development/developmentoverview/" component={DevelopmentOverview} />
-        <Route path="/development/components/breadcrumbs/"   component={BreadcrumbsPage} />
-        <Route path="/development/components/buttons/" component={ButtonsPage} />
-        <Route path="/development/components/button-group/" component={ButtonGroupPage} />
-        <Route path="/development/components/button-dropdown/" component={ButtonDropdownPage} />
-        <Route path="/development/components/dropdowns/" component={DropdownsPage} />
-        <Route path="/development/components/fade/" component={FadePage} />
-        <Route path="/development/components/form/" component={FormPage} />
-        <Route path="/development/components/input-group/" component={InputGroupPage} />
-        <Route path="/development/components/popovers/" component={PopoversPage} />
-        <Route path="/development/components/progress/" component={ProgressPage} />
-        <Route path="/development/components/tooltips/" component={TooltipsPage} />
-        <Route path="/development/components/badge/" component={BadgePage} />
-        <Route path="/development/components/card/" component={CardPage} />
-        <Route path="/development/components/tables/" component={TablesPage} />
-        <Route path="/development/components/modals/" component={ModalsPage} />
-        <Route path="/development/components/layout/" component={LayoutPage} />
-        <Route path="/development/components/navs/" component={NavsPage} />
-        <Route path="/development/components/navbar/" component={NavbarPage} />
-        <Route path="/development/components/media/" component={MediaPage} />
-        <Route path="/development/components/pagination/" component={PaginationPage} />
-        <Route path="/development/components/tabs/" component={TabsPage} />
-        <Route path="/development/components/alerts/" component={AlertsPage} />
-        <Route path="/development/components/jumbotron/" component={JumbotronPage} />
-        <Route path="/development/components/collapse/" component={CollapsePage} />
-        <Route path="/development/components/carousel/" component={CarouselPage} />
-        <Route path="/development/components/listgroup/" component={ListGroupPage} />
-        <Route path="/development/patterns" component={Patterns} />
-        <Route path="/development/pageTemplates" component={PageTemplates} />
-        <Route path="/development/modules" component={Modules} />
-        <Route path="/design/sketchDocumentation" component={SketchDocumentation} />
-        </Col>
-</Row>
+          <Navigation />
+          <Row>
+            <Col style={SidebarStyle} xs={6} md={3}>
+              <Sidebar />
+            </Col>
+            <Col xs={6} md={9}>
+              <Route path="/" exact component={Home} />
+
+              {/* Design routes */}
+              <Route path="/design" exact component={Design} />
+              <Route path="/design/sketchDocumentation" component={SketchDocumentation} />
+              <Route path="/design/sketchDocumentation" component={SketchDocumentation} />
+
+              {/* Development routes */}
+              <Route path="/development/components/development" component={Development} />
+              <Route path="/development/developmentoverview/" component={DevelopmentOverview} />
+
+              {/* Components routes  */}
+              <Route path="/development/components/breadcrumbs/" component={BreadcrumbsPage} />
+              <Route path="/development/components/buttons/" component={ButtonsPage} />
+              <Route path="/development/components/button-group/" component={ButtonGroupPage} />
+              <Route path="/development/components/button-dropdown/" component={ButtonDropdownPage} />
+              <Route path="/development/components/dropdowns/" component={DropdownsPage} />
+              <Route path="/development/components/fade/" component={FadePage} />
+              <Route path="/development/components/form/" component={FormPage} />
+              <Route path="/development/components/input-group/" component={InputGroupPage} />
+              <Route path="/development/components/popovers/" component={PopoversPage} />
+              <Route path="/development/components/progress/" component={ProgressPage} />
+              <Route path="/development/components/tooltips/" component={TooltipsPage} />
+              <Route path="/development/components/badge/" component={BadgePage} />
+              <Route path="/development/components/modals/" component={ModalsPage} />
+              <Route path="/development/components/layout/" component={LayoutPage} />
+              <Route path="/development/components/media/" component={MediaPage} />
+              <Route path="/development/components/pagination/" component={PaginationPage} />
+              <Route path="/development/components/tabs/" component={TabsPage} />
+              <Route path="/development/components/alerts/" component={AlertsPage} />
+              <Route path="/development/components/jumbotron/" component={JumbotronPage} />
+              <Route path="/development/components/collapse/" component={CollapsePage} />
+              <Route path="/development/components/carousel/" component={CarouselPage} />
+              <Route path="/development/components/listgroup/" component={ListGroupPage} />
+
+              {/* Page templates routes  */}
+              <Route path="/development/pageTemplates" component={PageTemplates} />
+
+              {/* Modules routes  */}
+              <Route path="/development/modules" exact component={Modules} />
+              <Route path="/development/modules/navs/" component={NavsPage} />
+              <Route path="/development/modules/navbar/" component={NavbarPage} />
+              <Route path="/development/modules/tables/" component={TablesPage} />
+              <Route path="/development/modules/card/" component={CardPage} />
+
+
+              {/* Patterns routes  */}
+              <Route path="/development/patterns" component={Patterns} />
+
+            </Col>
+          </Row>
         </div>
       </Router>
 
