@@ -52,7 +52,6 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <Navigation />
           <Row>
             <Col style={SidebarStyle} xs={6} md={3}>
               <Sidebar />

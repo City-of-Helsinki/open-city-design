@@ -140,7 +140,7 @@ class SidebarPagetemplates extends Component {
     return (
 
       <div className="list-group">
-        <h3 style={sidebarStyles} className="list-group-item" onClick={this.toggle}><a href="#">Pagetemplates</a></h3>
+        <h4 style={sidebarStyles} className="list-group-item" onClick={this.toggle}><a href="#">Pagetemplates</a></h4>
         <Collapse isOpen={this.state.pageTemplates}>
           {sidebarLinks.components.map((sidebarLink, i) => <a key={i} href="#" style={sidebarStyles} className="list-group-item">
             <NavLink to={sidebarLink.URL} activeStyle={{
