@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar} from 'reactstrap';
-import './Home.css';
-import Sidebar from '../components/Sidebar/Sidebar';
-import Welcome from '../components/Welcome';
+import Welcome from '../../components/Welcome';
 
 
 class Modules extends Component {
@@ -18,9 +16,7 @@ class Modules extends Component {
 
             return (
                   <div className="row">
-                        <Col xs={12} md={2}>
-                              <Sidebar />
-                        </Col>
+ 
                         <Col xs={12} md={10}>
                               <Welcome welcome={welcome} />
 

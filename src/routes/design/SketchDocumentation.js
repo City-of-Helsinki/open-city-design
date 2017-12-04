@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import { Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar } from 'reactstrap';
-import Welcome from '../components/Welcome';
-import Sidebar from '../components/Sidebar/Sidebar';
-import Image from '../components/Image';
+import Welcome from '../../components/Welcome';
+import Image from '../../components/Image';
 
 class SketchDocumentation extends Component {
       render() {
@@ -22,7 +21,7 @@ class SketchDocumentation extends Component {
             return (
                   <div>
                         <Welcome welcome={welcome} />
-                        <Button>Download Sketch Library<Image image={image} imageStyle={imageStyle} /></Button>
+                        <Button primary>Download Sketch Library<Image image={image} imageStyle={imageStyle} /></Button>
                   </div>
             );
       }

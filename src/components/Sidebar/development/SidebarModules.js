@@ -22,9 +22,10 @@ class SidebarModules extends Component {
     const linkStyle = {
       border: 'none',
       backgroundColor: 'transparent',
-      padding: '5px',
-      paddingLeft: '25px'
+      padding: 5,
+      paddingLeft: 25
     }
+
     const sidebarLinks = {
       'modules': [
    
@@ -60,8 +61,8 @@ class SidebarModules extends Component {
     return (
 
       <div className="list-group">
-        <h4 style={sidebarStyles} className="list-group-item" onClick={this.toggle}><a href="#">Modules</a></h4>
-        <Collapse isOpen={this.state.modules}>
+       <h4 style={sidebarStyles} className="list-group-item" onClick={this.toggle} ><a href="#">Modules</a></h4>
+       <Collapse isOpen={this.state.modules}>
           {sidebarLinks.modules.map((sidebarLink, i) => <a key={i} href="#" style={sidebarStyles && linkStyle} className="list-group-item">
             <NavLink to={sidebarLink.URL} activeStyle={{
               color: 'red'

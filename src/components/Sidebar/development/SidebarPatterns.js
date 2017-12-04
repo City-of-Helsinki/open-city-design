@@ -2,124 +2,138 @@ import React, { Component } from 'react'
 import { Collapse, Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar, NavItem } from 'reactstrap';
 import { NavLink, Link } from 'react-router-dom'
 
-class SidebarComponents extends Component {
+class SidebarPatterns extends Component {
       constructor(props) {
             super(props);
             this.toggle = this.toggle.bind(this);
-            this.state = { components: false };
+            this.state = { patterns: false };
           }
 
   toggle() {
-      this.setState({ components: !this.state.components });
+      this.setState({ patterns: !this.state.patterns });
 };
 
   render() {
     const sidebarStyles = {
       border: 'none',
       backgroundColor: 'transparent',
-    };
+      
+    }
     const linkStyle = {
       border: 'none',
       backgroundColor: 'transparent',
       padding: '5px',
       paddingLeft: '25px'
     }
+    const caretStyle = {
+      marginRight: 30
+    }
     const sidebarLinks = {
       'components': [
-        {
-          link: 'Overview',
-          URL: '/development/overview/'
-        },
+   
         {
           link: 'Alerts',
-          URL: '/development/components/alerts/'
+          URL: '/components/alerts/'
         },
         {
           link: 'Badge',
-          URL: '/development/components/badge/'
+          URL: '/components/badge/'
         },
         {
           link: 'Breadcrumbs',
-          URL: '/development/components/breadcrumbs/'
+          URL: '/components/breadcrumbs/'
         },
         {
           link: 'Buttons',
-          URL: '/development/components/buttons/'
+          URL: '/components/buttons/'
         },
         {
           link: 'Button Dropdown',
-          URL: '/development/components/button-dropdown/'
+          URL: '/components/button-dropdown/'
         },
         {
           link: 'Button Group',
-          URL: '/development/components/button-group/'
+          URL: '/components/button-group/'
         },
-
+        {
+          link: 'Card',
+          URL: '/components/card/'
+        },
         {
           link: 'Collapse',
-          URL: '/development/components/collapse/',
+          URL: '/components/collapse/',
         },
         {
           link: 'Carousel',
-          URL: '/development/components/carousel/'
+          URL: '/components/carousel/'
         },
         {
           link: 'Dropdowns',
-          URL: '/development/components/dropdowns/'
+          URL: '/components/dropdowns/'
         },
         {
           link: 'Fade',
-          URL: '/development/components/fade/'
+          URL: '/components/fade/'
         },
         {
           link: 'Form',
-          URL: '/development/components/form/'
+          URL: '/components/form/'
         },
         {
           link: 'Input Group',
-          URL: '/development/components/input-group/'
+          URL: '/components/input-group/'
         },
         {
           link: 'Jumbotron',
-          URL: '/development/components/jumbotron/'
+          URL: '/components/jumbotron/'
         },
         {
           link: 'Layout',
-          URL: '/development/components/layout/'
+          URL: '/components/layout/'
         },
         {
           link: 'List Group',
-          URL: '/development/components/listgroup/'
+          URL: '/components/listgroup/'
         },
         {
           link: 'Media',
-          URL: '/development/components/media/'
+          URL: '/components/media/'
         },
         {
           link: 'Modals',
-          URL: '/development/components/modals/'
+          URL: '/components/modals/'
         },
-
+        {
+          link: 'Navbar',
+          URL: '/components/navbar/'
+        },
+        {
+          link: 'Navs',
+          URL: '/components/navs/'
+        },
         {
           link: 'Pagination',
-          URL: '/development/components/pagination/'
+          URL: '/components/pagination/'
         },
         {
           link: 'Popovers',
-          URL: '/development/components/popovers/'
+          URL: '/components/popovers/'
         },
         {
           link: 'Progress',
-          URL: '/development/components/progress/'
+          URL: '/components/progress/'
         },
-
+        {
+          link: 'Tables',
+          URL: '/components/tables/'
+        },
         {
           link: 'Tabs',
-          URL: '/development/components/tabs/'
+          URL: '/components/tabs/'
         },
         {
           link: 'Tooltips',
-          URL: '/development/components/tooltips/'
+          URL: '/components/tooltips/'
         },
       ],
     
@@ -128,11 +142,11 @@ class SidebarComponents extends Component {
     return (
 
       <div className="list-group">
-       <h4 style={sidebarStyles} className="list-group-item" onClick={this.toggle} ><a href="#">Components</a></h4>
-        <Collapse isOpen={this.state.components}>
-          {sidebarLinks.components.map((sidebarLink, i) => <a key={i}  style={sidebarStyles && linkStyle} className="list-group-item">
-           <NavLink to={sidebarLink.URL} activeStyle={{
-              color: '#fd4f00'
+       <h4 style={sidebarStyles} className="list-group-item" onClick={this.toggle} ><a href="#">Patterns</a></h4>
+       <Collapse isOpen={this.state.patterns}>
+          {sidebarLinks.components.map((sidebarLink, i) => <a key={i} href="#" style={sidebarStyles} className="list-group-item">
+            <NavLink to={sidebarLink.URL} activeStyle={{
+              color: 'red'
             }}>{sidebarLink.link}</NavLink>
           </a>)}
         </Collapse>
@@ -147,4 +161,4 @@ class SidebarComponents extends Component {
 
 }
 
-export default SidebarComponents;
+export default SidebarPatterns;

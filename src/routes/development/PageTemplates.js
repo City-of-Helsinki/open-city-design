@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar} from 'reactstrap';
-import './Home.css';
-import Sidebar from '../components/Sidebar/Sidebar';
-import Welcome from '../components/Welcome';
+import Welcome from '../../components/Welcome';
 
 
 class PageTemplates extends Component {
@@ -18,9 +16,6 @@ class PageTemplates extends Component {
 
             return (
                   <div className="row">
-                        <Col xs={6} md={4}>
-                              <Sidebar />
-                        </Col>
                         <Col xs={6} md={8}>
                               <Welcome welcome={welcome} />
 

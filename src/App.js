@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from './routes/Home';
-import Design from './routes/Design';
-import Development from './routes/Development';
-import SketchDocumentation from './routes/SketchDocumentation';
-import Components from './routes/Components';
-import Overview from './routes/components/Overview';
-import Modules from './routes/Modules';
-import Patterns from './routes/Patterns';
-import PageTemplates from './routes/PageTemplates';
+import Design from './routes/design/Design';
+import Development from './routes/development/Development';
+import SketchDocumentation from './routes/design/SketchDocumentation';
+import Modules from './routes/development/Modules';
+import Patterns from './routes/development/Patterns';
+import PageTemplates from './routes/development/PageTemplates';
 import LayoutPage from './routes/components/LayoutPage';
 import NavsPage from './routes/components/NavsPage';
 import NavbarPage from './routes/components/NavbarPage';
@@ -35,37 +33,39 @@ import AlertsPage from './routes/components/AlertsPage';
 import CollapsePage from './routes/components/CollapsePage';
 import CarouselPage from './routes/components/CarouselPage';
 import ListGroupPage from './routes/components/ListGroupPage';
-import DevelopmentOverview from './routes/DevelopmentOverview'
-// import ClearfixPage from './Utilities/ClearfixPage';
-// import ColorsPage from './Utilities/ColorsPage';
-
+import DevelopmentOverview from './routes/development/DevelopmentOverview';
+import DesignOverview from './routes/design/DesignOverview';
 import Navigation from './components/Navigation';
 import Sidebar from './components/Sidebar/Sidebar';
+import SidebarDevelopment from './components/Sidebar/development/SidebarDevelopment';
+import SidebarDesign from './components/Sidebar/design/SidebarDesign';
+
+
+
 import { Container, Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar, NavDropdown, NavItem, MenuItem } from 'reactstrap';
 
 class App extends Component {
   render() {
-    const SidebarStyle = {
-      // borderRight: 'solid #dddddd 1px',
-      // height: '90%'
-    }
+
     return (
       <Router>
         <div>
+        <Route path="/" exact component={Home} />
+
           <Row>
-            <Col style={SidebarStyle} xs={6} md={3}>
-              <Sidebar />
-            </Col>
+          <Route path="/development" render={() => <Col xs={6} md={3}><Sidebar/><SidebarDevelopment /></Col>} />
+          <Route path="/design" render={() => <Col xs={6} md={3}><Sidebar /><SidebarDesign /></Col>} />
+
+            
             <Col xs={6} md={9}>
-              <Route path="/" exact component={Home} />
 
               {/* Design routes */}
-              <Route path="/design" exact component={Design} />
-              <Route path="/design/sketchDocumentation" component={SketchDocumentation} />
-              <Route path="/design/sketchDocumentation" component={SketchDocumentation} />
+              <Route path="/design/designoverview/" component={DesignOverview} />
+
+              <Route path="/design/sketchdocumentation" component={SketchDocumentation} />
 
               {/* Development routes */}
-              <Route path="/development/components/development" component={Development} />
+      
               <Route path="/development/developmentoverview/" component={DevelopmentOverview} />
 
               {/* Components routes  */}

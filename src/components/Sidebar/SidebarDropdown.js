@@ -29,12 +29,12 @@ class SidebarButton extends Component {
             }
             return (
                   <Dropdown  size='sm' isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-                        <DropdownToggle style={navButtonStyle} color="primary" >
-                              Choose city
+                        <DropdownToggle style={navButtonStyle} outline color="primary" caret >
+                              Choose City
                    </DropdownToggle>
                         <DropdownMenu>
 
-                              <DropdownItem>Helsinki</DropdownItem>
+                              <NavLink to='/design/designoverview' ><DropdownItem>Helsinki</DropdownItem></NavLink>
                               <DropdownItem divider />
                               <DropdownItem>Turku</DropdownItem>
                               <DropdownItem divider />

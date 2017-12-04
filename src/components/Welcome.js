@@ -5,16 +5,19 @@ import { Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar } from 'r
 class Welcome extends Component {
       render()  {
             var welcomeStyle = {
+                  marginTop: 50,
                   marginBottom: 0,
                   borderRadius: 0,
-                  padding: 10,
+                  padding: 0,
                   backgroundColor: 'transparent',
+                  width: '90%',
+ 
+                  color: '#000'
                 }
             return(
                               <Jumbotron style={welcomeStyle}>
-                                <h1>{this.props.heading}</h1>
-                                <p>{this.props.paragraph}</p>
-                                <p><Button color="primary">Learn more</Button></p>
+                                <h1 className='display-1' style={this.props.headerStyle} >{this.props.welcome.heading}</h1>
+                                <p className='lead' style={this.props.paragraphStyle} >{this.props.welcome.paragraph}</p>
                               </Jumbotron>
                   
             );
