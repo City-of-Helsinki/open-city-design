@@ -10,38 +10,16 @@ import brand from '../../images/brand.png';
 import logo from '../../images/logo.png';
 import sketch from '../../images/sketch.png';
 import ContentText from '../../components/ContentText'
+import Footer from '../../components/Footer'
 
 class DesignOverview extends Component {
   render() {
 
     const welcome = {
-      heading: "Design Guide",
+      heading: "Hi there ya Designer!",
       paragraph: "You have entered the Design Documentation for Helsnki City Digital Sevices"
     }
-    const sectionStyle_1 = {
-      height: '100%',
-      backgroundColor: '#9fc9eb',
-      borderBottom: 'solid #000 1px',
-      marginBottom: 20,
-    }
-    const sectionStyle_2 = {
-      height: 600,
-      backgroundColor: '#ffe977'
-    }
-    const sectionStyle_3 = {
-      height: 600,
-      backgroundColor: '#dedfe1'
-    }
 
-    const contentStyle = {
-      width: '100%',
-      marginLeft: 'auto',
-      marginRight: 'auto'
-    }
-    const rowStyle = {
-      paddingTop: '10%',
-      paddingBottom: '10%',
-    }
 
 
     const contentTexts = {
@@ -92,7 +70,7 @@ class DesignOverview extends Component {
         {
           key: 4,
           header: 'Colors',
-          paragraph: 'Brand color schema and instructions for usage',
+          paragraph: 'Color schema and instructions',
           imageURL: colors
         },
         {
@@ -109,20 +87,45 @@ class DesignOverview extends Component {
 
     return (
       <div>
-        <Welcome welcome={welcome} />
-        <Row>
-          {contentTexts.contentTexts.map((text, i) => <Col sm='6'>
-            <ContentText key={i} text={text} />        </Col>
-          )}
-        </Row>
-        <Row>
-          {cards.cards.map((card, i) => <Col sm='6'><HorizontalCard key={i} card={card} />        </Col>
-          )}
-        </Row>
-
+        <Container>
+          <Welcome welcome={welcome} />
+          <Row style={rowStyle}>
+            {contentTexts.contentTexts.map((text, i) => <Col xs='12' lg='6' >
+              <ContentText key={i} text={text} />        </Col>
+            )}
+          </Row>
+          <Row>
+            {cards.cards.map((card, i) => <Col xs='12' lg='6' ><HorizontalCard key={i} card={card} />        </Col>
+            )}
+          </Row>
+        </Container>
       </div>
     );
   }
+}
+
+const sectionStyle_1 = {
+  height: '100%',
+  backgroundColor: '#9fc9eb',
+  borderBottom: 'solid #000 1px',
+  marginBottom: 20,
+}
+const sectionStyle_2 = {
+  height: 600,
+  backgroundColor: '#ffe977'
+}
+const sectionStyle_3 = {
+  height: 600,
+  backgroundColor: '#dedfe1'
+}
+
+const contentStyle = {
+  width: '100%',
+  marginLeft: 'auto',
+  marginRight: 'auto'
+}
+const rowStyle = {
+  paddingBottom: '10%',
 }
 export default DesignOverview;
 

@@ -39,6 +39,7 @@ import Navigation from './components/Navigation';
 import Sidebar from './components/Sidebar/Sidebar';
 import SidebarDevelopment from './components/Sidebar/development/SidebarDevelopment';
 import SidebarDesign from './components/Sidebar/design/SidebarDesign';
+import Footer from './components/Footer';
 
 
 
@@ -53,11 +54,11 @@ class App extends Component {
         <Route path="/" exact component={Home} />
 
           <Row>
-          <Route path="/development" render={() => <Col xs={6} md={3}><Sidebar/><SidebarDevelopment /></Col>} />
-          <Route path="/design" render={() => <Col xs={6} md={3}><Sidebar /><SidebarDesign /></Col>} />
+          <Route path="/development"  render={() => <Col style={sidebarStyle} xs={12} lg={2}><Sidebar/><SidebarDevelopment /></Col>} />
+          <Route path="/design" render={() => <Col xs={12} lg={2}><Sidebar /><SidebarDesign /></Col>} />
 
             
-            <Col xs={6} md={9}>
+            <Col xs={12} lg={10}>
 
               {/* Design routes */}
               <Route path="/design/designoverview/" component={DesignOverview} />
@@ -105,7 +106,7 @@ class App extends Component {
 
               {/* Patterns routes  */}
               <Route path="/development/patterns" component={Patterns} />
-
+              <Footer />
             </Col>
           </Row>
         </div>
@@ -115,6 +116,13 @@ class App extends Component {
     );
   }
 
+}
+
+const sidebarStyle = {
+  borderRight: 'solid 1px #f4f4f4',
+  maxHeight: '100vh ',
+  overflow: 'true',
+  
 }
 
 export default App;

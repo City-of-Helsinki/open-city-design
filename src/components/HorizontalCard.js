@@ -19,16 +19,15 @@ class HorizontalCard extends Component {
                       },
                   // boxShadow: '0 5px 30px rgba(0, 0, 0, 0.1)',
                   margin: '10px 10px 10px 0px',
-                  maxHeight: 100
             }
 
             return (
-                <div style={cardStyle}>
-                        <Row style={this.props.rowStyle} >
-                              <Col xs='2'>
+                <div >
+                        <Row style={this.props.rowStyle} style={cardStyle}>
+                              <Col xs='4' lg='4'>
                                     <Image image={image} imageStyle={imageStyle} />
                               </Col>
-                              <Col xs='10' style={{ padding: '20px',  }}>
+                              <Col xs='8' lg='8' style={{ padding: '20px',  }}>
                               <NavLink to='#'> <h4>{this.props.card.header}</h4></NavLink>
                                     <p>{this.props.card.paragraph}</p></Col>
                         </Row>

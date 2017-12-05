@@ -3,7 +3,7 @@ import { Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar } from 'r
 import Hero from '../../components/Hero';
 import Welcome from '../../components/Welcome';
 import helsinki from '../../images/helsinki.png';
-
+import Footer from '../../components/Footer';
 
 class Design extends Component {
   render() {

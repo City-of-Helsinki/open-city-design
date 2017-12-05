@@ -10,7 +10,8 @@ class Sidebar extends Component {
     const SidebarStyles = {
       margin: 20,
       backgroundColor: ' $gray-100',
-      maxWidth: 250
+      maxWidth: 250,
+      
     };
     const logoStyles = {
       margin: 20,
