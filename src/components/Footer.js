@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import LazyHero from 'react-lazy-hero';
 import { NavLink } from 'react-router-dom';
-import { Col, Button, Row, Container, Badge } from 'reactstrap';
+import { Col, Button, Row, Container, Media, Badge } from 'reactstrap';
 import ContentTextWithButton from './ContentTextWithButton';
 import ContentText from './ContentText';
 import sketch from '../images/sketch_narrow.png';
@@ -85,7 +85,7 @@ class Footer extends Component {
 
                               </Container>
                         </Row>
-   
+      
                   </div>
 
             );
