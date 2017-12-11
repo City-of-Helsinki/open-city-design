@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Container, Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar, NavDropdown, NavItem, MenuItem } from 'reactstrap';
+
+
 import Home from './routes/Home';
 import Design from './routes/design/Design';
 import Development from './routes/development/Development';
@@ -43,9 +46,11 @@ import Footer from './components/Footer';
 
 
 
-import { Container, Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar, NavDropdown, NavItem, MenuItem } from 'reactstrap';
 
 class App extends Component {
+
+
+  
   render() {
 
     return (
@@ -58,7 +63,7 @@ class App extends Component {
           <Route path="/design" render={() => <Col xs={12} lg={2}><Sidebar /><SidebarDesign /></Col>} />
 
             
-            <Col xs={12} lg={10}>
+            <Col style={{ marginLeft: 300 }} xs={12} lg={10}>
 
               {/* Design routes */}
               <Route path="/design/designoverview/" component={DesignOverview} />
@@ -119,9 +124,12 @@ class App extends Component {
 }
 
 const sidebarStyle = {
-  borderRight: 'solid 1px #f4f4f4',
+  borderRight: 'solid 1px #343434',
   maxHeight: '100vh ',
   overflow: 'true',
+  position: 'fixed',
+  height: '100%',
+  overflow: 'show'
   
 }
 

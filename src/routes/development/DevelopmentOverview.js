@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar, CardColumns } from 'reactstrap';
+import { Container, Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar, CardColumns, Media } from 'reactstrap';
 import ScrollableAnchor from 'react-scrollable-anchor'
 
 import typography from '../../images/typography.png';
@@ -54,32 +54,32 @@ class DevelopmentOverview extends Component {
           key: 1,
           header: 'Buttons',
           paragraph: 'Use the Skecth Library to design applications',
-          imageURL: button,
+          imageURL: <Button color='primary' outline >MOi</Button>,
           URL: '#'
         },
         {
           key: 2,
-          header: 'Logo',
+          header: 'Alerts',
           paragraph: 'How to properly use logos?',
           imageURL: logo,
           URL: '#'
         },
         {
           key: 3,
-          header: 'Typography',
+          header: 'Badges',
           paragraph: 'Using typography correctly',
           imageURL: typography,
           URL: '#'
         },
         {
           key: 4,
-          header: 'Colors',
-          paragraph: 'Color schema and instructions',
+          header: 'Breadcrumb',
+          body: 'Color schema and instructions',
           imageURL: colors
         },
         {
           key: 4,
-          header: 'Brand',
+          header: 'Modals',
           paragraph: 'Study the brand guidelines',
           imageURL: brand,
           URL: '#'
@@ -91,11 +91,15 @@ class DevelopmentOverview extends Component {
 
     return (
       <div>
+                  <Row style={sectionStyle_1}>
+
         <Container>
           <Row>
             <Welcome welcome={welcome} />
           </Row>
-
+          </Container>
+</Row>
+<Container>
           <Row style={rowStyle}>
             {contentTexts.contentTexts.map((text, i) => <Col xs='12' lg='6' >
               <ContentText key={i} text={text} />        </Col>
@@ -108,7 +112,7 @@ class DevelopmentOverview extends Component {
             </ScrollableAnchor>
           </Row>
           <Row>
-            {cards.cards.map((card, i) => <Col xs='12' lg='6' ><HorizontalCard key={i} card={card} />        </Col>
+            {cards.cards.map((card, i) => <Col xs='12' lg='6' ><Media key={i} card={card} />        </Col>
             )}
           </Row>
 
@@ -121,8 +125,9 @@ class DevelopmentOverview extends Component {
 
 const sectionStyle_1 = {
   height: '100%',
-  backgroundColor: '#9fc9eb',
-  borderBottom: 'solid #000 1px',
+  width: '100%',
+  backgroundColor: '#f3f3f3',
+  borderBottom: 'solid #343434 1px',
   marginBottom: 20,
 }
 const sectionStyle_2 = {
