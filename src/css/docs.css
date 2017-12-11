@@ -167,3 +167,74 @@ pre, code {
 .docs-example .progress {
       margin-bottom: 1rem;
 }
+
+
+.sidebar {
+      width: 300px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      transition: all 0.2s ease-out;
+      transform: translateX(-300px);
+      border-right: 1px solid #aaa;
+}
+
+.sidebar.sidebar-open {
+      transform: translateX(0);
+}
+
+.main-content {
+      width: 100%;
+      transition: all 0.2s ease-out;
+      padding: 20px 30px;
+}
+
+.main-content__sidebar-open {
+      width: calc(100% - 300px);
+      transform: translateX(300px);
+}
+
+.sidebar-toggle {
+      position: absolute;
+      right: 0;
+}
+
+.sidebar-toggle {
+      width: 30px;
+      right: 0;
+      border: none;
+      background: white;
+      transition: all 0.2s ease-out;
+      border-radius: 0;
+      height: 30px;
+      line-height: 30px;
+}
+
+.sidebar-toggle .fa-bars {
+      display: none;
+}
+
+
+.sidebar-toggle:hover  {
+      background: blue;
+      color: white;
+ }
+
+.sidebar-toggle--open {
+      transform: translateX(30px);
+}
+
+.sidebar-toggle--open .fa-bars {
+      display: inline;
+}
+
+
+.sidebar-toggle--open .fa-close {
+      display: none;
+}
+
+.sidebar__scroll {
+      overflow: auto;
+      max-height: 100vh;
+}

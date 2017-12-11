@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Prism from './utility/prism.js';
+import classnames from 'classnames';
+import './css/docs.css';
+import './css/prism.css';
 import { Container, Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar, NavDropdown, NavItem, MenuItem } from 'reactstrap';
 
 
@@ -51,7 +54,19 @@ import Footer from './components/Footer';
 
 class App extends Component {
 
+  constructor(props) {
+    super(props);
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      menuOpen: true
+    };
+  }
 
+  toggle() {
+    this.setState({
+      menuOpen: !this.state.menuOpen
+    });
+  }
   
   render() {
 
@@ -60,12 +75,12 @@ class App extends Component {
         <div>
         <Route path="/" exact component={Home} />
 
-          <Row>
-          <Route path="/development"  render={() => <Col style={sidebarStyle} xs={12} lg={2}><Sidebar/><SidebarDevelopment /></Col>} />
-          <Route path="/design" render={() => <Col xs={12} lg={2}><Sidebar /><SidebarDesign /></Col>} />
-
-            
-            <Col style={{ marginLeft: 300 }} xs={12} lg={10}>
+          <aside className={classnames({ 'sidebar-open': this.state.menuOpen === true, 'sidebar': true })}>
+            <button className={classnames({ 'sidebar-toggle--open': this.state.menuOpen === false, 'sidebar-toggle': true })} onClick={() => { this.toggle(); }}><i class="fa fa-close"></i><i class="fa fa-bars"></i></button>
+            <Route path="/development"  render={() => <div className="sidebar__scroll"><Sidebar/><SidebarDevelopment /></div>} />
+            <Route path="/design" render={() => <div className="sidebar__scroll"><Sidebar /><SidebarDesign /></div>} />
+          </aside>
+          <main className={classnames({ 'main-content__sidebar-open': this.state.menuOpen === true, 'main-content': true })}>
 
               {/* Design routes */}
               <Route path="/design/overview/" component={DesignOverview} />
@@ -114,8 +129,7 @@ class App extends Component {
               {/* Patterns routes  */}
               <Route path="/development/patterns" component={Patterns} />
               <Footer />
-            </Col>
-          </Row>
+          </main>
         </div>
       </Router>
 
