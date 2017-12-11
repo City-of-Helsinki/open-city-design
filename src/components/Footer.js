@@ -72,7 +72,7 @@ class Footer extends Component {
 
             return (
                   <div style={footerStyle}>
-                        <Row style={footerLinkSectionStyle}>
+                        <footer style={footerLinkSectionStyle}>
                               <Container>
                                     <Row >
                                           {cards.cards.map((card, i) =>
@@ -84,8 +84,7 @@ class Footer extends Component {
 
 
                               </Container>
-                        </Row>
-      
+                        </footer>
                   </div>
 
             );

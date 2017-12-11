@@ -72,7 +72,7 @@ class App extends Component {
 
     return (
       <Router>
-        <div>
+        <div class="app">
         <Route path="/" exact component={Home} />
 
           <aside className={classnames({ 'sidebar-open': this.state.menuOpen === true, 'sidebar': true })}>
@@ -81,7 +81,7 @@ class App extends Component {
             <Route path="/design" render={() => <div className="sidebar__scroll"><Sidebar /><SidebarDesign /></div>} />
           </aside>
           <main className={classnames({ 'main-content__sidebar-open': this.state.menuOpen === true, 'main-content': true })}>
-
+            <Container>
               {/* Design routes */}
               <Route path="/design/overview/" component={DesignOverview} />
               <Route path="/design/sketchdocumentation" component={SketchDocumentation} />
@@ -128,7 +128,8 @@ class App extends Component {
 
               {/* Patterns routes  */}
               <Route path="/development/patterns" component={Patterns} />
-              <Footer />
+            </Container>
+            <Footer />
           </main>
         </div>
       </Router>

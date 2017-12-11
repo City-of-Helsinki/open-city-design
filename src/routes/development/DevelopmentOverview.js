@@ -91,15 +91,15 @@ class DevelopmentOverview extends Component {
 
     return (
       <div>
-                  <Row style={sectionStyle_1}>
 
-        <Container>
-          <Row>
-            <Welcome welcome={welcome} />
-          </Row>
+        <div style={sectionStyle_1}>
+          <Container>
+            <Row>
+              <Welcome welcome={welcome} />
+            </Row>
           </Container>
-</Row>
-<Container>
+        </div>
+        <Container>
           <Row style={rowStyle}>
             {contentTexts.contentTexts.map((text, i) => <Col xs='12' lg='6' >
               <ContentText key={i} text={text} />        </Col>
