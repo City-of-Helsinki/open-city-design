@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Prism from './utility/prism.js';
 import { Container, Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar, NavDropdown, NavItem, MenuItem } from 'reactstrap';
 
 
@@ -37,6 +38,7 @@ import CollapsePage from './routes/components/CollapsePage';
 import CarouselPage from './routes/components/CarouselPage';
 import ListGroupPage from './routes/components/ListGroupPage';
 import DevelopmentOverview from './routes/development/DevelopmentOverview';
+import ComponentOverview from './routes/components/Overview';
 import DesignOverview from './routes/design/DesignOverview';
 import Navigation from './components/Navigation';
 import Sidebar from './components/Sidebar/Sidebar';
@@ -66,15 +68,15 @@ class App extends Component {
             <Col style={{ marginLeft: 300 }} xs={12} lg={10}>
 
               {/* Design routes */}
-              <Route path="/design/designoverview/" component={DesignOverview} />
-
+              <Route path="/design/overview/" component={DesignOverview} />
               <Route path="/design/sketchdocumentation" component={SketchDocumentation} />
 
               {/* Development routes */}
       
-              <Route path="/development/developmentoverview/" component={DevelopmentOverview} />
+              <Route path="/development/overview/" component={DevelopmentOverview} />
 
               {/* Components routes  */}
+              <Route path="/development/components/overview/" component={ComponentOverview} />
               <Route path="/development/components/breadcrumbs/" component={BreadcrumbsPage} />
               <Route path="/development/components/buttons/" component={ButtonsPage} />
               <Route path="/development/components/button-group/" component={ButtonGroupPage} />
@@ -99,7 +101,7 @@ class App extends Component {
               <Route path="/development/components/listgroup/" component={ListGroupPage} />
 
               {/* Page templates routes  */}
-              <Route path="/development/pageTemplates" component={PageTemplates} />
+              <Route path="/development/pagetemplates" component={PageTemplates} />
 
               {/* Modules routes  */}
               <Route path="/development/modules" exact component={Modules} />

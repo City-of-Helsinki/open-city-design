@@ -31,7 +31,7 @@ class SidebarComponents extends Component {
       'components': [
         {
           link: 'Overview',
-          URL: '/development/overview/'
+          URL: '/development/components/overview/'
         },
         {
           link: 'Alerts',
