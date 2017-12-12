@@ -45,39 +45,7 @@ class Hero extends Component {
                         <LazyHero isCentered={true} color={this.props.heroColor} style={heroStyle} imageSrc="">
                               <Container>
                                     <Welcome welcome={welcome} />
-                                    <Row style={border} />
-                                    <Row style={rowStyle}>
-                                          <Col>
-                                                <Card   >
-                                                      <CardBody>
-                                                            <CardTitle><h1>Helsinki</h1></CardTitle>
-                                                            <CardSubtitle>Card subtitle</CardSubtitle>
-                                                            <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                                                            <NavLink to='/development/developmentoverview' >  <Button color='primary' outline >Explore</Button></NavLink>
-                                                      </CardBody>
-                                                </Card>
-                                          </Col>
-                                          <Col>
-                                                <Card  >
-                                                      <CardBody >
-                                                            <CardTitle><h1>Turku</h1></CardTitle>
-                                                            <CardSubtitle>Card subtitle</CardSubtitle>
-                                                            <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                                                            <Button color='primary' className='text-muted' outline >Explore</Button>
-                                                      </CardBody>
-                                                </Card>
-                                          </Col>
-                                          <Col>
-                                                <Card  >
-                                                      <CardBody>
-                                                            <CardTitle><h1>Tampere</h1></CardTitle>
-                                                            <CardSubtitle>Card subtitle</CardSubtitle>
-                                                            <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                                                            <Button color='primary' className='text-muted' outline >Explore</Button>
-                                                      </CardBody>
-                                                </Card>
-                                          </Col>
-                                    </Row>
+                                    
                               </Container>
                         </LazyHero>
                   </div>

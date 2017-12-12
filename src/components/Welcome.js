@@ -17,6 +17,8 @@ class Welcome extends Component {
                               <Jumbotron style={welcomeStyle}>
                                 <h1 className='display-1' style={this.props.headerStyle} >{this.props.welcome.heading}</h1>
                                 <p className='lead' style={this.props.paragraphStyle} >{this.props.welcome.paragraph}</p>
+                                <Button outline color={'light'} >{this.props.welcome.buttonText}</Button>
+
                               </Jumbotron>
                   </Container>
             );

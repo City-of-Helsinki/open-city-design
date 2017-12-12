@@ -25,7 +25,7 @@ class Sidebar extends Component {
       <div style={SidebarStyles} >
         <NavLink to='/'><h4 style={logoStyles}>Open City Design System</h4></NavLink>
         <SidebarDropdown />
-        <NavLink to='/design/overview'><SidebarButton buttonText={'Design Guide'} /></NavLink>
+        <NavLink  to='/design/overview'><SidebarButton  buttonText={'Design Guide'} /></NavLink>
         <NavLink to='/development/overview'><SidebarButton buttonText={'Development Guide'} /></NavLink>
 
       </div> 

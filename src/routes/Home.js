@@ -23,9 +23,7 @@ class Home extends Component {
     }
     const heroStyle = {
     }
-      const sidebarShow = {
-        display: false
-    }
+
 
     return (
       <div>
