@@ -182,6 +182,7 @@ pre, code {
       transition: all 0.2s ease-out;
       transform: translateX(-300px);
       border-right: 1px solid #aaa;
+      z-index: 3;
 }
 
 .sidebar.sidebar-open {

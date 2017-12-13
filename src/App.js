@@ -73,14 +73,19 @@ class App extends Component {
     return (
       <Router>
         <div class="app">
-        <Route path="/" exact component={Home} />
 
           <aside className={classnames({ 'sidebar-open': this.state.menuOpen === true, 'sidebar': true })}>
             <button className={classnames({ 'sidebar-toggle--open': this.state.menuOpen === false, 'sidebar-toggle': true })} onClick={() => { this.toggle(); }}><i class="fa fa-close"></i><i class="fa fa-bars"></i></button>
-            <Route path="/development"  render={() => <div className="sidebar__scroll"><Sidebar/><SidebarDevelopment /></div>} />
-            <Route path="/design" render={() => <div className="sidebar__scroll"><Sidebar /><SidebarDesign /></div>} />
+            <div className="sidebar__scroll">
+              <Sidebar/>
+              <Route path="/development"  render={() => <SidebarDevelopment />} />
+              <Route path="/design" render={() => <SidebarDesign />} />
+            </div>
           </aside>
           <main className={classnames({ 'main-content__sidebar-open': this.state.menuOpen === true, 'main-content': true })}>
+
+              <Route path="/" exact component={Home} />
+
               {/* Design routes */}
               <Route path="/design/overview/" component={DesignOverview} />
               <Route path="/design/sketchdocumentation" component={SketchDocumentation} />

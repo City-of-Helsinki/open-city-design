@@ -1,5 +1,5 @@
 import React from 'react';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, InputGroup, InputGroupAddon, Input } from 'reactstrap';
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, InputGroup, InputGroupAddon, Button, Input } from 'reactstrap';
 import Logo from '../../../images/logo-white-hki.svg';
 
 export default class Example extends React.Component {
@@ -19,9 +19,11 @@ export default class Example extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="dark" light expand="md">
+        <Navbar color="light" light expand="md">
           <NavbarBrand src={Logo}href="/"></NavbarBrand>
           <img src={Logo} width='80px' />
+          <Button outline size="sm" color="dark">Login</Button>
+          <Button outline size="sm" color="dark">Login</Button>
 
 
           <NavbarToggler onClick={this.toggle} />
@@ -29,8 +31,7 @@ export default class Example extends React.Component {
             <Nav className="ml-auto" navbar>
               <NavItem>
               <InputGroup color="dark">
-        <InputGroupAddon>@</InputGroupAddon>
-        <Input placeholder="Search" />
+              <Input placeholder="Search" />
       </InputGroup>
               </NavItem>
               <NavItem>
