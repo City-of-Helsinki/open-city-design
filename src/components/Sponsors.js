@@ -51,7 +51,7 @@ class Sponsors extends Component {
                         { this.props.placement === 'top' && 
                               <div className="">
                                     <div className="partner-banner__logo">
-                                          {sixAikaSvg}
+                                          <SixAikaColorSvg />
                                     </div>
                                     <div className="partner-banner__logo">
                                           <img alt="Vipuvoimaa EU:lta 2014-2020" src="/images/eu-vipuvoimaa-color.svg" class="partner-logo" aria-hidden="true" />
