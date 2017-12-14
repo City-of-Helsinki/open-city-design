@@ -17,8 +17,8 @@ const html = require('!!raw-loader!./KoroSection.html');
 
 
 const welcome = {
-  heading: 'Koro sections',
-  paragraph: 'Helsinki Brand is filled with colors. Koro shapes help you distance sections from each other with various brand border styles.',
+  heading: 'Koro section',
+  paragraph: 'Helsinki Brand is filled with colors. Koro shapes help you distance sections from each other with various brand-specific border styles.',
   
 }
 

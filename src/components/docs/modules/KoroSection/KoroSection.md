@@ -16,4 +16,4 @@ Use `.section-koro` class in your `<section>` tag to enable the koro shapes arou
 - `.koro-[edge]` defines if the koro shape is placed in `top` or `bottom`.
 - `.koro-size-[size]` defines the zoom and the size. `x1` koro is 10px high, `x2` 20px and so on.
 
-You can learn more about koros and their usage in the [styles subsection about koros](/development/styles/koro).
+You can learn more about koros and their usage elsewhere from the [styles subsection about koros](/development/styles/koro).
