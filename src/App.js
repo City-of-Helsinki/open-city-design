@@ -102,7 +102,7 @@ class App extends Component {
               <Route path="/development/overview/" component={DevelopmentOverview} />
 
               {/* Components routes  */}
-              <Container>
+              <Container className="docs-page">
               <Route path="/development/components/overview/" component={ComponentOverview} />
               <Route path="/development/components/breadcrumbs/" component={BreadcrumbsPage} />
               <Route path="/development/components/buttons/" component={ButtonsPage} />
