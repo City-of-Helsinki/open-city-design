@@ -10,6 +10,7 @@ import AlertLinkExample from '../../components/docs/examples/AlertLink';
 import AlertContentExample from '../../components/docs/examples/AlertContent';
 import AlertDismissExample from '../../components/docs/examples/AlertDismiss';
 import AlertUncontrolledDismissExample from '../../components/docs/examples/AlertUncontrolledDismiss';
+import WelcomeSmall from '../../components/WelcomeSmall';
 
 const AlertExampleSource = require('!!raw-loader!../../components/docs/examples/Alert.html');
 
@@ -21,13 +22,22 @@ const AlertDismissExampleSource = require('!!raw-loader!../../components/docs/ex
 
 const AlertUncontrolledDismissExampleSource = require('!!raw-loader!../../components/docs/examples/AlertUncontrolledDismiss');
 
+
+const welcome = {
+  heading: 'Alerts',
+  paragraph: 'Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.',
+  
+}
+
+
 export default class AlertsPage extends React.Component {
   render() {
     return (
       <div>
         <Helmet title="Alerts" />
 
-        <h3>Alerts</h3>
+        <WelcomeSmall welcome={welcome} />
+
         <div className="docs-example">
           <AlertExample />
         </div>

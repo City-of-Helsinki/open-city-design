@@ -30,7 +30,6 @@ import TooltipsPage from './routes/components/TooltipsPage';
 import BadgePage from './routes/components/BadgePage';
 import MediaPage from './routes/components/MediaPage';
 import ModalsPage from './routes/components/ModalsPage';
-import CardPage from './routes/components/CardPage';
 import TablesPage from './routes/components/TablesPage';
 import PaginationPage from './routes/components/PaginationPage';
 import TabsPage from './routes/components/TabsPage';
@@ -50,6 +49,8 @@ import Footer from './components/Footer';
 
 // Modules
 import NavbarPage from './components/docs/modules/Navbar/NavbarPage';
+import CardPage from './/components/docs/modules/Cards/CardPage';
+
 
 
 
@@ -129,7 +130,7 @@ class App extends Component {
               <Route path="/development/modules/navs/" component={NavsPage} />
               <Route path="/development/modules/navbar/" component={NavbarPage} />
               <Route path="/development/modules/tables/" component={TablesPage} />
-              <Route path="/development/modules/card/" component={CardPage} />
+              <Route path="/development/modules/cardpage/" component={CardPage} />
 
 
               {/* Patterns routes  */}

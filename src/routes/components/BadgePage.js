@@ -8,6 +8,9 @@ import BadgeButtonExample from '../../components/docs/examples/BadgeButton';
 import BadgePillsExample from '../../components/docs/examples/BadgePills';
 import BadgeVariationsExample from '../../components/docs/examples/BadgeVariations';
 import BadgeLinksExample from '../../components/docs/examples/BadgeLinks';
+import WelcomeSmall from '../../components/WelcomeSmall';
+
+
 const BadgeExampleSource = require('!!raw-loader!../../components/docs/examples/Badge');
 
 const BadgeButtonExampleSource = require('!!raw-loader!../../components/docs/examples/BadgeButton');
@@ -18,14 +21,20 @@ const BadgeVariationsExampleSource = require('!!raw-loader!../../components/docs
 
 const BadgeLinksExampleSource = require('!!raw-loader!../../components/docs/examples/BadgeLinks');
 
+
+const welcome = {
+  heading: 'Badges',
+  paragraph: 'Documentation and examples for badges, our small count and labeling component.',
+  
+}
+
+
 export default class BadgesPage extends React.Component {
   render() {
     return (
       <div>
         <Helmet title="Badges" />
-        <h3>Badges</h3>
-        <hr />
-        <p>Scale to parent</p>
+        <WelcomeSmall welcome={welcome} />
         <div className="docs-example">
           <BadgeExample />
         </div>
