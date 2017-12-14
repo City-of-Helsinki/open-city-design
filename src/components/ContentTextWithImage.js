@@ -21,9 +21,9 @@ class ContentTextWithImage extends Component {
 
 }
 const style = {
-      height: 200,
+      height: 300,
 }
 
-const imageStyle = { maxHeight: 300, maxWidth: '100%',  float: 'left', };
+const imageStyle = { maxHeight: 300, maxWidth: '100%',  float: 'left', boxShadow: '0 2px 2px rgba(0, 0, 0, 0.5)', alignSelf: 'flex-end' };
 const textStyle = { marginTop: 10 }
 export default ContentTextWithImage;

@@ -149,3 +149,14 @@ $btn-border-radius-sm:           0;
 $btn-transition:                 all .15s ease-in-out !default;
 
 $input-btn-border-width:         2px; // For form controls and buttons
+
+// Alerts
+//
+// Define alert colors, border radius, and padding.
+
+$alert-padding-y:             5rem !default;
+$alert-padding-x:             1.25rem !default;
+$alert-margin-bottom:         1rem !default;
+$alert-border-radius:         $border-radius !default;
+$alert-link-font-weight:      $font-weight-bold !default;
+$alert-border-width:          $border-width !default;

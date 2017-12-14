@@ -3,10 +3,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { PrismCode } from 'react-prism';
 import Helmet from 'react-helmet';
-import NavbarExample from '../../components/docs/examples/Navbar';
-import NavbarTogglerExample from '../../components/docs/examples/NavbarToggler';
-const NavbarExampleSource = require('!!raw-loader!../../components/docs/examples/Navbar');
-const NavbarTogglerExampleSource = require('!!raw-loader!../../components/docs/examples/NavbarToggler');
+import NavbarExample from './Navbar';
+import NavbarTogglerExample from './NavbarToggler';
+const NavbarExampleSource = require('!!raw-loader!./Navbar');
+const NavbarTogglerExampleSource = require('!!raw-loader!./NavbarToggler');
 
 export default class NavsPage extends React.Component {
   render() {

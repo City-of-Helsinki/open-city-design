@@ -16,7 +16,6 @@ import Patterns from './routes/development/Patterns';
 import PageTemplates from './routes/development/PageTemplates';
 import LayoutPage from './routes/components/LayoutPage';
 import NavsPage from './routes/components/NavsPage';
-import NavbarPage from './routes/components/NavbarPage';
 import BreadcrumbsPage from './routes/components/BreadcrumbsPage';
 import ButtonsPage from './routes/components/ButtonsPage';
 import ButtonGroupPage from './routes/components/ButtonGroupPage';
@@ -49,6 +48,8 @@ import SidebarDevelopment from './components/Sidebar/development/SidebarDevelopm
 import SidebarDesign from './components/Sidebar/design/SidebarDesign';
 import Footer from './components/Footer';
 
+// Modules
+import NavbarPage from './components/docs/modules/Navbar/NavbarPage';
 
 
 

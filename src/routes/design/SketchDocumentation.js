@@ -77,17 +77,21 @@ class SketchDocumentation extends Component {
                   }
             return (
                   <div>
+                        <Container>
                         <Welcome welcome={welcome} />
-                        <Container  >
+                        <Row  >
 
                         {cards.cards.map((card, i) =>
                                                 
-                              <Col style={rowStyle} lg='12' xl='6' >
+                              <Col style={rowStyle} xs='12' lg='6' >
                                     <ContentTextWithImage key={i} card={card} />
                               </Col>
                         )}
-                                                              </Container>  
-  </div>
+                                                                   </Row>  
+                                                                   </Container>
+
+ </div>
+
             );
       }
 

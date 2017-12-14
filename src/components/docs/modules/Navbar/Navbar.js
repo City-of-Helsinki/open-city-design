@@ -1,6 +1,6 @@
 import React from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, InputGroup, InputGroupAddon, Button, Input } from 'reactstrap';
-import Logo from '../../../images/logo-white-hki.svg';
+import Logo from '../../../../images/logo-white-hki.svg';
 
 export default class Example extends React.Component {
   constructor(props) {
