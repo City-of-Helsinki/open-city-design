@@ -245,3 +245,34 @@ pre, code {
       overflow: auto;
       height: 100vh;
 }
+
+.partner-banner {
+      text-align: center;
+      margin-bottom: 24px;
+      z-index: 101;
+}
+
+@media screen and (min-width: 992px) {
+      .partner-banner--top {
+            position: absolute;
+            right: 10%;
+            top: 84px;
+      }
+}
+
+.partner-banner--top {
+      margin-bottom: 0;
+      background-color: white;
+      box-shadow: rgba(35, 31, 32, 0.3) 2px 2px 5px;
+}
+
+.partner-banner--footer {
+      background: transparent;
+}
+
+.partner-banner .partner-banner__logo {
+      display: inline-block;
+      width: 5.5em;
+      padding: 12px;
+      vertical-align: middle;
+}

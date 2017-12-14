@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar,} from 'reactstrap';
 import Hero from '../components/Hero';
 import Welcome from '../components/Welcome';
-
+import Sponsors from '../components/Sponsors';
 
 class Home extends Component {
  
@@ -28,7 +28,7 @@ class Home extends Component {
     return (
       <div>
      
-     
+            <Sponsors placement="top" />
             <Hero hero={hero} style={heroStyle} heroHeight={'100vh'} />
             
       </div>
