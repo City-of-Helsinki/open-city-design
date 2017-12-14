@@ -2,28 +2,29 @@ import React, { Component } from 'react'
 import { Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar, Container } from 'reactstrap';
 
 
-class Welcome extends Component {
+class WelcomeSmall extends Component {
       render()  {
             var welcomeStyle = {
-                  marginTop: 150 || this.props.marginTop,
-                  marginBottom: 150,
+                  marginTop: 20,
+                  marginBottom: 20,
                   borderRadius: 0,
                   padding: 0,
                   backgroundColor: 'transparent',
-                  width: '90%',
+                  width: '100%',
                  }
             return(
                   <Container>
                               <Jumbotron style={welcomeStyle}>
                                 <h1 className='display-1' style={this.props.headerStyle} >{this.props.welcome.heading}</h1>
                                 <p className='lead' style={this.props.paragraphStyle} >{this.props.welcome.paragraph}</p>
-                                <Button outline color={'light'} >{this.props.welcome.buttonText}</Button>
 
                               </Jumbotron>
+                              <hr />
+
                   </Container>
             );
       }
 
 }
 
-export default Welcome;
+export default WelcomeSmall;
