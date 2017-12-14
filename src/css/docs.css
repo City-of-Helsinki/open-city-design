@@ -255,20 +255,27 @@ pre, code {
 @media screen and (min-width: 992px) {
       .partner-banner--top {
             position: absolute;
-            right: 10%;
-            top: 84px;
+            right: 10px;
+            top: 10px;
       }
 }
 
 .partner-banner--top {
       margin-bottom: 0;
       background-color: white;
-      box-shadow: rgba(35, 31, 32, 0.3) 2px 2px 5px;
 }
 
 .partner-banner--footer {
-      background: transparent;
+      background: rgba(35, 31, 32, 1);
 }
+
+
+@media screen and (min-width: 992px) {
+      .partner-banner--footer {
+            float: right;
+      }
+}
+
 
 .partner-banner .partner-banner__logo {
       display: inline-block;
