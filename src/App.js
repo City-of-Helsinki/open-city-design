@@ -14,32 +14,8 @@ import SketchDocumentation from './routes/design/SketchDocumentation';
 import Modules from './routes/development/Modules';
 import Patterns from './routes/development/Patterns';
 import PageTemplates from './routes/development/PageTemplates';
-import LayoutPage from './routes/components/LayoutPage';
-import NavsPage from './routes/components/NavsPage';
-import BreadcrumbsPage from './routes/components/BreadcrumbsPage';
-import ButtonsPage from './routes/components/ButtonsPage';
-import ButtonGroupPage from './routes/components/ButtonGroupPage';
-import ButtonDropdownPage from './routes/components/ButtonDropdownPage';
-import DropdownsPage from './routes/components/DropdownsPage';
-import FadePage from './routes/components/FadePage';
-import FormPage from './routes/components/FormPage';
-import InputGroupPage from './routes/components/InputGroupPage';
-import PopoversPage from './routes/components/PopoversPage';
-import ProgressPage from './routes/components/ProgressPage';
-import TooltipsPage from './routes/components/TooltipsPage';
-import BadgePage from './routes/components/BadgePage';
-import MediaPage from './routes/components/MediaPage';
-import ModalsPage from './routes/components/ModalsPage';
-import TablesPage from './routes/components/TablesPage';
-import PaginationPage from './routes/components/PaginationPage';
-import TabsPage from './routes/components/TabsPage';
-import JumbotronPage from './routes/components/JumbotronPage';
-import AlertsPage from './routes/components/AlertsPage';
-import CollapsePage from './routes/components/CollapsePage';
-import CarouselPage from './routes/components/CarouselPage';
-import ListGroupPage from './routes/components/ListGroupPage';
 import DevelopmentOverview from './routes/development/DevelopmentOverview';
-import ComponentOverview from './routes/components/Overview';
+import ComponentOverview from './components/docs/components/Overview';
 import DesignOverview from './routes/design/DesignOverview';
 import Navigation from './components/Navigation';
 import Sidebar from './components/Sidebar/Sidebar';
@@ -47,9 +23,38 @@ import SidebarDevelopment from './components/Sidebar/development/SidebarDevelopm
 import SidebarDesign from './components/Sidebar/design/SidebarDesign';
 import Footer from './components/Footer';
 
-// Modules
+// Development Components
+
+
+import LayoutPage from './components/docs/components/Layout/LayoutPage';
+import NavsPage from './components/docs/components/Navs/NavsPage';
+import BreadcrumbsPage from './components/docs/components/Breadcrumbs/BreadcrumbsPage';
+import ButtonsPage from './components/docs/components/Buttons/ButtonsPage';
+import ButtonGroupPage from './components/docs/components/ButtonGroup/ButtonGroupPage';
+import ButtonDropdownPage from './components/docs/components/ButtonDropdown/ButtonDropdownPage';
+import DropdownsPage from './components/docs/components/Dropdowns/DropdownsPage';
+import FadePage from './components/docs/components/Fade/FadePage';
+import FormPage from './components/docs/components/Form/FormPage';
+import InputGroupPage from './components/docs/components/InputGroup/InputGroupPage';
+import PopoversPage from './components/docs/components/Popovers/PopoversPage';
+import ProgressPage from './components/docs/components/Progress/ProgressPage';
+import TooltipsPage from './components/docs/components/Tooltips/TooltipsPage';
+import BadgePage from './components/docs/components/Badge/BadgePage';
+import MediaPage from './components/docs/components/Media/MediaPage';
+import ModalsPage from './components/docs/components/Modals/ModalsPage';
+import PaginationPage from './components/docs/components/Pagination/PaginationPage';
+import TabsPage from './components/docs/components/Tabs/TabsPage';
+import JumbotronPage from './components/docs/components/Jumbotron/JumbotronPage';
+import AlertsPage from './components/docs/components/Alerts/AlertsPage';
+import CollapsePage from './components/docs/components/Collapse/CollapsePage';
+import CarouselPage from './components/docs/components/Carousel/CarouselPage';
+import ListGroupPage from './components/docs/components/ListGroup/ListGroupPage';
+
+
+// Development Modules
 import NavbarPage from './components/docs/modules/Navbar/NavbarPage';
-import CardPage from './/components/docs/modules/Cards/CardPage';
+import CardPage from './components/docs/modules/Cards/CardPage';
+import TablesPage from './components/docs/modules/Tables/TablesPage';
 
 
 
@@ -129,7 +134,7 @@ class App extends Component {
               <Route path="/development/modules" exact component={Modules} />
               <Route path="/development/modules/navs/" component={NavsPage} />
               <Route path="/development/modules/navbar/" component={NavbarPage} />
-              <Route path="/development/modules/tables/" component={TablesPage} />
+              <Route path="/development/modules/tablespage/" component={TablesPage} />
               <Route path="/development/modules/cardpage/" component={CardPage} />
 
 

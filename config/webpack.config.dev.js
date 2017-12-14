@@ -138,6 +138,11 @@ module.exports = {
               name: 'static/media/[name].[hash:8].[ext]',
             },
           },
+          // Import SVGs as React components.
+          {
+            test: /\.svg$/,
+            loader: 'babel!svg-react'
+          },
           // Process JS with Babel.
           {
             test: /\.(js|jsx|mjs)$/,

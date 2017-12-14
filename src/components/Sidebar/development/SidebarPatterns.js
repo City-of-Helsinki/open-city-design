@@ -17,19 +17,19 @@ class SidebarPatterns extends Component {
     const sidebarStyles = {
       border: 'none',
       backgroundColor: 'transparent',
-      
+      color: '#f5a3c7',
     }
     const linkStyle = {
       border: 'none',
       backgroundColor: 'transparent',
-      padding: '5px',
-      paddingLeft: '25px'
+      padding: 5,
+      paddingLeft: 25
     }
     const caretStyle = {
       marginRight: 30
     }
     const sidebarLinks = {
-      'components': [
+      'patterns': [
         {
           link: 'Task List',
           URL: 'development/components/tooltips/'
@@ -51,8 +51,8 @@ class SidebarPatterns extends Component {
       <div className="list-group">
        <h4 style={sidebarStyles} className="list-group-item" onClick={this.toggle} ><a href="#">Patterns</a></h4>
        <Collapse isOpen={this.state.patterns}>
-          {sidebarLinks.components.map((sidebarLink, i) => <a key={i} href="#" style={sidebarStyles} className="list-group-item">
-            <NavLink to={sidebarLink.URL} activeStyle={{
+       {sidebarLinks.patterns.map((sidebarLink, i) => <a key={i} href="#" style={sidebarStyles && linkStyle} className="list-group-item">
+       <NavLink to={sidebarLink.URL} activeStyle={{
               color: 'red'
             }}>{sidebarLink.link}</NavLink>
           </a>)}

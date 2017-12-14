@@ -28,7 +28,7 @@ class SidebarPagetemplates extends Component {
     }
 
     const sidebarLinks = {
-      'components': [
+      'pageTemplates': [
    
         {
           link: 'Todo Page',
@@ -47,8 +47,8 @@ class SidebarPagetemplates extends Component {
       <div className="list-group">
        <h4 style={sidebarStyles} className="list-group-item" onClick={this.toggle} ><a href="#">Page Templates</a></h4>
        <Collapse isOpen={this.state.pageTemplates}>
-          {sidebarLinks.components.map((sidebarLink, i) => <a key={i} href="#" style={sidebarStyles} className="list-group-item">
-            <NavLink to={sidebarLink.URL} activeStyle={{
+       {sidebarLinks.pageTemplates.map((sidebarLink, i) => <a key={i} href="#" style={sidebarStyles && linkStyle} className="list-group-item">
+       <NavLink to={sidebarLink.URL} activeStyle={{
               color: 'red'
             }}>{sidebarLink.link}</NavLink>
           </a>)}
