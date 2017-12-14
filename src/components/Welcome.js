@@ -9,8 +9,7 @@ class Welcome extends Component {
                   marginBottom: 150,
                   borderRadius: 0,
                   padding: 0,
-                  backgroundColor: 'transparent',
-                  width: '90%',
+                  backgroundColor: 'transparent'
                  }
             return(
                   <div>

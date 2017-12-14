@@ -245,3 +245,41 @@ pre, code {
       overflow: auto;
       height: 100vh;
 }
+
+.partner-banner {
+      text-align: center;
+      margin-bottom: 24px;
+      z-index: 101;
+}
+
+@media screen and (min-width: 992px) {
+      .partner-banner--top {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+      }
+}
+
+.partner-banner--top {
+      margin-bottom: 0;
+      background-color: white;
+}
+
+.partner-banner--footer {
+      background: rgba(35, 31, 32, 1);
+}
+
+
+@media screen and (min-width: 992px) {
+      .partner-banner--footer {
+            float: right;
+      }
+}
+
+
+.partner-banner .partner-banner__logo {
+      display: inline-block;
+      width: 5.5em;
+      padding: 12px;
+      vertical-align: middle;
+}

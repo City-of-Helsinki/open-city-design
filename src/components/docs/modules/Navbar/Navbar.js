@@ -19,11 +19,11 @@ export default class Example extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="light" light expand="md">
+        <Navbar color="dark" light expand="md">
           <NavbarBrand src={Logo}href="/"></NavbarBrand>
           <img src={Logo} width='80px' />
-          <Button outline size="sm" color="dark">Login</Button>
-          <Button outline size="sm" color="dark">Login</Button>
+          <Button outline size="sm" color="light">Login</Button>
+          <Button outline size="sm" color="light">Login</Button>
 
 
           <NavbarToggler onClick={this.toggle} />

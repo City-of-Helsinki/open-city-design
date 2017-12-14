@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { Col, Button, Row, Container, Media, Badge } from 'reactstrap';
 import ContentTextWithButton from './ContentTextWithButton';
 import ContentText from './ContentText';
+import Sponsors from './Sponsors.js';
 import sketch from '../images/sketch_narrow.png';
 import git from '../images/git.png';
 import NPM from '../images/NPM.png';
@@ -82,7 +83,11 @@ class Footer extends Component {
                                           )}
                                     </Row>
 
-
+                                    <Row>
+                                          <Col xs='12'>
+                                                <Sponsors placement="footer" />
+                                          </Col>
+                                    </Row>
                               </Container>
                         </footer>
                   </div>
