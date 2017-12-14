@@ -97,7 +97,7 @@ h1,h2,h3 {
       margin-top: 2rem;
 }
 
-.docs-page h2, .docs-page h3 {
+.docs-page h2, .docs-page h3, .docs-page h4 {
       margin: 3rem 0 1rem;
 }
 
@@ -119,6 +119,11 @@ h1,h2,h3 {
       color: rgba(52, 52, 52, 0.3);
       background: white;
       font-weight: bold;
+}
+
+.docs-markdown a {
+      text-decoration: underline;
+      color: rgb(253, 79, 0);
 }
 
 

@@ -23,6 +23,12 @@ import SidebarDevelopment from './components/Sidebar/development/SidebarDevelopm
 import SidebarDesign from './components/Sidebar/design/SidebarDesign';
 import Footer from './components/Footer';
 
+
+// Development Styles
+
+
+import ColorsPage from './components/docs/styles/colors/ColorsPage';
+
 // Development Components
 
 
@@ -55,6 +61,7 @@ import ListGroupPage from './components/docs/components/ListGroup/ListGroupPage'
 import NavbarPage from './components/docs/modules/Navbar/NavbarPage';
 import CardPage from './components/docs/modules/Cards/CardPage';
 import TablesPage from './components/docs/modules/Tables/TablesPage';
+import KoroSectionPage from './components/docs/modules/KoroSection/KoroSectionPage';
 
 
 
@@ -101,8 +108,12 @@ class App extends Component {
       
               <Route path="/development/overview/" component={DevelopmentOverview} />
 
-              {/* Components routes  */}
               <Container className="docs-page">
+
+              {/* Styles routes  */}
+              <Route path="/development/styles/colors/" component={ColorsPage} />
+
+              {/* Components routes  */}
               <Route path="/development/components/overview/" component={ComponentOverview} />
               <Route path="/development/components/breadcrumbs/" component={BreadcrumbsPage} />
               <Route path="/development/components/buttons/" component={ButtonsPage} />
@@ -133,6 +144,7 @@ class App extends Component {
               {/* Modules routes  */}
               <Route path="/development/modules" exact component={Modules} />
               <Route path="/development/modules/navs/" component={NavsPage} />
+              <Route path="/development/modules/korosection/" component={KoroSectionPage} />
               <Route path="/development/modules/navbar/" component={NavbarPage} />
               <Route path="/development/modules/tablespage/" component={TablesPage} />
               <Route path="/development/modules/cardpage/" component={CardPage} />
