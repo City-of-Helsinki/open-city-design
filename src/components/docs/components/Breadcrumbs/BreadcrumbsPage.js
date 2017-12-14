@@ -5,6 +5,13 @@ import Helmet from 'react-helmet';
 
 import BreadcrumbExample from './Breadcrumb';
 import BreadcrumbNoListExample from './BreadcrumbNoList';
+import WelcomeSmall from '../../../WelcomeSmall';
+
+
+const welcome = {
+  heading: 'Breadcrumb',
+  paragraph: 'Indicate the current page location within a navigational hierarchy that automatically adds separators via CSS ',
+}
 const BreadcrumbExampleSource = require('!!raw-loader!./Breadcrumb');
 
 const BreadcrumbNoListExampleSource = require('!!raw-loader!./BreadcrumbNoList');
@@ -14,7 +21,7 @@ export default class BreadcrumbsPage extends React.Component {
     return (
       <div>
         <Helmet title="Breadcrumbs" />
-        <h3>Breadcrumbs</h3>
+        <WelcomeSmall welcome={welcome} />
         <div className="docs-example">
           <BreadcrumbExample />
         </div>

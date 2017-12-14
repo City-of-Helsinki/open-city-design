@@ -13,7 +13,7 @@ class WelcomeSmall extends Component {
                   width: '100%',
                  }
             return(
-                  <Container>
+                  <div>
                               <Jumbotron style={welcomeStyle}>
                                 <h1 className='display-1' style={this.props.headerStyle} >{this.props.welcome.heading}</h1>
                                 <p className='lead' style={this.props.paragraphStyle} >{this.props.welcome.paragraph}</p>
@@ -21,7 +21,7 @@ class WelcomeSmall extends Component {
                               </Jumbotron>
                               <hr />
 
-                  </Container>
+                  </div>
             );
       }
 

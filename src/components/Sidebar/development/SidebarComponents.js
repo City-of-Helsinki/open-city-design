@@ -42,7 +42,7 @@ class SidebarComponents extends Component {
           URL: '/development/components/badge/'
         },
         {
-          link: 'Breadcrumbs',
+          link: 'Breadcrumb',
           URL: '/development/components/breadcrumbs/'
         },
         {
