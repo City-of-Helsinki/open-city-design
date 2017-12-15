@@ -5,9 +5,9 @@ export default class KoroSection extends React.Component {
     render() {
         return (
             <div>
-                <section className="section-koro hel-metro koro-wave-top koro-wave-bottom">
+                <section className="section-koro hel-metro koro-wave-top koro-pulse-bottom koro-size-x3">
                     <div className="section-koro__content">
-                        <div className="section">
+                        <div className="container">
                             <h1>This is a Koro section</h1>
                             <ul>
                                 <li>Preferred to split long content sections from each other.</li>

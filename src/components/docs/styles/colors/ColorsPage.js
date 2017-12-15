@@ -171,7 +171,7 @@ export default class ColorsPage extends React.Component {
       ]
       return (
             <div>
-                  <Helmet title="Alerts" />
+                  <Helmet title="Colors" />
 
                   <WelcomeSmall welcome={welcome} />
 

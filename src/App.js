@@ -27,7 +27,8 @@ import Footer from './components/Footer';
 // Development Styles
 
 
-import ColorsPage from './components/docs/styles/colors/ColorsPage';
+import ColorsPage from './components/docs/styles/Colors/ColorsPage';
+import KorosPage from './components/docs/styles/Koros/KorosPage';
 
 // Development Components
 
@@ -112,6 +113,7 @@ class App extends Component {
 
               {/* Styles routes  */}
               <Route path="/development/styles/colors/" component={ColorsPage} />
+              <Route path="/development/styles/koros/" component={KorosPage} />
 
               {/* Components routes  */}
               <Route path="/development/components/overview/" component={ComponentOverview} />

@@ -5,7 +5,7 @@
 }
 
 .section-koro__content {
-      padding: 20px 15px;
+      padding: 40px 0;
 }
 
 .section-koro:before {
@@ -25,16 +25,16 @@
 .koro-size-x1:before, .koro-size-x1:after {
       height: 10px;
 }
-.koro-size-x2:before, .koro-size-x1:after {
+.koro-size-x2:before, .koro-size-x2:after {
       height: 20px;
 }
-.koro-size-x3:before, .koro-size-x1:after {
+.koro-size-x3:before, .koro-size-x3:after {
       height: 30px;
 }
-.koro-size-x4:before, .koro-size-x1:after {
+.koro-size-x4:before, .koro-size-x4:after {
       height: 40px;
 }
-.koro-size-x5:before, .koro-size-x1:after {
+.koro-size-x5:before, .koro-size-x5:after {
       height: 50px;
 }
 
@@ -44,12 +44,12 @@
 }
 
 .section-koro.hel-metro.koro-wave-top:before {
-      @include koro("wave", #fd4f00, 100);
+      @include koro("wave", #fd4f00, 300);
 }
 
-.section-koro.hel-metro.koro-wave-bottom:after {
+.section-koro.hel-metro.koro-pulse-bottom:after {
       background: #fd4f00;
-      @include koro("wave", #ffffff, 100);
+      @include koro("pulse", #ffffff, 300);
 }
 
 

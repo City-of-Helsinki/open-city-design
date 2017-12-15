@@ -12,10 +12,6 @@ export default class Colors extends React.Component {
       }
 
       render() {
-            const cardStyle = {
-                  marginBottom: '20px',
-                  display: 'block'
-            }
             const btnStyle = {
                   width: '200px',
                   padding: '10px 30px'
@@ -36,7 +32,7 @@ export default class Colors extends React.Component {
                   borderTop: 'none'
             }
             return (
-                  <a className="color-card" style={cardStyle}>
+                  <a className="color-card">
                         <div className="color-flood" style={colorStyle}>
                         <CopyToClipboard text={this.props.hex}
                               onCopy={() => this.setState({copied: true})}>

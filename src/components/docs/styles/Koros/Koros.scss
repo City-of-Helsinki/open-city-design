@@ -1,0 +1,15 @@
+@import '../../../../scss/bootstrap/scss/hel-custom-styles';
+@import '../Colors/Colors.scss';
+
+.koro-example .koro-content{
+      color: white;
+      background: $hel-bus;
+      padding: 20px 15px;
+}
+
+.koro-example:before {
+      height: 40px;
+      content: '';
+      display: block;
+      @include koro("beat", $hel-bus, 300);
+}

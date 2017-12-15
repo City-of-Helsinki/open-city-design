@@ -77,6 +77,17 @@
       font-weight: 300
 }
 
+.color-card {
+      margin-bottom: 20px;
+      display: block;
+      transition: 0.2s ease-out all;
+}
+
+.color-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 4px rgba(0,0,0,0.15);
+}
+
 footer {
       padding-top: 3rem;
       padding-bottom: 3rem
