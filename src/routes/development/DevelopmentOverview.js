@@ -20,27 +20,39 @@ class DevelopmentOverview extends Component {
   render() {
 
     const welcome = {
-      heading: <span style={{ color: 'white' }}>Development Guide</span>,
-      paragraph: <div><p style={{ color: '#D2C5FF' }}>Ahoy there Developer! This is the Development guide for Helsinki City Design System. Go check out <a href='#components' style={{ textDecoration: 'underline', color: 'white' }}>components</a> for starters.</p></div>,
-      buttonText: 'Explore Components'
+      heading: <span style={{ color: 'white' }}>Getting started</span>,
+      paragraph: <div><p style={{ color: '#D2C5FF' }}>Ahoy there Developer! This is the Development guide for Helsinki City Design System.</p></div>,
+      buttonText: 'Explore Components',
+      buttonUrl: '/development/components/overview'
+    }
+
+    const text =         {
+      header: 'What is Design System? 🤔',
+      body: <div><p><strong>Now</strong> –we do understand that this can be a bit overwelming to grasp but bare with us. We have build a system that contains all ya need for developing and designing digital services using the Cities own design systems. In other words, we have combined Design tools and Development tools to make new service creation simple and easy to approach.</p></div>
     }
 
     const contentTexts = {
       "contentTexts": [
-        {
-          key: 1,
-          header: 'What is this Development guide? 🤔',
-          body: <div><p><strong>Now</strong> –we do understand that this can be a bit overwelming to grasp but bare with us. We have build a system that contains all ya need for developing and designing digital services using the Cities own design systems. In other words, we have combined Design tools and Development tools to make new service creation simple and easy to approach.</p></div>
-        },
+
         {
           key: 2,
-          header: 'How to use the guide? 🚀',
+          header: 'Components',
           body: <div><p><strong>The OCDS Design Guide</strong> is built for those who are intrested in designing new comoponents, modules, patterns and page templates for the City of Helsinki. There re multiple ways to begin the design process -but we have structured few files and guides for you to begin with</p></div>
         },
         {
           key: 3,
-          header: '',
-          body: ''
+          header: 'Modules',
+          body: <div><p><strong>The OCDS Design Guide</strong> is built for those who are intrested in designing new comoponents, modules, patterns and page templates for the City of Helsinki. There re multiple ways to begin the design process -but we have structured few files and guides for you to begin with</p></div>
+        },
+        {
+          key: 3,
+          header: 'Patterns',
+          body: <div><p><strong>The OCDS Design Guide</strong> is built for those who are intrested in designing new comoponents, modules, patterns and page templates for the City of Helsinki. There re multiple ways to begin the design process -but we have structured few files and guides for you to begin with</p></div>
+        },
+        {
+          key: 3,
+          header: 'Page Templates',
+          body: <div><p><strong>The OCDS Design Guide</strong> is built for those who are intrested in designing new comoponents, modules, patterns and page templates for the City of Helsinki. There re multiple ways to begin the design process -but we have structured few files and guides for you to begin with</p></div>
         },
       ]
     }
@@ -99,17 +111,20 @@ class DevelopmentOverview extends Component {
           </Container>
         </div>
         <Container>
+        <Row style={rowStyle}>
+             <Col xs='12' lg='12' >
+              <ContentText text={text} />        
+              </Col>
+          
+
+          </Row>
           <Row style={rowStyle}>
             {contentTexts.contentTexts.map((text, i) => <Col xs='12' lg='6' >
               <ContentText key={i} text={text} />        </Col>
             )}
 
           </Row>
-          <Row style={rowStyle}>
-            <ScrollableAnchor id={'components'}>
-              <h1> Components </h1>
-            </ScrollableAnchor>
-          </Row>
+          
           <Row>
             {cards.cards.map((card, i) => <Col xs='12' lg='6' ><Media key={i} card={card} />        </Col>
             )}

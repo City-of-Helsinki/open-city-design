@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Container, Nav, Navbar } from 'reactstrap';
-import Welcome from '../../components/Welcome';
+import WelcomeSmall from '../../components/WelcomeSmall';
 import Image from '../../components/Image';
 import ContentTextWithImage from '../../components/ContentTextWithImage';
 import image1 from '../../images/sketch-how-to/1-open-files.png';
@@ -11,11 +11,11 @@ import image5 from '../../images/sketch-how-to/5-accept-changes.png';
 
 
 
-class SketchDocumentation extends Component {
+class DesignKit extends Component {
       render() {
             const image = { url: 'https://www.sketchapp.com/images/press/sketch-press-kit/app-icons/sketch-mac-icon@2x.png' };
             const welcome = {
-                  heading: "Sketch Documentation",
+                  heading: "Design Kit",
                   paragraph: "How to apply Sketch files in your design process"
             };
 
@@ -78,7 +78,7 @@ class SketchDocumentation extends Component {
             return (
                   <div>
                         <Container>
-                        <Welcome welcome={welcome} />
+                        <WelcomeSmall welcome={welcome} />
                         <Row  >
 
                         {cards.cards.map((card, i) =>
@@ -109,4 +109,4 @@ const rowStyle = {
       marginBottom: 50,
 }
 
-export default SketchDocumentation;
+export default DesignKit;

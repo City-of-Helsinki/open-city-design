@@ -27,7 +27,7 @@ export default class KoroSectionPage extends React.Component {
   render() {
     return (
       <div>
-            <Helmet title="Alerts" />
+            <Helmet title="Koros" />
 
             <WelcomeSmall welcome={welcome} />
 

@@ -8,20 +8,23 @@ import { Container, Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navba
 
 
 import Home from './routes/Home';
-import Design from './routes/design/Design';
 import Development from './routes/development/Development';
-import SketchDocumentation from './routes/design/SketchDocumentation';
 import Modules from './routes/development/Modules';
 import Patterns from './routes/development/Patterns';
 import PageTemplates from './routes/development/PageTemplates';
 import DevelopmentOverview from './routes/development/DevelopmentOverview';
 import ComponentOverview from './components/docs/components/Overview';
-import DesignOverview from './routes/design/DesignOverview';
 import Navigation from './components/Navigation';
 import Sidebar from './components/Sidebar/Sidebar';
 import SidebarDevelopment from './components/Sidebar/development/SidebarDevelopment';
 import SidebarDesign from './components/Sidebar/design/SidebarDesign';
 import Footer from './components/Footer';
+
+// Design 
+import Design from './routes/design/Design';
+import DesignOverview from './routes/design/DesignOverview';
+import DesignKit from './routes/design/DesignKit';
+import BrandMaterial from './routes/design/BrandMaterial';
 
 
 // Development Styles
@@ -35,8 +38,8 @@ import KorosPage from './components/docs/styles/Koros/KorosPage';
 
 import LayoutPage from './components/docs/components/Layout/LayoutPage';
 import NavsPage from './components/docs/components/Navs/NavsPage';
-import BreadcrumbsPage from './components/docs/components/Breadcrumbs/BreadcrumbsPage';
-import ButtonsPage from './components/docs/components/Buttons/ButtonsPage';
+import BreadcrumbsPage from './components/docs/components/Breadcrumb/BreadcrumbsPage';
+import ButtonsPage from './components/docs/components/Button/ButtonsPage';
 import ButtonGroupPage from './components/docs/components/ButtonGroup/ButtonGroupPage';
 import ButtonDropdownPage from './components/docs/components/ButtonDropdown/ButtonDropdownPage';
 import DropdownsPage from './components/docs/components/Dropdowns/DropdownsPage';
@@ -103,7 +106,9 @@ class App extends Component {
 
               {/* Design routes */}
               <Route path="/design/overview/" component={DesignOverview} />
-              <Route path="/design/sketchdocumentation" component={SketchDocumentation} />
+              <Route path="/design/designkit/" component={DesignKit} />
+              <Route path="/design/brandmaterial/" component={BrandMaterial} />
+
 
               {/* Development routes */}
       
@@ -117,7 +122,7 @@ class App extends Component {
 
               {/* Components routes  */}
               <Route path="/development/components/overview/" component={ComponentOverview} />
-              <Route path="/development/components/breadcrumbs/" component={BreadcrumbsPage} />
+              <Route path="/development/components/breadcrumb/" component={BreadcrumbsPage} />
               <Route path="/development/components/buttons/" component={ButtonsPage} />
               <Route path="/development/components/button-group/" component={ButtonGroupPage} />
               <Route path="/development/components/button-dropdown/" component={ButtonDropdownPage} />

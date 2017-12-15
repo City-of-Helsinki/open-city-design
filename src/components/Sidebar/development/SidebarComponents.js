@@ -29,10 +29,7 @@ class SidebarComponents extends Component {
 
     const sidebarLinks = {
       'components': [
-        {
-          link: 'Overview',
-          URL: '/development/components/overview/'
-        },
+
         {
           link: 'Alerts',
           URL: '/development/components/alerts/'
@@ -131,7 +128,7 @@ class SidebarComponents extends Component {
     return (
 
       <div className="list-group">
-       <h4 style={sidebarStyles} className="list-group-item" onClick={this.toggle} ><a href="#">Components</a></h4>
+       <h4 style={sidebarStyles} className="list-group-item" onClick={this.toggle} ><NavLink to="/development/components/overview">Components</NavLink></h4>
         <Collapse  isOpen={this.state.components}>
           {sidebarLinks.components.map((sidebarLink, i) => <a key={i}  style={sidebarStyles && linkStyle} className="list-group-item">
            <NavLink caret to={sidebarLink.URL} activeStyle={{
