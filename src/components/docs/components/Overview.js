@@ -5,8 +5,9 @@ import Helmet from 'react-helmet';
 import OverviewThumbnail from '../../../components/OverviewThumbnail';
 import Welcome from '../../../components/Welcome';
 import { Collapse, Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar, Container, NavItem, Card,
-Alert, Badge
+Alert, Badge, Breadcrumb, ButtonDropdown, ButtonGroup, Carousel, Collapse, Dropdown, Fade,
 } from 'reactstrap';
+import CollapseExample from './Collapse/Collapse';
 
 
 
@@ -18,12 +19,84 @@ Alert, Badge
 
  const cards = {
   "cards": [
-        {
-              key: 1,
-              header: 'Badge',
-              paragraph: 'Download the Skecth Library to design applications using the Sketch Library (note: you should have the latest Sketch Beta installed. View Sketch documentation for more information)',
-              componentName: <Badge color="secondary">New</Badge>
-        },
+              {
+                key: 1,
+                header: 'Alert',
+                paragraph: 'Download the Skecth Library to design applications using the Sketch Library (note: you should have the latest Sketch Beta installed. View Sketch documentation for more information)',
+                componentName: <Alert color="secondary">This is alert</Alert>
+              },
+              {
+                key: 1,
+                header: 'Badge',
+                paragraph: 'Download the Skecth Library to design applications using the Sketch Library (note: you should have the latest Sketch Beta installed. View Sketch documentation for more information)',
+                componentName: <Badge color="secondary">New</Badge>
+              },
+              {
+                key: 1,
+                header: 'Badge',
+                paragraph: 'Download the Skecth Library to design applications using the Sketch Library (note: you should have the latest Sketch Beta installed. View Sketch documentation for more information)',
+                componentName: <Breadcrumb color="secondary">New</Breadcrumb>
+              },
+              {
+                key: 1,
+                header: 'Badge',
+                paragraph: 'Download the Skecth Library to design applications using the Sketch Library (note: you should have the latest Sketch Beta installed. View Sketch documentation for more information)',
+                componentName: <Button color="secondary">New</Button>
+              },
+              {
+                key: 1,
+                header: 'Badge',
+                paragraph: 'Download the Skecth Library to design applications using the Sketch Library (note: you should have the latest Sketch Beta installed. View Sketch documentation for more information)',
+                componentName: <ButtonDropdown color="secondary">New</ButtonDropdown>
+              },
+              {
+                key: 1,
+                header: 'Badge',
+                paragraph: 'Download the Skecth Library to design applications using the Sketch Library (note: you should have the latest Sketch Beta installed. View Sketch documentation for more information)',
+                componentName: <ButtonGroup color="secondary">New</ButtonGroup>
+              },
+              {
+                key: 1,
+                header: 'Badge',
+                paragraph: 'Download the Skecth Library to design applications using the Sketch Library (note: you should have the latest Sketch Beta installed. View Sketch documentation for more information)',
+                componentName: <Carousel color="secondary">New</Carousel>
+              },
+              {
+                key: 1,
+                header: 'Badge',
+                paragraph: 'Download the Skecth Library to design applications using the Sketch Library (note: you should have the latest Sketch Beta installed. View Sketch documentation for more information)',
+                componentName: <Collapse color="secondary">New</Collapse>
+              },
+              {
+                key: 1,
+                header: 'Badge',
+                paragraph: 'Download the Skecth Library to design applications using the Sketch Library (note: you should have the latest Sketch Beta installed. View Sketch documentation for more information)',
+                componentName: <Dropdown color="secondary">New</Dropdown>
+              },
+              {
+                key: 1,
+                header: 'Badge',
+                paragraph: 'Download the Skecth Library to design applications using the Sketch Library (note: you should have the latest Sketch Beta installed. View Sketch documentation for more information)',
+                componentName: <Fade color="secondary">New</Fade>
+              },
+              {
+                key: 1,
+                header: 'Badge',
+                paragraph: 'Download the Skecth Library to design applications using the Sketch Library (note: you should have the latest Sketch Beta installed. View Sketch documentation for more information)',
+                componentName: <Badge color="secondary">New</Badge>
+              },
+              {
+                key: 1,
+                header: 'Badge',
+                paragraph: 'Download the Skecth Library to design applications using the Sketch Library (note: you should have the latest Sketch Beta installed. View Sketch documentation for more information)',
+                componentName: <Badge color="secondary">New</Badge>
+              },
+              {
+                key: 1,
+                header: 'Badge',
+                paragraph: 'Download the Skecth Library to design applications using the Sketch Library (note: you should have the latest Sketch Beta installed. View Sketch documentation for more information)',
+                componentName: <Badge color="secondary">New</Badge>
+              },
       
 
   ]
