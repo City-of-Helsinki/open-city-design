@@ -77,6 +77,17 @@
       font-weight: 300
 }
 
+.color-card {
+      margin-bottom: 20px;
+      display: block;
+      transition: 0.2s ease-out all;
+}
+
+.color-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 4px rgba(0,0,0,0.15);
+}
+
 footer {
       padding-top: 3rem;
       padding-bottom: 3rem
@@ -93,10 +104,37 @@ h1,h2,h3 {
       margin-bottom: 1rem;
 }
 
+.docs-page {
+      margin-top: 2rem;
+}
+
+.docs-page h2, .docs-page h3, .docs-page h4 {
+      margin: 3rem 0 1rem;
+}
+
 .docs-example {
       position: relative;
       padding: 3em 1em 1em;
       margin: 3rem 1rem 5rem 1rem;
+      border: 2px solid rgba(52, 52, 52, 0.1);
+}
+
+.docs-example:before {
+      content: "Example";
+      position: absolute;
+      font-size: 10px;
+      left: 10px;
+      top: -8px;
+      padding: 0 8px;
+      text-transform: uppercase;
+      color: rgba(52, 52, 52, 0.3);
+      background: white;
+      font-weight: bold;
+}
+
+.docs-markdown a {
+      text-decoration: underline;
+      color: rgb(253, 79, 0);
 }
 
 
@@ -119,7 +157,6 @@ pre, code {
 
 .docs-example + pre {
       border: 1px solid #d8d8d8;
-      border-top: none;
       padding: 1em;
       margin-top: 0 !important;
       clear: both;

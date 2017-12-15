@@ -31,19 +31,19 @@ class SidebarStyles extends Component {
       'styles': [
         {
           link: 'Colors',
-          URL: '/development/components/overview/'
+          URL: '/development/styles/colors/'
         },
         {
           link: 'Typography',
-          URL: '/development/components/overview/'
+          URL: '/development/styles/typography/'
         },
         {
           link: 'Logo',
-          URL: '/development/components/overview/'
+          URL: '/development/styles/logo/'
         },
         {
           link: 'Koros',
-          URL: '/development/components/overview/'
+          URL: '/development/styles/koros/'
         },
        
       ],

@@ -1,0 +1,107 @@
+@import '../../../../scss/bootstrap/scss/hel-custom-styles';
+
+.section-koro {
+      display: block;
+}
+
+.section-koro__content {
+      padding: 40px 0;
+}
+
+.section-koro:before {
+      content: '';
+      display: block;
+      height: 10px;
+      width: 100%;
+}
+
+.section-koro:after {
+      content: '';
+      display: block;
+      height: 10px;
+      width: 100%;
+}
+
+.koro-size-x1:before, .koro-size-x1:after {
+      height: 10px;
+}
+.koro-size-x2:before, .koro-size-x2:after {
+      height: 20px;
+}
+.koro-size-x3:before, .koro-size-x3:after {
+      height: 30px;
+}
+.koro-size-x4:before, .koro-size-x4:after {
+      height: 40px;
+}
+.koro-size-x5:before, .koro-size-x5:after {
+      height: 50px;
+}
+
+.section-koro.hel-metro .section-koro__content {
+      background: #fd4f00;
+      color: white;
+}
+
+.section-koro.hel-metro.koro-wave-top:before {
+      @include koro("wave", #fd4f00, 300);
+}
+
+.section-koro.hel-metro.koro-pulse-bottom:after {
+      background: #fd4f00;
+      @include koro("pulse", #ffffff, 300);
+}
+
+
+.section-koro.hel-metro.koro-wave-bottom:after {
+      
+}
+
+.section-koro.hel-black, .section-koro.hel-black:before, .section-koro.hel-black:after {
+      background: #343434;
+}
+
+.section-koro.hel-copper, .section-koro.hel-copper:before, .section-koro.hel-copper:after {
+      background: #00d7a7;
+}
+
+.section-koro.hel-bus, .section-koro.hel-bus:before, .section-koro.hel-bus:after {
+      background: #0000bf;
+}
+
+
+
+
+// Koro class generation. Insert your colors, styles and sizes you want generated.
+
+$koro_colors: (
+      hel-black:         #343434,
+      hel-copper:        #00d7a7,
+      hel-bus:           #0000bf,
+      hel-coat:          #0072c6,
+      hel-fog:           #9fc9eb,
+      hel-metro:         #fd4f00,
+      hel-brick:         #bd2719,
+      hel-suomenlinna:   #f5a3c7,
+      hel-engel:         #ffe977,
+      hel-tram:          #009246,
+      hel-summer:        #ffc61e,
+      hel-silver:        #dedfe1,
+      hel-gold:          #c2a251
+);
+
+$koro_shapes: wave beat pulse storm normal;
+
+$koro-sizes: (
+      x1: 100,
+      x2: 200,
+      x3: 300,
+      x4: 400,
+      x5: 500
+);
+
+@mixin koro-size($_shape, $_color, $_size) {
+      .section-koro.#{$_color} {
+
+      }
+}

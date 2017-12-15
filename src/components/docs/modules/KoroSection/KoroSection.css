@@ -1,0 +1,52 @@
+.section-koro {
+}
+
+.section-koro__content {
+      padding: 20px 15px;
+}
+
+.section-koro:before {
+      content: '';
+      display: block;
+      height: 30px;
+      width: 100%;
+}
+
+.section-koro:after {
+      content: '';
+      display: block;
+      height: 30px;
+      width: 100%;
+}
+
+.section-koro.hel-metro, .section-koro.hel-metro:before, .section-koro.hel-metro:after {
+      background: #fd4f00;
+}
+
+.section-koro.hel-black, .section-koro.hel-black:before, .section-koro.hel-black:after {
+      background: #343434;
+}
+
+.section-koro.hel-copper, .section-koro.hel-copper:before, .section-koro.hel-copper:after {
+      background: #00d7a7;
+}
+
+.section-koro.hel-bus, .section-koro.hel-bus:before, .section-koro.hel-bus:after {
+      background: #0000bf;
+}
+
+/*
+$hel-black:         #343434;
+$hel-copper:        #00d7a7;
+$hel-bus:           #0000bf;
+$hel-coat:          #0072c6;
+$hel-fog:           #9fc9eb;
+$hel-metro:         #fd4f00;
+$hel-brick:         #bd2719;
+$hel-suomenlinna:   #f5a3c7;
+$hel-engel:         #ffe977;
+$hel-tram:          #009246;
+$hel-summer:        #ffc61e;
+$hel-silver:        #dedfe1;
+$hel-gold:          #c2a251;
+*/

@@ -38,8 +38,12 @@ class SidebarModules extends Component {
           URL: '/development/modules/footer/'
         },
         {
-          link: 'Loginmodal',
+          link: 'Login modal',
           URL: '/development/modules/loginmodal/'
+        },
+        {
+          link: 'Koro section',
+          URL: '/development/modules/korosection/'
         },
         {
           link: 'Tables',
