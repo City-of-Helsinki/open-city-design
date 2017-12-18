@@ -6,15 +6,7 @@ import { NavLink, Link } from 'react-router-dom';
 
 
 class SidebarDesign extends Component {
-      constructor(props) {
-            super(props);
-            this.toggle = this.toggle.bind(this);
-            this.state = { components: false };
-      }
 
-      toggle() {
-            this.setState({ components: !this.state.components });
-      };
 
       render() {
             const sidebarStyles = {
@@ -34,8 +26,8 @@ class SidebarDesign extends Component {
 
       return(
                   <div className="list-group">
-                  <NavLink to='/design/designkit' ><h4 style={sidebarStyles} className="list-group-item" ><a href="#">Design Kit</a></h4></NavLink>
-                  <NavLink to='/design/brandmaterial' ><h4 style={sidebarStyles} className="list-group-item" ><a href="#">Brand Material</a></h4></NavLink>
+                  <NavLink to='/design/designkit/' ><h4 style={sidebarStyles} className="list-group-item" >Design Kit</h4></NavLink>
+                  <NavLink to='/design/brandmaterial/' ><h4 style={sidebarStyles} className="list-group-item" >Brand Material</h4></NavLink>
 
                   </div>
             );

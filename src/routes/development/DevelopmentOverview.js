@@ -1,6 +1,9 @@
+/* eslint react/no-multi-comp: 0, react/prop-types: 0, import/no-webpack-loader-syntax: off */
+
+
 import React, { Component } from 'react';
 import { Container, Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar, CardColumns, Media } from 'reactstrap';
-import ScrollableAnchor from 'react-scrollable-anchor'
+import Markdown from 'react-remarkable';
 
 import typography from '../../images/typography.png';
 import colors from '../../images/colors.png';
@@ -13,8 +16,11 @@ import Welcome from '../../components/Welcome';
 import Hero from '../../components/Hero';
 import HorizontalCard from '../../components/HorizontalCard';
 import Section from '../../components/Section';
-import ContentText from '../../components/ContentText'
-import Footer from '../../components/Footer'
+import ContentText from '../../components/ContentText';
+import Footer from '../../components/Footer';
+
+const Documentation = require('!!raw-loader!./DevelopmentOverview.md');
+
 
 class DevelopmentOverview extends Component {
   render() {
@@ -23,10 +29,10 @@ class DevelopmentOverview extends Component {
       heading: <span style={{ color: 'white' }}>Getting started</span>,
       paragraph: <div><p style={{ color: '#D2C5FF' }}>Ahoy there Developer! This is the Development guide for Helsinki City Design System.</p></div>,
       buttonText: 'Explore Components',
-      buttonUrl: '/development/components/overview'
+      buttonUrl: '/development/components/overview',
     }
 
-    const text =         {
+    const text = {
       header: 'What is Design System? 🤔',
       body: <div><p><strong>Now</strong> –we do understand that this can be a bit overwelming to grasp but bare with us. We have build a system that contains all ya need for developing and designing digital services using the Cities own design systems. In other words, we have combined Design tools and Development tools to make new service creation simple and easy to approach.</p></div>
     }
@@ -111,11 +117,16 @@ class DevelopmentOverview extends Component {
           </Container>
         </div>
         <Container>
-        <Row style={rowStyle}>
-             <Col xs='12' lg='12' >
-              <ContentText text={text} />        
-              </Col>
-          
+          <article >
+            <Markdown source={Documentation} />
+          </article>
+        </Container>
+        <Container>
+          <Row style={rowStyle}>
+            <Col xs='12' lg='12' >
+              <ContentText text={text} />
+            </Col>
+
 
           </Row>
           <Row style={rowStyle}>
@@ -124,7 +135,7 @@ class DevelopmentOverview extends Component {
             )}
 
           </Row>
-          
+
           <Row>
             {cards.cards.map((card, i) => <Col xs='12' lg='6' ><Media key={i} card={card} />        </Col>
             )}
@@ -144,7 +155,7 @@ const sectionStyle_1 = {
   background: '-webkit-linear-gradient(#0000BF, #0072C6)', /* For Safari 5.1 to 6.0 */
   background: '-o-linear-gradient(red, yellow)', /* For Opera 11.1 to 12.0 */
   background: '-moz-linear-gradient(red, yellow)', /* For Firefox 3.6 to 15 */
-  background: 'linear-gradient(#3a2099, #1A0D49)',/* Standard syntax */  
+  background: 'linear-gradient(#3a2099, #1A0D49)',/* Standard syntax */
   borderBottom: 'solid #343434 1px',
   marginBottom: 20,
 }

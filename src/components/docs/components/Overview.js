@@ -46,11 +46,11 @@ import ProgressExample from './Progress/Progress';
               {
                 key: 4,
                 header: 'Breadcrumb',
-                componentName:       <Breadcrumb>
+                componentName:      <div> <Breadcrumb>
                 <BreadcrumbItem><a href="#">Home</a></BreadcrumbItem>
                 <BreadcrumbItem><a href="#">Library</a></BreadcrumbItem>
                 <BreadcrumbItem active>Data</BreadcrumbItem>
-              </Breadcrumb>,
+              </Breadcrumb></div>,
                 url: '/development/components/breadcrumb'
                                               
               },

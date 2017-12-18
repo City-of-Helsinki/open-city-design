@@ -9,8 +9,8 @@ import colors from '../../images/colors.png';
 import brand from '../../images/brand.png';
 import logo from '../../images/logo.png';
 import sketch from '../../images/sketch.png';
-import ContentText from '../../components/ContentText'
-import Footer from '../../components/Footer'
+import ContentText from '../../components/ContentText';
+import Footer from '../../components/Footer';
 
 class DesignOverview extends Component {
   render() {
@@ -36,11 +36,7 @@ class DesignOverview extends Component {
           header: 'Using the Design Guide',
           body: 'The OCDS Design Guide is built for those who are intrested in designing new comoponents, modules, patterns and page templates for the City of helsinki. There re multiple ways to begin the design process -but we have structured few files and guides for you to begin with  '
         },
-        {
-          key: 3,
-          header: '',
-          body: ''
-        },
+
       ]
     }
 
