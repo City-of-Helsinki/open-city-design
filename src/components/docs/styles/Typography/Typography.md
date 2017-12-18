@@ -36,3 +36,15 @@ ___
 ## Body font
 
 Body font `font-size: 1rem`
+
+## Font styles
+
+There are four cuts created for the Helsinki Grotesk Typeface.
+
+##### Helsinki Grotesk Regular
+
+##### Helsinki Grotesk Medium
+
+##### Helsinki Grotesk Bold
+
+##### Helsinki Grotesk Black
