@@ -1,29 +1,40 @@
 import React, { Component } from 'react';
-import { Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar, NavDropdown, NavItem, MenuItem } from 'react-bootstrap';
-import './Home.css';
-import Sidebar from '../components/Sidebar';
+import { Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar,} from 'reactstrap';
 import Hero from '../components/Hero';
-import Content from '../components/Content';
+import Welcome from '../components/Welcome';
+import Sponsors from '../components/Sponsors';
 
-/**
- * The only true button.
- *
- * @version 1.0.1
- * @author [Artem Sapegin](https://github.com/sapegin)
- * @author [Andy Krings-Stern](https://github.com/ankri)
-*/
 class Home extends Component {
+ 
   render() {
+    const welcome = {
+      heading: 'Collaborative Network',
+      paragraph: 'Welcome to the open City design System – a system built to collect City Designs from Helsnki, Tuku, Tampere etc. to one collaborative network.'
+    }
+    const button = {
+      button: true
+    }
+    const hero = {
+      hero: 'Open City Design System',
+      header: 'Helsinki',
+      paragraph: 'Start creating your best designs and collaborate with developers to create best solutions for your city',
+      
+    
+    }
+    const heroStyle = {
+    }
+
+
     return (
       <div>
      
-  
-            <Hero />
-
+            <Sponsors placement="top" />
+            <Hero hero={hero} style={heroStyle} heroHeight={'100vh'} />
+            
       </div>
 
-    );
+    ); 
   }
-}
+} 
 export default Home;
 

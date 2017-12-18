@@ -1,0 +1,14 @@
+
+
+.thumbnail {
+      min-height: 200px;
+      position: relative;
+      padding: 1em 1em 1em;
+      margin-top: 2rem;
+      border: 2px solid rgba(52, 52, 52, 0.1);
+      background-color: rgba(52, 52, 52, 0.0);
+}
+.thumbnail:hover {
+      cursor: pointer;
+      background-color: rgba(52, 52, 52, 0.06);
+}

@@ -1,24 +1,26 @@
 import React, { Component } from 'react'
-import { Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar, NavDropdown, NavItem, MenuItem } from 'react-bootstrap';
-
+import { Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar, Container } from 'reactstrap';
+import { NavLink } from 'react-router-dom';
 
 class Welcome extends Component {
       render()  {
             var welcomeStyle = {
-                  marginBottom: 0,
+                  marginTop: 150 || this.props.marginTop,
+                  marginBottom: 150,
                   borderRadius: 0,
-                  padding: 10,
-                  backgroundColor: 'transparent',
-                }
+                  padding: 0,
+                  backgroundColor: 'transparent'
+                 }
             return(
-                            <div>
+                  <div className="col">
                               <Jumbotron style={welcomeStyle}>
-                                <h1>{this.props.welcome.heading}</h1>
-                                <p>{this.props.welcome.paragraph}</p>
-                                <p><Button bsStyle="primary">Learn more</Button></p>
+                                <h1 className='display-1' style={this.props.headerStyle} >{this.props.welcome.heading}</h1>
+                                <p className='lead' style={this.props.paragraphStyle} >{this.props.welcome.paragraph}</p>
+                                { this.props.welcome.buttonUrl &&
+                                    <NavLink to={this.props.welcome.buttonUrl} ><Button outline color={'light'} >{this.props.welcome.buttonText}</Button></NavLink>
+                                }
                               </Jumbotron>
-                            </div>
-                  
+                  </div>
             );
       }
 
