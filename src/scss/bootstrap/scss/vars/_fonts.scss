@@ -1,5 +1,6 @@
-
-// Helsinki-specific fonts
+// Variables-hel
+//
+// Helsinki-specific fonts, color variables and defaults.
 
 @charset "utf-8";
 
@@ -73,71 +74,11 @@ $hel-grotesk: "HelsinkiGrotesk", Arial, -apple-system, BlinkMacSystemFont,
     "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
 
-
-
-// Fonts
-//
-// Font, line-height, and color for body text, headings, and more.
+// Helsinki Brand Variables
+// Do not use these variables directly.
+// Map them to application or theme variables instead.
+// --------------------------------------------------
 
 // Application font:
 $font-family-sans-serif: $hel-grotesk;
 $font-family-base: $hel-grotesk;
-
-
-$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
-$font-size-lg:   1.25rem !default;
-$font-size-sm:   .875rem !default;
-
-$font-weight-normal: normal !default;
-$font-weight-bold: bold !default;
-
-$font-weight-base: $font-weight-normal !default;
-$line-height-base: 1.5 !default;
-
-$h1-font-size: 2.5rem !default;
-$h2-font-size: 2rem !default;
-$h3-font-size: 1.75rem !default;
-$h4-font-size: 1.5rem !default;
-$h5-font-size: 1.25rem !default;
-$h6-font-size: 1rem !default;
-
-$headings-margin-bottom: ($spacer / 2) !default;
-$headings-font-family:   inherit !default;
-$headings-font-weight:   500 !default;
-$headings-line-height:   1.1 !default;
-$headings-color:         inherit !default;
-
-$display1-size: 6rem !default;
-$display2-size: 5.5rem !default;
-$display3-size: 4.5rem !default;
-$display4-size: 3.5rem !default;
-
-$display1-weight:     300 !default;
-$display2-weight:     300 !default;
-$display3-weight:     300 !default;
-$display4-weight:     300 !default;
-$display-line-height: $headings-line-height !default;
-
-$lead-font-size:   1.25rem !default;
-$lead-font-weight: 300 !default;
-
-$small-font-size: 80% !default;
-
-$text-muted: $gray-600 !default;
-
-$blockquote-small-color:  $gray-600 !default;
-$blockquote-font-size:    ($font-size-base * 1.25) !default;
-
-$hr-border-color: rgba($black,.1) !default;
-$hr-border-width: $border-width !default;
-
-$mark-padding: .2em !default;
-
-$dt-font-weight: $font-weight-bold !default;
-
-$kbd-box-shadow:         inset 0 -.1rem 0 rgba($black,.25) !default;
-$nested-kbd-font-weight: $font-weight-bold !default;
-
-$list-inline-padding: 5px !default;
-
-$mark-bg: #fcf8e3 !default;
