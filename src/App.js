@@ -91,7 +91,7 @@ class App extends Component {
   render() {
 
     return (
-      <Router>
+      <Router basename="/open-city-guide">
         <div class="app">
 
           <aside className={classnames({ 'sidebar-open': this.state.menuOpen === true, 'sidebar': true })}>
