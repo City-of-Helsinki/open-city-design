@@ -140,9 +140,11 @@ class Components extends React.Component {
                 {this.state.navItems.map((item, i) => {
                   return <ComponentLink key={i} item={item} />;
                 })}
+                {/*
                 <NavItem>
                   <NavLink href="https://github.com/reactstrap/reactstrap/issues/13"><small>Additional Components</small></NavLink>
                 </NavItem>
+                */}
               </Nav>
             </div>
           </Col>
