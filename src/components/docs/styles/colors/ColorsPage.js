@@ -10,7 +10,7 @@ import WelcomeSmall from '../../../WelcomeSmall';
 import ColorDisplay from './ColorDisplay';
 
 const Documentation = require('!!raw-loader!./Colors.md');
-const css = require('!!raw-loader!./Colors.scss');
+const css = require('!!raw-loader!../../../../scss/bootstrap/scss/vars/_colors.scss');
 
 
 const welcome = {
