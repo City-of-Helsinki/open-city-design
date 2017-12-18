@@ -28,14 +28,14 @@ export default class ColorsPage extends React.Component {
                   name: "Coat",
                   hex: "#0072c6",
                   variable: "$hel-coat",
-                  text: "dark"
+                  text: "light"
             },
             {
                   id: 2,
                   name: "Tram",
                   hex: "#009246",
                   variable: "$hel-tram",
-                  text: "dark"
+                  text: "light"
             },
             {
                   id: 3,
@@ -91,7 +91,7 @@ export default class ColorsPage extends React.Component {
                   name: "Metro",
                   hex: "#fd4f00",
                   variable: "$hel-metro",
-                  text: "dark"
+                  text: "light"
             },
             {
                   id: 11,

@@ -69,10 +69,11 @@ class DesignOverview extends Component {
           key: 4,
           header: 'Colors',
           paragraph: 'Color schema and instructions',
-          imageURL: colors
+          imageURL: colors,
+          URL: '#'
         },
         {
-          key: 4,
+          key: 5,
           header: 'Brand',
           paragraph: 'Study the brand guidelines',
           imageURL: brand,

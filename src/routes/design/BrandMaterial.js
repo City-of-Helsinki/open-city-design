@@ -31,48 +31,7 @@ class BrandMaterial extends Component {
                               imageURL: image1,
                               buttonURL: '#',
                               buttonText: 'Download Sketch Library'
-                        },
-                        {
-                              key: 2,
-                              header: '2. Open the Library file in Sketch',
-                              paragraph: 'In case you have problems opening the file go to Sketch documentation to find out more about the usage of library files In the hki-sketch.zip file you should see one sketch project and the resources -file. Open the hki-library -Sketch project in Sketch.',
-                              imageURL: image1,
-                              buttonURL: '#',
-                              buttonText: 'Download Sketch Library'
-                        },
-                        {
-                              key: 2,
-                              header: '3. Modify the Library in Sketch',
-                              paragraph: 'Ones you have opened the Library -file you can modify the components by double clicking them. If you create a new symbol it will automatically be saved into the library. Note: you need to save in order to make the change in the library to make it appear in a linked file. All changes to the library will take effect in all files it is linked to.',
-                              imageURL: image2,
-                              buttonURL: '#',
-                              buttonText: 'Download Sketch Library'
-                        },
-                        {
-                              key: 2,
-                              header: '4. Open the resources in Sketch',
-                              paragraph: 'Go to the “resources” file in the hki-sketch.zip and open the hki-modules Sketch project in Sketch.',
-                              imageURL: image3,
-                              buttonURL: '#',
-                              buttonText: 'Download Sketch Library'
-                        },
-                        {
-                              key: 2,
-                              header: '5. Modify a symbol in an external library',
-                              paragraph: 'In the hki-modules -project you can double click any of the components (symbols). You will be prompt to open the component in the hki-library file. Click “Open in Original Document” to modify the component. ',
-                              imageURL: image4,
-                              buttonURL: '#',
-                              buttonText: 'Download Sketch Library'
-                        },
-                        {
-                              key: 2,
-                              header: '6. Accept changes from the library',
-                              buttonText: 'Download Sketch Library',
-                              paragraph: 'In the hki-modules -project you can double click any of the components (symbols). You will be prompt to open the component in the hki-library file. Click “Open in Original Document” to modify the component. ',
-                              imageURL: image5,
-                              buttonURL: '#',
-                              buttonText: 'Download Sketch Library'
-                        },
+                        }
                   ]
                   }
             return (
