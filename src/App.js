@@ -68,6 +68,8 @@ import TablesPage from './components/docs/modules/Tables/TablesPage';
 import KoroSectionPage from './components/docs/modules/KoroSection/KoroSectionPage';
 
 
+// Patterns
+
 
 
 class App extends Component {
@@ -159,6 +161,7 @@ class App extends Component {
 
               {/* Patterns routes  */}
               <Route path="/development/patterns" component={Patterns} />
+              
               </Container>
             <Footer />
           </main>
