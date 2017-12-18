@@ -53,7 +53,7 @@ class SidebarStyles extends Component {
     return (
 
       <div className="list-group">
-       <h4 style={sidebarStyles} className="list-group-item" onClick={this.toggle} ><a href="#">Styles</a></h4>
+       <h4 style={sidebarStyles} className="list-group-item" onClick={this.toggle} ><NavLink to="/development/styles/overview">Styles</NavLink></h4>
         <Collapse  isOpen={this.state.components}>
           {sidebarLinks.styles.map((sidebarLink, i) => <a key={i}  style={sidebarStyles && linkStyle} className="list-group-item">
            <NavLink caret to={sidebarLink.URL} activeStyle={{

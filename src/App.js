@@ -32,9 +32,11 @@ import BrandMaterial from './routes/design/BrandMaterial';
 
 import ColorsPage from './components/docs/styles/Colors/ColorsPage';
 import KorosPage from './components/docs/styles/Koros/KorosPage';
+import TypographyPage from './components/docs/styles/Typography/TypographyPage';
+import StylesOverviewPage from './components/docs/styles/Overview/StylesOverviewPage';
+import LogoPage from './components/docs/styles/Logo/LogoPage';
 
 // Development Components
-
 
 import LayoutPage from './components/docs/components/Layout/LayoutPage';
 import NavsPage from './components/docs/components/Navs/NavsPage';
@@ -121,6 +123,10 @@ class App extends Component {
               {/* Styles routes  */}
               <Route path="/development/styles/colors/" component={ColorsPage} />
               <Route path="/development/styles/koros/" component={KorosPage} />
+              <Route path="/development/styles/typography/" component={TypographyPage} />
+              <Route path="/development/styles/overview/" component={StylesOverviewPage} />
+              <Route path="/development/styles/logo/" component={LogoPage} />
+
 
               {/* Components routes  */}
               <Route path="/development/components/overview/" component={ComponentOverview} />

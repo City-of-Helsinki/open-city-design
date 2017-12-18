@@ -1,0 +1,34 @@
+// Brand colors
+
+$hel-white:         #ffffff;
+$hel-black:         #343434;
+$hel-copper:        #00d7a7;
+$hel-bus:           #0000bf;
+$hel-coat:          #0072c6;
+$hel-fog:           #9fc9eb;
+$hel-metro:         #fd4f00;
+$hel-brick:         #bd2719;
+$hel-suomenlinna:   #f5a3c7;
+$hel-engel:         #ffe977;
+$hel-tram:          #009246;
+$hel-summer:        #ffc61e;
+$hel-silver:        #dedfe1;
+$hel-gold:          #c2a251;
+
+// Map the variables to the values
+
+// Application font:
+$font-family-sans-serif: $hel-grotesk;
+$font-family-base: $hel-grotesk;
+
+// Application color mappings:
+$theme-colors: (
+  primary: $hel-bus,
+  secondary: $hel-coat,
+  success: $hel-tram,
+  info: $hel-copper,
+  warning: $hel-summer,
+  danger: $hel-brick,
+  light: $hel-silver,
+  dark: $hel-black
+);
