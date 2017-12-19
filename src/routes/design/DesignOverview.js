@@ -1,6 +1,14 @@
+/* eslint react/no-multi-comp: 0, react/prop-types: 0, import/no-webpack-loader-syntax: off */
+
+
 import React, { Component } from 'react';
-import { Container, Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar, CardColumns } from 'reactstrap';
+import { Container, Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Media, Nav, Navbar, CardColumns } from 'reactstrap';
+import Markdown from 'react-remarkable';
+
 import Welcome from '../../components/Welcome';
+import WelcomeSmall from '../../components/WelcomeSmall';
+import './DesignOverview.scss';
+
 import Hero from '../../components/Hero';
 import HorizontalCard from '../../components/HorizontalCard';
 import Section from '../../components/Section';
@@ -11,98 +19,65 @@ import logo from '../../images/logo.png';
 import sketch from '../../images/sketch.png';
 import ContentText from '../../components/ContentText';
 import Footer from '../../components/Footer';
+import DownloadButton from '../../components/DownloadButton/DownloadButton'
+
+const Documentation = require('!!raw-loader!./DesignOverview.md');
+
+
+
 
 class DesignOverview extends Component {
   render() {
 
     const welcome = {
-      heading: <span style={{ color: 'white' }}>Design Guide</span>,
-      paragraph: <div><p style={{ color: '#AADBFF' }}>Hi there Designer! This is the Deign guide for Helsinki City Design System. Go check out <a href='#components' style={{ textDecoration: 'underline', color: 'white' }}>Sketch Documentation</a> for starters.</p></div>,
+      heading: <span style={{ color: 'white' }}>Getting Started</span>,
+      paragraph: <div><p style={{ color: '#AADBFF' }}>Hi there Designer! This is the Deign guide for Helsinki City Design System. </p></div>,
       buttonText: 'Explore Sketch Documentation'
-      
     }
+    const DownloadButtonImage = { imageURL: 'https://upload.wikimedia.org/wikipedia/commons/7/73/Sketch_logo_frame.svg' };
+    const text = { text: 'Download' }
 
 
 
-    const contentTexts = {
-      "contentTexts": [
-        {
-          key: 1,
-          header: 'Using the Design Guide',
-          body: 'The OCDS Design Guide is built for those who are intrested in designing new comoponents, modules, patterns and page templates for the City of helsinki. There re multiple ways to begin the design process -but we have structured few files and guides for you to begin with  '
-        },
-        {
-          key: 2,
-          header: 'Using the Design Guide',
-          body: 'The OCDS Design Guide is built for those who are intrested in designing new comoponents, modules, patterns and page templates for the City of helsinki. There re multiple ways to begin the design process -but we have structured few files and guides for you to begin with  '
-        },
-
-      ]
-    }
-
-
-
-    const cards = {
-      "cards": [
-        {
-          key: 1,
-          header: 'Sketch',
-          paragraph: 'Use the Skecth Library to design applications',
-          imageURL: sketch,
-          URL: '#'
-        },
-        {
-          key: 2,
-          header: 'Logo',
-          paragraph: 'How to properly use logos?',
-          imageURL: logo,
-          URL: '#'
-        },
-        {
-          key: 3,
-          header: 'Typography',
-          paragraph: 'Using typography correctly',
-          imageURL: typography,
-          URL: '#'
-        },
-        {
-          key: 4,
-          header: 'Colors',
-          paragraph: 'Color schema and instructions',
-          imageURL: colors,
-          URL: '#'
-        },
-        {
-          key: 5,
-          header: 'Brand',
-          paragraph: 'Study the brand guidelines',
-          imageURL: brand,
-          URL: '#'
-        },
-      ]
-    }
 
 
 
     return (
       <div>
-               <div style={sectionStyle_1}>
-               <Container>
-                 <Row>
-                   <Welcome welcome={welcome} />
-                 </Row>
-               </Container>
-             </div>
+        <div style={sectionStyle_1}>
           <Container>
-          <Row style={rowStyle}>
-            {contentTexts.contentTexts.map((text, i) => <Col xs='12' lg='6' >
-              <ContentText key={i} text={text} />        </Col>
-            )}
-          </Row>
-          <Row>
-            {cards.cards.map((card, i) => <Col xs='12' lg='6' ><HorizontalCard key={i} card={card} />        </Col>
-            )}
-          </Row>
+            <Row>
+              <Welcome welcome={welcome} />
+            </Row>
+          </Container>
+        </div>
+        <Container style={mediaObject}>
+          <h1>Tools</h1>
+          <p>The Design System is using Sketch App as the medium for creating new Designs. We engourage you to download the Sketch Documents and jump into building services from the components, modules and patterns made ready in the documents.</p>
+        </Container>
+
+
+        <Container style={mediaObject}>
+          <Media className="sketch-thumbnail" >
+            <Media left href="#">
+              <Media object style={sketchStyle} src={DownloadButtonImage.imageURL} alt="Sketch" />
+            </Media>
+            <Media body>
+
+              <Media heading>
+                Download Sketch App
+                </Media>
+                "Sketch is built for designers like you. With useful features, an intuitive interface and powerful plugins built by a community of developers, it helps you focus on what you do best.""
+             </Media>
+          </Media>
+        </Container>
+        <Container>
+          <article >
+            <Markdown source={Documentation} />
+          </article>
+        </Container>
+        <Container>
+
         </Container>
       </div>
     );
@@ -116,26 +91,19 @@ const sectionStyle_1 = {
   background: '-webkit-linear-gradient(#0000BF, #0072C6)', /* For Safari 5.1 to 6.0 */
   background: '-o-linear-gradient(red, yellow)', /* For Opera 11.1 to 12.0 */
   background: '-moz-linear-gradient(red, yellow)', /* For Firefox 3.6 to 15 */
-  background: 'linear-gradient(#13D7A8, #0775C6)',/* Standard syntax */  
+  background: 'linear-gradient(#13D7A8, #0775C6)',/* Standard syntax */
   borderBottom: 'solid #343434 1px',
   marginBottom: 20,
 }
-const sectionStyle_2 = {
-  height: 600,
-  backgroundColor: '#ffe977'
-}
-const sectionStyle_3 = {
-  height: 600,
-  backgroundColor: '#dedfe1'
+const sketchStyle = {
+  maxHeight: 60,
+  marginLeft: 40,
+  marginRight: 40
 }
 
-const contentStyle = {
-  width: '100%',
-  marginLeft: 'auto',
-  marginRight: 'auto'
-}
-const rowStyle = {
-  paddingBottom: '10%',
+const mediaObject = {
+  marginTop: 50,
+  marginBottom: 50
 }
 export default DesignOverview;
 

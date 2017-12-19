@@ -11,6 +11,7 @@ import brand from '../../images/brand.png';
 import logo from '../../images/logo.png';
 import sketch from '../../images/sketch.png';
 import button from '../../images/components-thumbs/button.png';
+import './DevelopmentOverview.scss';
 
 import Welcome from '../../components/Welcome';
 import Hero from '../../components/Hero';
@@ -18,6 +19,8 @@ import HorizontalCard from '../../components/HorizontalCard';
 import Section from '../../components/Section';
 import ContentText from '../../components/ContentText';
 import Footer from '../../components/Footer';
+
+
 
 const Documentation = require('!!raw-loader!./DevelopmentOverview.md');
 
@@ -32,78 +35,10 @@ class DevelopmentOverview extends Component {
       buttonUrl: '/development/components/overview',
     }
 
-    const text = {
-      header: 'What is Design System? 🤔',
-      body: <div><p><strong>Now</strong> –we do understand that this can be a bit overwelming to grasp but bare with us. We have build a system that contains all ya need for developing and designing digital services using the Cities own design systems. In other words, we have combined Design tools and Development tools to make new service creation simple and easy to approach.</p></div>
-    }
-
-    const contentTexts = {
-      "contentTexts": [
-
-        {
-          key: 2,
-          header: 'Components',
-          body: <div><p><strong>The OCDS Design Guide</strong> is built for those who are intrested in designing new comoponents, modules, patterns and page templates for the City of Helsinki. There re multiple ways to begin the design process -but we have structured few files and guides for you to begin with</p></div>
-        },
-        {
-          key: 3,
-          header: 'Modules',
-          body: <div><p><strong>The OCDS Design Guide</strong> is built for those who are intrested in designing new comoponents, modules, patterns and page templates for the City of Helsinki. There re multiple ways to begin the design process -but we have structured few files and guides for you to begin with</p></div>
-        },
-        {
-          key: 3,
-          header: 'Patterns',
-          body: <div><p><strong>The OCDS Design Guide</strong> is built for those who are intrested in designing new comoponents, modules, patterns and page templates for the City of Helsinki. There re multiple ways to begin the design process -but we have structured few files and guides for you to begin with</p></div>
-        },
-        {
-          key: 3,
-          header: 'Page Templates',
-          body: <div><p><strong>The OCDS Design Guide</strong> is built for those who are intrested in designing new comoponents, modules, patterns and page templates for the City of Helsinki. There re multiple ways to begin the design process -but we have structured few files and guides for you to begin with</p></div>
-        },
-      ]
-    }
-
-
-
-    const cards = {
-      "cards": [
-        {
-          key: 1,
-          header: 'Buttons',
-          paragraph: 'Use the Skecth Library to design applications',
-          imageURL: <Button color='primary' outline >MOi</Button>,
-          URL: '#'
-        },
-        {
-          key: 2,
-          header: 'Alerts',
-          paragraph: 'How to properly use logos?',
-          imageURL: logo,
-          URL: '#'
-        },
-        {
-          key: 3,
-          header: 'Badges',
-          paragraph: 'Using typography correctly',
-          imageURL: typography,
-          URL: '#'
-        },
-        {
-          key: 4,
-          header: 'Breadcrumb',
-          body: 'Color schema and instructions',
-          imageURL: colors
-        },
-        {
-          key: 4,
-          header: 'Modals',
-          paragraph: 'Study the brand guidelines',
-          imageURL: brand,
-          URL: '#'
-        },
-      ]
-    }
-
+  
+    const DownloadButtonImage = { imageURL: 'https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png' };
+    
+  
 
 
     return (
@@ -117,32 +52,28 @@ class DevelopmentOverview extends Component {
           </Container>
         </div>
         <Container>
+
+        <Container style={mediaObject}>
+          <Media className="media-thumbnail" >
+            <Media left href="#">
+              <Media object style={sketchStyle} src={DownloadButtonImage.imageURL} alt="Sketch" />
+            </Media>
+            <Media body>
+
+              <Media heading>
+                Go to Helsinki City GitHub
+                </Media>
+                Download all resources needed for Designing, contributing and Developing from GitHub
+             </Media>
+          </Media>
+        </Container>
+
+
           <article >
             <Markdown source={Documentation} />
           </article>
         </Container>
-        <Container>
-          <Row style={rowStyle}>
-            <Col xs='12' lg='12' >
-              <ContentText text={text} />
-            </Col>
 
-
-          </Row>
-          <Row style={rowStyle}>
-            {contentTexts.contentTexts.map((text, i) => <Col xs='12' lg='6' >
-              <ContentText key={i} text={text} />        </Col>
-            )}
-
-          </Row>
-
-          <Row>
-            {cards.cards.map((card, i) => <Col xs='12' lg='6' ><Media key={i} card={card} />        </Col>
-            )}
-          </Row>
-
-
-        </Container>
       </div>
     );
   }
@@ -166,6 +97,17 @@ const sectionStyle_2 = {
 const sectionStyle_3 = {
   height: 600,
   backgroundColor: '#dedfe1'
+}
+
+const sketchStyle = {
+  maxHeight: 60,
+  marginLeft: 40,
+  marginRight: 40
+}
+
+const mediaObject = {
+  marginTop: 50,
+  marginBottom: 50
 }
 
 const contentStyle = {

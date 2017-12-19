@@ -9,8 +9,7 @@ class SidebarButton extends Component {
                   marginTop: 5,
                   minWidth: 200,
                   paddingLeft: 10,
-                  textAlign: 'left'
-          }
+                  textAlign: 'left'          }
             return(
                         <Button 
                         

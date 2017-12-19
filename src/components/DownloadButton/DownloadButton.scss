@@ -1,0 +1,53 @@
+.download-btn {
+  background: #f5f5f5;
+  background-image: -webkit-linear-gradient(top, #f5f5f5, #e0e0e0);
+  background-image: -moz-linear-gradient(top, #f5f5f5, #e0e0e0);
+  background-image: -ms-linear-gradient(top, #f5f5f5, #e0e0e0);
+  background-image: -o-linear-gradient(top, #f5f5f5, #e0e0e0);
+  background-image: linear-gradient(to bottom, #f5f5f5, #e0e0e0);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #343434;
+  font-size: 20px;
+  padding: 10px 100px 10px 50px;
+  border: solid #cccccc 1px;
+  text-decoration: none;
+  max-height: 50px;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+.btn-img {
+  max-width: 20px;
+  margin: 0px 20px 0px 20px
+}
+
+
+.download-btn-text {
+  white-space: nowrap;
+  text-align: center;
+  margin-right: 50;
+}
+
+.download-btn:hover {
+  background: #fafafa;
+  background-image: -webkit-linear-gradient(top, #fafafa, #e0e0e0);
+  background-image: -moz-linear-gradient(top, #fafafa, #e0e0e0);
+  background-image: -ms-linear-gradient(top, #fafafa, #e0e0e0);
+  background-image: -o-linear-gradient(top, #fafafa, #e0e0e0);
+  background-image: linear-gradient(to bottom, #fafafa, #e0e0e0);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.download-btn:active {
+  background: #ebebeb;
+  background-image: -webkit-linear-gradient(top, #ebebeb, #bababa);
+  background-image: -moz-linear-gradient(top, #ebebeb, #bababa);
+  background-image: -ms-linear-gradient(top, #ebebeb, #bababa);
+  background-image: -o-linear-gradient(top, #ebebeb, #bababa);
+  background-image: linear-gradient(to bottom, #ebebeb, #bababa);
+  cursor: pointer;
+}
