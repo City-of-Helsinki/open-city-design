@@ -10,6 +10,7 @@ import git from '../images/git.png';
 import NPM from '../images/NPM.png';
 import slack from '../images/slack.png';
 
+import './Footer.scss'
 
 class Footer extends Component {
       render() {
@@ -78,7 +79,23 @@ class Footer extends Component {
                                     <Row >
                                           {cards.cards.map((card, i) =>
                                                 <Col style={rowStyle} xs='12' lg='6' >
-                                                      <ContentTextWithButton key={i} card={card} />
+
+                                                      <Media className="footer-thumbnail" key={i} card={card} >
+                                                            <Media left href="#">
+                                                                  <Media className="media-img" object style={sketchStyle} src={card.imageURL} alt="Sketch" />
+                                                            </Media>
+                                                            <Media body>
+
+                                                                  <Media  className="footer-text" heading>
+                                                                        {card.header}
+                                                                  </Media>
+                                                                  {card.paragraph}
+                                                            </Media>
+                                                      </Media>
+
+
+
+
                                                 </Col>
                                           )}
                                     </Row>
@@ -101,8 +118,14 @@ const footerStyle = {
       bottom: 0,
 
 }
+const sketchStyle = {
+      maxHeight: 60,
+      marginLeft: 40,
+      marginRight: 40
+}
+
 const footerLinkSectionStyle = {
-      backgroundColor: '#ebedf1',
+      backgroundColor: '#343434',
       minHeight: 700,
 }
 const footerBottomSectionStyle = {
@@ -113,9 +136,9 @@ const footerBottomSectionStyle = {
 const rowStyle = {
       paddingTop: 25,
       marginBottom: 25
-      
-    }
-    
+
+}
+
 
 
 export default Footer;

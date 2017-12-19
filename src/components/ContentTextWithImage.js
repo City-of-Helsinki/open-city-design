@@ -10,7 +10,7 @@ class ContentTextWithImage extends Component {
             
             return (
                   <div style={style}>
-                        <h3 style={{ marginBottom: '30px', marginTop: '30px' }}>{this.props.card.header}</h3>
+                        <h5 style={{ marginBottom: '30px', marginTop: '30px' }}>{this.props.card.header}</h5>
                         <p>{this.props.card.paragraph}</p>
                         <NavLink to={this.props.card.buttonURL}>
                               <Image image={image}  imageStyle={imageStyle}/>
@@ -24,6 +24,6 @@ const style = {
       height: 300,
 }
 
-const imageStyle = { maxHeight: 300, maxWidth: '100%',  float: 'left', boxShadow: '0 2px 2px rgba(0, 0, 0, 0.5)', alignSelf: 'flex-end' };
+const imageStyle = { width: '100%', marginTop: 20,  float: 'left', boxShadow: '0 2px 2px rgba(0, 0, 0, 0.5)', alignSelf: 'flex-end' };
 const textStyle = { marginTop: 10 }
 export default ContentTextWithImage;

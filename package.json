@@ -2,6 +2,7 @@
   "name": "selailunakyma",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://nettinero.github.io/open-city-guide",
   "dependencies": {
     "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",
@@ -72,9 +73,11 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
     "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build"
+    "styleguide:build": "styleguidist build",
+    "deploy": "npm run build&&gh-pages -d build"
   },
   "devDependencies": {
+    "gh-pages": "^1.1.0",
     "html-loader": "^0.5.1",
     "markdown-loader": "^2.0.1",
     "node-sass-chokidar": "0.0.3",

@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Container, Nav, Navbar } from 'reactstrap';
+import DownloadButton from '../../components/DownloadButton/DownloadButton';
+
 import Welcome from '../../components/Welcome';
 import Image from '../../components/Image';
 import ContentTextWithImage from '../../components/ContentTextWithImage';
@@ -13,12 +15,14 @@ import image5 from '../../images/sketch-how-to/5-accept-changes.png';
 
 class BrandMaterial extends Component {
       render() {
-            const image = { url: 'https://www.sketchapp.com/images/press/sketch-press-kit/app-icons/sketch-mac-icon@2x.png' };
+            const DownloadButtonImage = { imageURL: 'https://www.sketchapp.com/images/press/sketch-press-kit/app-icons/sketch-mac-icon@2x.png' };
             const welcome = {
                   heading: "Sketch Documentation",
                   paragraph: "How to apply Sketch files in your design process"
             };
 
+            const text = { 
+                  text: 'Download latest' };
             const URL = {
                   url: 'https://github.com/nettinero/open-city-guide/tree/master/hki-sketch'
             }
@@ -39,6 +43,8 @@ class BrandMaterial extends Component {
                         <Container>
                         <Welcome welcome={welcome} />
                         <Row  >
+                        <DownloadButton DownloadButtonImage={DownloadButtonImage} text={text} />
+
 
                         {cards.cards.map((card, i) =>
                                                 

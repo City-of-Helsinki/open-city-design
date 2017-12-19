@@ -15,8 +15,8 @@ class WelcomeSmall extends Component {
             return(
                   <div>
                               <Jumbotron style={welcomeStyle}>
-                                <h1 className='display-1' style={this.props.headerStyle} >{this.props.welcome.heading}</h1>
-                                <p className='lead' style={this.props.paragraphStyle} >{this.props.welcome.paragraph}</p>
+                                <h1 className='display-1' >{this.props.welcome.heading}</h1>
+                                <p className='lead'  >{this.props.welcome.paragraph}</p>
 
                               </Jumbotron>
                               <hr />

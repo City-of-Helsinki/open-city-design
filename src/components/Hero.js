@@ -38,7 +38,7 @@ class Hero extends Component {
             }
             const welcome = {
                   heading: 'Open City Design System',
-                  paragraph: 'Welcome - Please select City'
+                  paragraph: ''
             }
             return (
                   <div>

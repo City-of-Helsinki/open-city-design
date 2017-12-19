@@ -25,12 +25,5 @@ class OverviewThumbnail extends Component {
       }
 
 }
-const style = {
-      height: 200,
-      position: 'relative',
-      padding: '1em 1em 1em',
-      marginTop: '2rem',
-      border: '2px solid rgba(52, 52, 52, 0.1)',
-      backgroundColor: 'rgba(52, 52, 52, 0.1)'
-}
+
 export default OverviewThumbnail;

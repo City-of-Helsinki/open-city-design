@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Container, Nav, Navbar } from 'reactstrap';
 import WelcomeSmall from '../../components/WelcomeSmall';
+import DownloadButton from '../../components/DownloadButton/DownloadButton';
+
 import Image from '../../components/Image';
 import ContentTextWithImage from '../../components/ContentTextWithImage';
 import image1 from '../../images/sketch-how-to/1-open-files.png';
@@ -18,40 +20,32 @@ class DesignKit extends Component {
                   heading: "Design Kit",
                   paragraph: "How to apply Sketch files in your design process"
             };
+            const DownloadButtonImage = { imageURL: 'https://upload.wikimedia.org/wikipedia/commons/7/73/Sketch_logo_frame.svg' };
+            const text = { text: 'Download Sketch Resources' }
 
             const URL = {
                   url: 'https://github.com/nettinero/open-city-guide/tree/master/hki-sketch'
             }
             const cards = {
                   "cards": [
+
                         {
-                              key: 1,
-                              header: '1. Download the files',
-                              paragraph: <p>Download the file from <a href={'www.facebook.com'}>here</a> or from <a href={'www.github.com'}>GitHub</a>.</p>,
+                              key: 2,
+                              header: '1. After installing the Sketch resources open the hki-library file.',
                               imageURL: image1,
                               buttonURL: '#',
                               buttonText: 'Download Sketch Library'
                         },
                         {
                               key: 2,
-                              header: '2. Open the Library file in Sketch',
-                              paragraph: 'In case you have problems opening the file go to Sketch documentation to find out more about the usage of library files In the hki-sketch.zip file you should see one sketch project and the resources -file. Open the hki-library -Sketch project in Sketch.',
-                              imageURL: image1,
-                              buttonURL: '#',
-                              buttonText: 'Download Sketch Library'
-                        },
-                        {
-                              key: 2,
-                              header: '3. Modify the Library in Sketch',
-                              paragraph: 'Ones you have opened the Library -file you can modify the components by double clicking them. If you create a new symbol it will automatically be saved into the library. Note: you need to save in order to make the change in the library to make it appear in a linked file. All changes to the library will take effect in all files it is linked to.',
+                              header: '2. In the hki-library Sketch you can modify Components',
                               imageURL: image2,
                               buttonURL: '#',
                               buttonText: 'Download Sketch Library'
                         },
                         {
                               key: 2,
-                              header: '4. Open the resources in Sketch',
-                              paragraph: 'Go to the “resources” file in the hki-sketch.zip and open the hki-modules Sketch project in Sketch.',
+                              header: '3. G',
                               imageURL: image3,
                               buttonURL: '#',
                               buttonText: 'Download Sketch Library'
@@ -59,7 +53,6 @@ class DesignKit extends Component {
                         {
                               key: 2,
                               header: '5. Modify a symbol in an external library',
-                              paragraph: 'In the hki-modules -project you can double click any of the components (symbols). You will be prompt to open the component in the hki-library file. Click “Open in Original Document” to modify the component. ',
                               imageURL: image4,
                               buttonURL: '#',
                               buttonText: 'Download Sketch Library'
@@ -68,29 +61,30 @@ class DesignKit extends Component {
                               key: 2,
                               header: '6. Accept changes from the library',
                               buttonText: 'Download Sketch Library',
-                              paragraph: 'In the hki-modules -project you can double click any of the components (symbols). You will be prompt to open the component in the hki-library file. Click “Open in Original Document” to modify the component. ',
                               imageURL: image5,
                               buttonURL: '#',
                               buttonText: 'Download Sketch Library'
                         },
                   ]
-                  }
+            }
             return (
                   <div>
                         <Container>
-                        <WelcomeSmall welcome={welcome} />
-                        <Row  >
+                              <WelcomeSmall welcome={welcome} />
+                              <DownloadButton DownloadButtonImage={DownloadButtonImage} text={text} />
+                              <h1>Instructions</h1>
+                              <p>Download the resources and follow these instructions in order to activate the Sektch Library fro your project</p>
+                              <Row>
+                              {cards.cards.map((card, i) =>
 
-                        {cards.cards.map((card, i) =>
-                                                
-                              <Col style={rowStyle} xs='12' lg='6' >
-                                    <ContentTextWithImage key={i} card={card} />
-                              </Col>
-                        )}
-                                                                   </Row>  
-                                                                   </Container>
+                                    <Col style={rowStyle} xs='12' lg='12' >
+                                          <ContentTextWithImage key={i} card={card} />
+                                    </Col>
+                              )}
+                              </Row>
+</Container>
 
- </div>
+                  </div>
 
             );
       }

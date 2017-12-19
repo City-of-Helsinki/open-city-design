@@ -32,9 +32,11 @@ import BrandMaterial from './routes/design/BrandMaterial';
 
 import ColorsPage from './components/docs/styles/Colors/ColorsPage';
 import KorosPage from './components/docs/styles/Koros/KorosPage';
+import TypographyPage from './components/docs/styles/Typography/TypographyPage';
+import StylesOverviewPage from './components/docs/styles/Overview/StylesOverviewPage';
+import LogoPage from './components/docs/styles/Logo/LogoPage';
 
 // Development Components
-
 
 import LayoutPage from './components/docs/components/Layout/LayoutPage';
 import NavsPage from './components/docs/components/Navs/NavsPage';
@@ -68,6 +70,8 @@ import TablesPage from './components/docs/modules/Tables/TablesPage';
 import KoroSectionPage from './components/docs/modules/KoroSection/KoroSectionPage';
 
 
+// Patterns
+
 
 
 class App extends Component {
@@ -89,7 +93,7 @@ class App extends Component {
   render() {
 
     return (
-      <Router>
+      <Router basename="/open-city-guide">
         <div class="app">
 
           <aside className={classnames({ 'sidebar-open': this.state.menuOpen === true, 'sidebar': true })}>
@@ -119,6 +123,10 @@ class App extends Component {
               {/* Styles routes  */}
               <Route path="/development/styles/colors/" component={ColorsPage} />
               <Route path="/development/styles/koros/" component={KorosPage} />
+              <Route path="/development/styles/typography/" component={TypographyPage} />
+              <Route path="/development/styles/overview/" component={StylesOverviewPage} />
+              <Route path="/development/styles/logo/" component={LogoPage} />
+
 
               {/* Components routes  */}
               <Route path="/development/components/overview/" component={ComponentOverview} />
@@ -159,6 +167,7 @@ class App extends Component {
 
               {/* Patterns routes  */}
               <Route path="/development/patterns" component={Patterns} />
+              
               </Container>
             <Footer />
           </main>

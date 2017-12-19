@@ -30,12 +30,9 @@ class SidebarButton extends Component {
             return (
                   <Dropdown  size='sm' isOpen={this.state.dropdownOpen} toggle={this.toggle}>
                         <DropdownToggle style={navButtonStyle} outline color="primary" caret >
-                              Choose City
+                              Helsinki
                    </DropdownToggle>
                         <DropdownMenu>
-
-                              <NavLink to='/design/designoverview' ><DropdownItem>Helsinki</DropdownItem></NavLink>
-                              <DropdownItem divider />
                               <DropdownItem>Turku</DropdownItem>
                               <DropdownItem divider />
                               <DropdownItem>Tampere</DropdownItem>

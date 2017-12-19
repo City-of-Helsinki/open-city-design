@@ -1,0 +1,14 @@
+
+
+.sketch-thumbnail {
+      position: relative;
+      padding: 1em 1em 1em;
+      border: 2px solid rgba(52, 52, 52, 0.1);
+      background-color: rgba(52, 52, 52, 0.0);
+      margin-top: 50;
+      margin-bottom: 50;
+}
+.sketch-thumbnail:hover {
+      cursor: pointer;
+      background-color: rgba(52, 52, 52, 0.06);
+}

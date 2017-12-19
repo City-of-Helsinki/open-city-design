@@ -100,7 +100,7 @@ h1,h2,h3,h4,h5,h6,strong,b {
       font-weight: 300;
 }
 
-h1,h2,h3 {
+.docs-page > div > h1,h2,h3 {
       margin-bottom: 1rem;
 }
 
@@ -108,7 +108,7 @@ h1,h2,h3 {
       margin-top: 2rem;
 }
 
-.docs-page h2, .docs-page h3, .docs-page h4 {
+.docs-page > div > h2, .docs-page > div > h3, .docs-page > div > h4 {
       margin: 3rem 0 1rem;
 }
 
@@ -303,7 +303,7 @@ pre, code {
 }
 
 .partner-banner--footer {
-      background: rgba(35, 31, 32, 1);
+      background: #343434;
 }
 
 

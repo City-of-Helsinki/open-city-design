@@ -8,7 +8,7 @@
 
 // Table of Contents
 //
-// Color system - Per-city
+// Color system
 // Options
 // Spacing
 // Body
@@ -156,7 +156,7 @@ $sizes: (
 // Settings for the `<body>` element.
 
 $body-bg:       $white !default;
-$body-color:    $hel-black!default;
+$body-color:    $gray-900 !default;
 
 // Links
 //
@@ -256,7 +256,7 @@ $headings-margin-bottom: ($spacer / 2) !default;
 $headings-font-family:   inherit !default;
 $headings-font-weight:   500 !default;
 $headings-line-height:   1.1 !default;
-$headings-color:         inherit !default;
+$headings-color:         #343434 !default;
 
 $display1-size: 6rem !default;
 $display2-size: 5.5rem !default;

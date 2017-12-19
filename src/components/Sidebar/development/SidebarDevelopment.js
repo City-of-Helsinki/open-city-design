@@ -4,14 +4,14 @@ import SidebarModules from './SidebarModules'
 import SidebarPatterns from './SidebarPatterns'
 import SidebarPageTemplates from './SidebarPagetemplates'
 import SidebarStyles from './SidebarStyles'
+import { NavLink } from 'react-router-dom'
 
 class SidebarDevelopment extends Component {
       render()  {
-            const styles = {
-                  marginLeft: 20,
-            }
+
             return(
                   <div style={styles}>
+                        <NavLink to='/development/overview' ><h4 style={sidebarStyles} className="list-group-item" ><a href="#">Getting started</a></h4></NavLink>
                         <SidebarStyles />
                         <SidebarComponents />
                         <SidebarModules />
@@ -22,7 +22,13 @@ class SidebarDevelopment extends Component {
       }
 
 }
-
+const styles = {
+      marginLeft: 20,
+}
+const sidebarStyles = {
+      border: 'none',
+      backgroundColor: 'transparent',
+}
 export default SidebarDevelopment;
 
 
