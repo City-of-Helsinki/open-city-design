@@ -5,7 +5,7 @@ import classnames from 'classnames';
 import './css/docs.css';
 import './css/prism.css';
 import { Container, Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar, NavDropdown, NavItem, MenuItem } from 'reactstrap';
-
+import ScrollToTop from './components/ScrollToTop';
 
 import Home from './routes/Home';
 import Development from './routes/development/Development';
@@ -71,6 +71,7 @@ import KoroSectionPage from './components/docs/modules/KoroSection/KoroSectionPa
 
 
 // Patterns
+import TaskListPage from './components/docs/patterns/TaskList/TaskListPage';
 
 
 
@@ -93,7 +94,7 @@ class App extends Component {
   render() {
 
     return (
-      <Router basename="/open-city-guide">
+      <Router onUpdate={() => window.scrollTo(0, 0)} basename="/open-city-guide">
         <div class="app">
 
           <aside className={classnames({ 'sidebar-open': this.state.menuOpen === true, 'sidebar': true })}>
@@ -104,73 +105,79 @@ class App extends Component {
               <Route path="/design" render={() => <SidebarDesign />} />
             </div>
           </aside>
-          <main className={classnames({ 'main-content__sidebar-open': this.state.menuOpen === true, 'main-content': true })}>
-
-              <Route path="/" exact component={Home} />
-
-              {/* Design routes */}
-              <Route path="/design/overview/" component={DesignOverview} />
-              <Route path="/design/designkit/" component={DesignKitPage} />
-              <Route path="/design/brandmaterial/" component={BrandMaterialPage} />
+          <ScrollToTop>
+            <main className={classnames({ 'main-content__sidebar-open': this.state.menuOpen === true, 'main-content': true })}>
 
 
-              {/* Development routes */}
-      
-              <Route path="/development/overview/" component={DevelopmentOverview} />
+                <Route path="/" exact component={Home} />
 
-              <Container className="docs-page">
-
-              {/* Styles routes  */}
-              <Route path="/development/styles/colors/" component={ColorsPage} />
-              <Route path="/development/styles/koros/" component={KorosPage} />
-              <Route path="/development/styles/typography/" component={TypographyPage} />
-              <Route path="/development/styles/overview/" component={StylesOverviewPage} />
-              <Route path="/development/styles/logo/" component={LogoPage} />
+                {/* Design routes */}
+                <Route path="/design/overview/" component={DesignOverview} />
+                <Route path="/design/designkit/" component={DesignKitPage} />
+                <Route path="/design/brandmaterial/" component={BrandMaterialPage} />
 
 
-              {/* Components routes  */}
-              <Route path="/development/components/overview/" component={ComponentOverview} />
-              <Route path="/development/components/breadcrumb/" component={BreadcrumbsPage} />
-              <Route path="/development/components/buttons/" component={ButtonsPage} />
-              <Route path="/development/components/button-group/" component={ButtonGroupPage} />
-              <Route path="/development/components/button-dropdown/" component={ButtonDropdownPage} />
-              <Route path="/development/components/dropdowns/" component={DropdownsPage} />
-              <Route path="/development/components/fade/" component={FadePage} />
-              <Route path="/development/components/form/" component={FormPage} />
-              <Route path="/development/components/input-group/" component={InputGroupPage} />
-              <Route path="/development/components/popovers/" component={PopoversPage} />
-              <Route path="/development/components/progress/" component={ProgressPage} />
-              <Route path="/development/components/tooltips/" component={TooltipsPage} />
-              <Route path="/development/components/badge/" component={BadgePage} />
-              <Route path="/development/components/modals/" component={ModalsPage} />
-              <Route path="/development/components/layout/" component={LayoutPage} />
-              <Route path="/development/components/media/" component={MediaPage} />
-              <Route path="/development/components/pagination/" component={PaginationPage} />
-              <Route path="/development/components/tabs/" component={TabsPage} />
-              <Route path="/development/components/alerts/" component={AlertsPage} />
-              <Route path="/development/components/jumbotron/" component={JumbotronPage} />
-              <Route path="/development/components/collapse/" component={CollapsePage} />
-              <Route path="/development/components/carousel/" component={CarouselPage} />
-              <Route path="/development/components/listgroup/" component={ListGroupPage} />
+                {/* Development routes */}
+        
+                <Route path="/development/overview/" component={DevelopmentOverview} />
 
-              {/* Page templates routes  */}
-              <Route path="/development/pagetemplates" component={PageTemplates} />
+                <Container className="docs-page">
 
-              {/* Modules routes  */}
-              <Route path="/development/modules" exact component={Modules} />
-              <Route path="/development/modules/navs/" component={NavsPage} />
-              <Route path="/development/modules/korosection/" component={KoroSectionPage} />
-              <Route path="/development/modules/navbar/" component={NavbarPage} />
-              <Route path="/development/modules/tablespage/" component={TablesPage} />
-              <Route path="/development/modules/cardpage/" component={CardPage} />
+                {/* Styles routes  */}
+                <Route path="/development/styles/colors/" component={ColorsPage} />
+                <Route path="/development/styles/koros/" component={KorosPage} />
+                <Route path="/development/styles/typography/" component={TypographyPage} />
+                <Route path="/development/styles/overview/" component={StylesOverviewPage} />
+                <Route path="/development/styles/logo/" component={LogoPage} />
 
 
-              {/* Patterns routes  */}
-              <Route path="/development/patterns" component={Patterns} />
-              
-              </Container>
-            <Footer />
-          </main>
+                {/* Components routes  */}
+                <Route path="/development/components/overview/" component={ComponentOverview} />
+                <Route path="/development/components/breadcrumb/" component={BreadcrumbsPage} />
+                <Route path="/development/components/buttons/" component={ButtonsPage} />
+                <Route path="/development/components/button-group/" component={ButtonGroupPage} />
+                <Route path="/development/components/button-dropdown/" component={ButtonDropdownPage} />
+                <Route path="/development/components/dropdowns/" component={DropdownsPage} />
+                <Route path="/development/components/fade/" component={FadePage} />
+                <Route path="/development/components/form/" component={FormPage} />
+                <Route path="/development/components/input-group/" component={InputGroupPage} />
+                <Route path="/development/components/popovers/" component={PopoversPage} />
+                <Route path="/development/components/progress/" component={ProgressPage} />
+                <Route path="/development/components/tooltips/" component={TooltipsPage} />
+                <Route path="/development/components/badge/" component={BadgePage} />
+                <Route path="/development/components/modals/" component={ModalsPage} />
+                <Route path="/development/components/layout/" component={LayoutPage} />
+                <Route path="/development/components/media/" component={MediaPage} />
+                <Route path="/development/components/pagination/" component={PaginationPage} />
+                <Route path="/development/components/tabs/" component={TabsPage} />
+                <Route path="/development/components/alerts/" component={AlertsPage} />
+                <Route path="/development/components/jumbotron/" component={JumbotronPage} />
+                <Route path="/development/components/collapse/" component={CollapsePage} />
+                <Route path="/development/components/carousel/" component={CarouselPage} />
+                <Route path="/development/components/listgroup/" component={ListGroupPage} />
+
+                {/* Page templates routes  */}
+                <Route path="/development/pagetemplates" component={PageTemplates} />
+
+                {/* Modules routes  */}
+                <Route path="/development/modules" exact component={Modules} />
+                <Route path="/development/modules/navs/" component={NavsPage} />
+                <Route path="/development/modules/korosection/" component={KoroSectionPage} />
+                <Route path="/development/modules/navbar/" component={NavbarPage} />
+                <Route path="/development/modules/tablespage/" component={TablesPage} />
+                <Route path="/development/modules/cardpage/" component={CardPage} />
+
+
+                {/* Patterns routes  */}
+                <Route path="/development/patterns" exact component={Patterns} />
+                <Route path="/development/patterns/tasklist/" component={TaskListPage} />
+                
+                </Container>
+
+              <Footer />
+            </main>
+
+          </ScrollToTop>
         </div>
       </Router>
 

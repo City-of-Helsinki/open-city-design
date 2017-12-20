@@ -15,7 +15,7 @@ class Home extends Component {
       button: true
     }
     const hero = {
-      hero: 'Open City Design System',
+      hero: '<div>Open City Design System<span className="label label-primary">Alpha</span></div>',
       header: 'Helsinki',
       paragraph: 'Start creating your best designs and collaborate with developers to create best solutions for your city',
       
