@@ -1,0 +1,122 @@
+@import '../../../../scss/bootstrap/scss/vars/colors';
+
+.task {
+      padding: 10px;
+      &__heading {
+            margin-bottom: 2rem;
+            text-align: center;
+            color: white;
+      }
+      &__icon {
+            position: relative;
+            &:after {
+                  display: block;
+                  width: 4px;
+                  height: 100%;
+                  position: absolute;
+                  left: 28px;
+                  top: 50%;
+                  z-index: 0;
+                  content: '';
+                  background: $hel-tram;
+            }
+            &:before {
+                  display: block;
+                  width: 4px;
+                  height: 100%;
+                  position: absolute;
+                  left: 28px;
+                  top: -50%;
+                  z-index: 0;
+                  content: '';
+                  background: $hel-tram;
+            }
+            &__container {
+                  position: relative;
+                  padding: 13px 18px;
+                  display: inline-block;
+                  width: 60px;
+                  font-size: 1.6rem;
+                  height: 60px;
+                  z-index: 1;
+                  border-radius: 50%;
+                  background: $hel-tram;
+
+
+                  &:first-child {
+                        &:before {
+                              display: none;
+                        }
+                  }
+                  &:last-child {
+                        &:after {
+                              display: none;
+                        }
+                  }
+            }
+            &--first:before{
+                  display: none;
+            }
+            &--active {
+                  .task__icon__container {
+                        background: white;
+                        color: #343434;
+                  }
+                  .task__step {
+                        border-color: white;
+                  }
+                  &:before {
+                        background-color: white;
+                  }
+            }
+            &--done {
+                  .task__icon__container {
+                        background: white;
+                        color: #343434;
+                  }
+                  .task__step {
+                        border-color: white;
+                        color: #343434;
+                  }
+                  &:after, &:before {
+                        background-color: white;
+                  }
+            }
+            &--last:after {
+                  display: none;
+            }
+      }
+      &__step {
+            width: 20px;
+            display: inline-block;
+            height: 20px;
+            border: 4px solid $hel-tram;
+            border-radius: 50%;
+            margin: 0 20px;
+            background: $hel-metro;
+            position: relative;
+            z-index: 1;
+      }
+      &__name {
+            font-size: 1.6rem;
+            line-height: 60px;
+            display: inline-block;
+            margin-left: 0.5rem;
+      }
+      &__item {
+            position: relative;
+            padding: 20px;
+            background: white;
+            color: #343434;
+            &:before {
+                  content: '';
+                  width: 30px;
+                  height: 30px;
+                  border: 15px solid transparent;
+                  border-right-color: white;
+                  position: absolute;
+                  left: -30px;
+                  top: 25px;
+            }
+      }
+}

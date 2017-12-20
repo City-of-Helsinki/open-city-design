@@ -1,15 +1,23 @@
-### Using Logo
+### Helsinki City Logo
 
-The brand koro-shapes can be used to divide page sections. Theme mixin koro() can create a svg background image of any color or koro variation.
+##### Basic guidelines 
 
-#### Usage
-`@mixin koro($_style, $_color, $_scale)` where
 
-`$_style` is one of `"basic", "pulse", "beat", "storm"` and `"wave"`
 
-`$_color` can be any color in hex format. Check [colors page](/development/style/colors) for brand reference.
+* The minimum size of the logo should be 25 millimetres
+* there are color combinations that are not suitable for the logo use. These are mainly color contrast related problems. You can read more about these limitations from the brand material
+* Altering the logo text or fitting within the SVG logo is not engouraged
 
-`$_scale` scaled size of the shape as percentage value (typically `100,200,300,400...`)
+##### Language versions
 
-#### Koro shape variations
-There are five different shapes. Basic, Pulse, Beat, Storm and Wave.
+There are language versions from the logo.
+
+##### Using logo color with mixin
+
+`@mixin helsinki-logo($_color)` where
+
+`$_color` can be any color
+
+###### Example
+`@include helsinki-logo($black);`
+`height: $line-height-computed * 4;`

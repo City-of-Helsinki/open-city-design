@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
 import { Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Container, Nav, Navbar } from 'reactstrap';
-import WelcomeSmall from '../../components/WelcomeSmall';
-import DownloadButton from '../../components/DownloadButton/DownloadButton';
+import WelcomeSmall from '../../../components/WelcomeSmall';
+import DownloadButton from '../../../components/DownloadButton/DownloadButton';
 
-import Image from '../../components/Image';
-import ContentTextWithImage from '../../components/ContentTextWithImage';
-import image1 from '../../images/sketch-how-to/1-open-files.png';
-import image2 from '../../images/sketch-how-to/2-sketch-library.png';
-import image3 from '../../images/sketch-how-to/3-open-resources.png';
-import image4 from '../../images/sketch-how-to/4-modify-symbol.png';
-import image5 from '../../images/sketch-how-to/5-accept-changes.png';
+import Image from '../../../components/Image';
+import ContentTextWithImage from '../../../components/ContentTextWithImage';
+import image1 from '../../../images/sketch-how-to/1-open-files.png';
+import image2 from '../../../images/sketch-how-to/2-sketch-library.png';
+import image3 from '../../../images/sketch-how-to/3-open-resources.png';
+import image4 from '../../../images/sketch-how-to/4-modify-symbol.png';
+import image5 from '../../../images/sketch-how-to/5-accept-changes.png';
 
 
 
