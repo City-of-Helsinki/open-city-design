@@ -32,16 +32,8 @@ class SidebarPatterns extends Component {
       'patterns': [
         {
           link: 'Task List',
-          URL: 'development/components/tooltips/'
-        },
-        {
-          link: 'Card Group Slider',
-          URL: 'development/components/tooltips/'
-        },    
-        {
-          link: 'Card Group',
-          URL: 'development/components/tooltips/'
-        },
+          URL: '/development/patterns/tasklist/'
+        }
       ],
     
     };

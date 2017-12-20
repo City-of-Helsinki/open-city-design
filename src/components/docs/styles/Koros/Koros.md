@@ -13,3 +13,5 @@ The brand koro-shapes can be used to divide page sections. Theme mixin koro() ca
 
 #### Koro shape variations
 There are five different shapes. Basic, Pulse, Beat, Storm and Wave.
+
+<span style="color: red">I like you</span>

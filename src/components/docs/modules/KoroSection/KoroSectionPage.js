@@ -32,7 +32,15 @@ export default class KoroSectionPage extends React.Component {
             <WelcomeSmall welcome={welcome} />
 
             <div className="docs-example">
-                  <Component />
+                  <Component top bottom>
+                        <div className="container">
+                            <h3 style={{color: 'white'}}>This is a Koro section</h3>
+                            <ul>
+                                <li>Preferred to split long content sections from each other.</li>
+                                <li>Use this for UI elements (carousels, card lists), not for large amounts of article style text.</li>
+                            </ul>
+                        </div>
+                  </Component>
             </div>
 
             <article className="docs-markdown">
