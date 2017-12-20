@@ -32,14 +32,7 @@ export default class StylesOverviewPage extends React.Component {
                               <Markdown source={Documentation} />
                         </article>
 
-                        <h2>Koro shapes</h2>
-
-                        <div className="docs-example">
-                              <StylesOverview />
-                        </div>
-
-                        <h3>Sources</h3>
-                        <h4>SCSS</h4>
+                        <h3>Example code</h3>
                         <pre>
                               <PrismCode className="language-css">
                                     {css}

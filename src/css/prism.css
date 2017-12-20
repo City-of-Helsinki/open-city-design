@@ -23,6 +23,7 @@ pre[class*="language-"] {
   hyphens: none;
   background: #f5f7ff;
   color: #5e6687;
+  max-width: 100%
 }
 
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
