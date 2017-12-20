@@ -23,8 +23,8 @@ import Footer from './components/Footer';
 // Design 
 import Design from './routes/design/Design';
 import DesignOverview from './routes/design/DesignOverview';
-import DesignKit from './routes/design/DesignKit';
-import BrandMaterial from './routes/design/BrandMaterial';
+import DesignKitPage from './routes/design/DesignKit/DesignKitPage';
+import BrandMaterialPage from './routes/design/BrandMaterial/BrandMaterialPage';
 
 
 // Development Styles
@@ -110,8 +110,8 @@ class App extends Component {
 
               {/* Design routes */}
               <Route path="/design/overview/" component={DesignOverview} />
-              <Route path="/design/designkit/" component={DesignKit} />
-              <Route path="/design/brandmaterial/" component={BrandMaterial} />
+              <Route path="/design/designkit/" component={DesignKitPage} />
+              <Route path="/design/brandmaterial/" component={BrandMaterialPage} />
 
 
               {/* Development routes */}
