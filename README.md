@@ -16,7 +16,7 @@ Open City Design System is built on [React.js](https://reactjs.org/), a Javascri
 
 You can get it running by cloning the repository locally, and running the following commands:
 
-`cd open-city-guide`
+`cd open-city-design`
 
 `npm install`
 
