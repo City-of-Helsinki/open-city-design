@@ -40,7 +40,7 @@ class SidebarComponents extends Component {
         },
         {
           link: 'Breadcrumb',
-          URL: '/development/components/breadcrumbs/'
+          URL: '/development/components/breadcrumb/'
         },
         {
           link: 'Buttons',

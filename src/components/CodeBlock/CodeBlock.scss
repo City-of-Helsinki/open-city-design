@@ -1,0 +1,22 @@
+.code-container {
+      position: relative;
+      max-height: 5000px;
+      transition: max-height 500ms cubic-bezier(0.860, 0.000, 1.000, 0.710); /* custom */
+      overflow: hidden;
+      &--closed {
+            max-height: 200px;
+      }
+}
+
+.code-showmore {
+      height: 70px;
+      background-image: linear-gradient(180deg, transparent, rgba(255,255,255,0.5));
+      margin-top: -70px;
+      position: relative;
+      text-align: center;
+      padding: 10px;
+      &--closed {
+            display: none;
+      }
+}
+

@@ -6,6 +6,7 @@ import Helmet from 'react-helmet';
 import Markdown from 'react-remarkable';
 
 import WelcomeSmall from '../../../WelcomeSmall';
+import CodeBlock from '../../../CodeBlock/CodeBlock';
 import Koros from './Koros';
 
 
@@ -40,11 +41,14 @@ export default class KorosPage extends React.Component {
 
                   <h3>Sources</h3>
                   <h4>SCSS</h4>
-                  <pre>
-                        <PrismCode className="language-css">
-                        {css}
-                        </PrismCode>
-                  </pre>
+
+                  <CodeBlock code={css}>
+                        <pre>
+                              <PrismCode className="language-css">
+                              {css}
+                              </PrismCode>
+                        </pre>
+                  </CodeBlock>
             </div>
       );
   }
