@@ -2,7 +2,7 @@
   "name": "selailunakyma",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nettinero.github.io/open-city-guide",
+  "homepage": "https://city-of-helsinki.github.io/open-city-design",
   "dependencies": {
     "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",

@@ -11,6 +11,7 @@ import AlertContentExample from './AlertContent';
 import AlertDismissExample from './AlertDismiss';
 import AlertUncontrolledDismissExample from './AlertUncontrolledDismiss';
 import WelcomeSmall from '../../../WelcomeSmall';
+import CodeBlock from '../../../CodeBlock/CodeBlock';
 
 const AlertExampleSource = require('!!raw-loader!./Alert.html');
 
@@ -41,16 +42,16 @@ export default class AlertsPage extends React.Component {
         <div className="docs-example">
           <AlertExample />
         </div>
+        <CodeBlock code={AlertExampleSource}>
         <pre>
           <PrismCode className="language-jsx">
             {AlertExampleSource}
           </PrismCode>
         </pre>
+        </CodeBlock>
 
-        <h3>Properties</h3>
-        <pre>
-          <PrismCode className="language-jsx">
-{`Alert.propTypes = {
+        <h3>React Properties</h3>
+        <CodeBlock code={`Alert.propTypes = {
   className: PropTypes.string,
   closeClassName: PropTypes.string,
   color: PropTypes.string, // default: 'success'
@@ -60,39 +61,61 @@ export default class AlertsPage extends React.Component {
   // Controls the transition of the alert fading in and out
   // See [Fade](/components/fade/) for more details
   transition: PropTypes.shape(Fade.propTypes),
-}`}
-          </PrismCode>
-        </pre>
+}`}>
+          <pre>
+            <PrismCode className="language-jsx">
+  {`Alert.propTypes = {
+    className: PropTypes.string,
+    closeClassName: PropTypes.string,
+    color: PropTypes.string, // default: 'success'
+    isOpen: PropTypes.bool,  // default: true
+    toggle: PropTypes.func,
+    tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+    // Controls the transition of the alert fading in and out
+    // See [Fade](/components/fade/) for more details
+    transition: PropTypes.shape(Fade.propTypes),
+  }`}
+            </PrismCode>
+          </pre>
+        </CodeBlock>
 
         <h3>Link color</h3>
         <div className="docs-example">
           <AlertLinkExample />
         </div>
+        <CodeBlock code={AlertLinkExampleSource}>
         <pre>
           <PrismCode className="language-jsx">
             {AlertLinkExampleSource}
           </PrismCode>
         </pre>
+        </CodeBlock>
 
         <h3>Additional content</h3>
         <div className="docs-example">
           <AlertContentExample />
         </div>
-        <pre>
-          <PrismCode className="language-jsx">
-            {AlertContentExampleSource}
-          </PrismCode>
-        </pre>
+
+        <CodeBlock code={AlertContentExampleSource}>
+          <pre>
+            <PrismCode className="language-jsx">
+              {AlertContentExampleSource}
+            </PrismCode>
+          </pre>
+        </CodeBlock>
 
         <h3>Dismissing</h3>
         <div className="docs-example">
           <AlertDismissExample />
         </div>
+
+        <CodeBlock code={AlertDismissExampleSource}>
         <pre>
           <PrismCode className="language-jsx">
             {AlertDismissExampleSource}
           </PrismCode>
         </pre>
+        </CodeBlock>
 
         <h3>Uncontrolled [disable] Alerts</h3>
         <p>
@@ -101,11 +124,14 @@ export default class AlertsPage extends React.Component {
         <div className="docs-example">
           <AlertUncontrolledDismissExample />
         </div>
+
+        <CodeBlock code={AlertUncontrolledDismissExampleSource}>
         <pre>
           <PrismCode className="language-jsx">
             {AlertUncontrolledDismissExampleSource}
           </PrismCode>
         </pre>
+        </CodeBlock>
       </div>
     );
   }

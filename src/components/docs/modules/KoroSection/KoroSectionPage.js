@@ -6,6 +6,7 @@ import Helmet from 'react-helmet';
 import Markdown from 'react-remarkable';
 
 import WelcomeSmall from '../../../WelcomeSmall';
+import CodeBlock from '../../../CodeBlock/CodeBlock';
 
 import Component from './KoroSection';
 // import Documentation from './KoroSection.md'
@@ -48,24 +49,31 @@ export default class KoroSectionPage extends React.Component {
             </article>
 
             <h3>Sources</h3>
-            <h4>React</h4>
-            <pre>
-                  <PrismCode className="language-jsx">
-                  {source}
-                  </PrismCode>
-            </pre>
             <h4>HTML</h4>
+
+            <CodeBlock code={html}>
             <pre>
                   <PrismCode className="language-html">
                   {html}
                   </PrismCode>
             </pre>
+            </CodeBlock>
+            <CodeBlock code={css}>
             <h4>CSS</h4>
             <pre>
                   <PrismCode className="language-css">
                   {css}
                   </PrismCode>
             </pre>
+            </CodeBlock>
+            <CodeBlock code={source}>
+            <h4>React</h4>
+            <pre>
+                  <PrismCode className="language-jsx">
+                  {source}
+                  </PrismCode>
+            </pre>
+            </CodeBlock>
       </div>
     );
   }
