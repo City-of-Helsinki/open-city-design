@@ -11,7 +11,7 @@ import Koros from './Koros';
 
 
 const Documentation = require('!!raw-loader!./Koros.md');
-const css = require('!!raw-loader!../../../../scss/bootstrap/scss/_hel-custom-styles.scss')
+const css = require('!!raw-loader!../../../../scss/helsinki/_custom-styles.scss')
 
 
 const welcome = {
