@@ -1,4 +1,4 @@
-[Browse the Open City Design System](https://nettinero.github.io/open-city-guide/)
+[Browse the Open City Design System](https://opencity.design/)
 
 # Open City Design System
 
@@ -8,7 +8,7 @@ Open City Design System is a part of EU-backed [6aika](https://6aika.fi) project
 
 ## How to use?
 
-Go to [Open City Design System website](https://nettinero.github.io/open-city-guide/) and browse the city-specific design systems.
+Go to [Open City Design System website](https://opencity.design/) and browse the city-specific design systems.
 
 ## How can I contribute?
 

@@ -24,7 +24,7 @@ class DesignKit extends Component {
             const text = { text: 'Download Sketch Resources' }
 
             const URL = {
-                  url: 'https://github.com/nettinero/open-city-guide/tree/master/hki-sketch'
+                  url: 'https://github.com/City-of-Helsinki/open-city-design/tree/master/hki-sketch'
             }
             const cards = {
                   "cards": [
