@@ -94,7 +94,7 @@ class App extends Component {
   render() {
 
     return (
-      <Router onUpdate={() => window.scrollTo(0, 0)} basename="/open-city-guide">
+      <Router onUpdate={() => window.scrollTo(0, 0)} basename="/">
         <div class="app">
 
           <aside className={classnames({ 'sidebar-open': this.state.menuOpen === true, 'sidebar': true })}>
