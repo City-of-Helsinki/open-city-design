@@ -30,8 +30,8 @@ class DesignOverview extends Component {
   render() {
 
     const welcome = {
-      heading: <span style={{ color: 'white' }}>Getting Started</span>,
-      paragraph: <div><p style={{ color: '#AADBFF' }}>Hi there Designer! This is the Deign guide for Helsinki City Design System. </p></div>,
+      heading: <span style={{ color: 'white' }}>Getting started</span>,
+      paragraph: <div><p style={{ color: '#AADBFF' }}>Hi there Designer! This is the Design guide for Helsinki City Design System.</p></div>,
       buttonText: 'Explore Sketch Documentation'
     }
     const DownloadButtonImage = { imageURL: 'https://upload.wikimedia.org/wikipedia/commons/7/73/Sketch_logo_frame.svg' };
@@ -53,7 +53,7 @@ class DesignOverview extends Component {
         </div>
         <Container style={mediaObject}>
           <h1>Tools</h1>
-          <p>The Design System is using Sketch App as the medium for creating new Designs. We engourage you to download the Sketch Documents and jump into building services from the components, modules and patterns made ready in the documents.</p>
+          <p>Open City Design System uses Sketch as the tool for creating new designs. We encourage you to download the Sketch files and jump into designing new components, modules and patterns.</p>
         </Container>
 
 
@@ -65,9 +65,9 @@ class DesignOverview extends Component {
             <Media body>
 
               <Media heading>
-                Download Sketch App
+                Download Sketch
                 </Media>
-                "Sketch is built for designers like you. With useful features, an intuitive interface and powerful plugins built by a community of developers, it helps you focus on what you do best.""
+                "Sketch is built for designers like you. With useful features, an intuitive interface and powerful plugins built by a community of developers, it helps you focus on what you do best."
              </Media>
           </Media>
         </Container>
