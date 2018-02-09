@@ -3,9 +3,7 @@
 
 # Getting started
 
-Open City Design System is build using Components, Modules and Patterns. 
-The Design System is built using Bootstrap 4 as a reference library. 
-You can learn more about Bootstrap and their documentation here [Bootstrap 4 documentation](https://google.com).
+Open City Design System is organised into components, modules and patterns. The components use Bootstrap 4 as a backing framework. You can learn more about Bootstrap 4 in their [documentation](https://getbootstrap.com/docs/4.0/getting-started/contents/).
 
 ___
 ##### Workflow
