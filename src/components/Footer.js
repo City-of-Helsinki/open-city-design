@@ -49,7 +49,7 @@ class Footer extends Component {
                               key: 2,
                               header: 'Slack',
                               paragraph: 'We use Slack for discussion. Please participate and give feedback or show your creations. You may request a Slack invitation by pressing the link.',
-                              imageURL: 'https://cdn.worldvectorlogo.com/logos/slack-1.svg',
+                              imageURL: 'https://upload.wikimedia.org/wikipedia/commons/7/76/Slack_Icon.png',
                               buttonURL: 'https://join.slack.com/t/opencitydesignsystem/signup',
                               buttonText: 'Take part in Slack'
 
