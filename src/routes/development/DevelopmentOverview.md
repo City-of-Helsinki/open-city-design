@@ -3,39 +3,44 @@
 
 # Getting started
 
-Open City Design System is build using Components, Modules and Patterns. 
-The Design System is built using Bootstrap 4 as a reference library. 
-You can learn more about Bootstrap and their documentation here [Bootstrap 4 documentation](https://google.com).
+Open City Design System is organised into components, modules and patterns. 
+The components use Bootstrap 4 as a backing framework. 
+You can learn more about Bootstrap 4 in their [documentation](https://getbootstrap.com/docs/4.0/getting-started/introduction/).
+
 
 ___
 ##### Workflow
 
-The OCDS Design Guide is built for those who are intrested in designing new comoponents, modules, patterns and page templates for the City of Helsinki. 
-There re multiple ways to begin the design process -but we have structured few files and guides for you to begin with.
+The OCDS Development Guide contains styles, components, modules, patterns and page templates for developers.
+The OCDS Design Guide is built for those who are interested in designing new components, modules, patterns and page templates. There are multiple ways to begin the design process. At this point we have structured a few Sketch files for you to get you started.
 
-##### What is Design System
+##### What is Open City Design System
 
-Now –we do understand that this can be a bit overwelming to grasp but bare with us. We have build a system that contains all ya need for developing and designing digital services using the Cities own design systems. In other words, we have combined Design tools and Development tools to make new service creation simple and easy to approach.
+Open City Design System is a pattern and UI component library for cities’ services. Components and other UI elements can be combined with city-specific branding. Design and development tools have been combined to make new service creation simpler and easier to approach.
 
-Design Systems goals are: 
+Design system’s goals are:
 
-* To establish consistency among digital services
-* Ensure usability of Digital Services by including Design in all Service creation stages
-* Gathering a community of Developers and Designers to contribute to the overall Desing language
+* To create a collection of reusable UI elements
+* To combine UI elements with design tools (including city-specific branding)
+* To promote design thinking and open service creation within public services
+* To create a community of developers and designers working together for better public services
 
-##### Elements of the Design System
+##### Elements of the design system
 
-The Design system is built on Components. These components are used to build modules that together form Patterns.
+Open City Design System is based on components. Components are used to build modules. Components and modules together form patterns. Finally, components, modules and patterns can be used to make page templates.
 
-Design Systems elements are: 
+Design system’s elements are:
 
-1. Components
-   - Build using Bootstrap 4 component library as a basis
-   - Simple components such as Button, Alert, Badge etc.
+* Components
+   - Built using Bootstrap 4 library as a basis
+   - Basic components like buttons, alerts, badges etc.
 * Modules
-   - Created by using Components
-   - Component group that can be Navbar, Footer, Card etc.
- * Patterns
-   - Created using Modules
-   - Contains a more complex idea of service
-   - Pattern can be a Task List, Card Group etc. 
+   - Created from components
+   - Modules such as navbar, footer, card etc.
+* Patterns
+   - Created from components and modules
+   - Service patterns such as user interactions, feedback etc.
+* Page templates
+   - Page templates to get you started: landing page etc.
+
+The project is in early Alpha.
