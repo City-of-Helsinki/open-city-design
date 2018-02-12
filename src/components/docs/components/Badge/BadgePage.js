@@ -9,6 +9,7 @@ import BadgePillsExample from './BadgePills';
 import BadgeVariationsExample from './BadgeVariations';
 import BadgeLinksExample from './BadgeLinks';
 import WelcomeSmall from '../../../WelcomeSmall';
+import CodeBlock from '../../../CodeBlock/CodeBlock';
 
 
 const BadgeExampleSource = require('!!raw-loader!./Badge');
@@ -38,15 +39,16 @@ export default class BadgesPage extends React.Component {
         <div className="docs-example">
           <BadgeExample />
         </div>
-        <pre>
-          <PrismCode className="language-jsx">
-            {BadgeExampleSource}
-          </PrismCode>
-        </pre>
+
+        <CodeBlock code={BadgeExampleSource} language="jsx"></CodeBlock>
+
         <p>Badges can be used as part of links or buttons to provide a counter.</p>
         <div className="docs-example">
           <BadgeButtonExample />
         </div>
+
+
+        <CodeBlock code={BadgeExampleSource} language="jsx"></CodeBlock>
         <pre>
           <PrismCode className="language-jsx">
             {BadgeButtonExampleSource}
