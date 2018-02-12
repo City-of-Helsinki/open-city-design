@@ -1,0 +1,15 @@
+{
+      "github": "https://github.com/City-of-Helsinki/open-city-design/",
+      "cities": [
+            {
+                  "name": "Helsinki",
+                  "github": "https://github.com/City-of-Helsinki/open-city-design/",
+                  "url": "http://opencity.design"
+            },
+            {
+                  "name": "OpenCity",
+                  "github": "https://github.com/tomi-sjoblom/open-city-design/",
+                  "url": "http://tomi-sjoblom.github.io/open-city-design"
+            }
+      ]
+}

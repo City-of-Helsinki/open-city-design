@@ -9,6 +9,7 @@ import sketch from '../images/sketch_narrow.png';
 import git from '../images/git.png';
 import NPM from '../images/NPM.png';
 import slack from '../images/slack.png';
+import globals from '../globals.json';
 
 import './Footer.scss'
 
