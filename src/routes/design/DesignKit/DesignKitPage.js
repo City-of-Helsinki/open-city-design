@@ -55,18 +55,18 @@ class DesignKit extends Component {
                                     <Image imageStyle={imageStyle} image={Image3} />
                               </div>
                               <a href={globals.sketchMaterial} target="_blank" style={linkStyle}>
-                              <Media className="sketch-thumbnail" >
-                                    <Media left href="#">
-                                          <Media object style={sketchStyle} src={DownloadButtonImage.imageURL} alt="Sketch" />
-                                    </Media>
-                                    <Media body>
-
-                                          <Media heading>
-                                                Download Sketch Resources
+                                    <Media className="sketch-thumbnail" >
+                                          <Media left href="#">
+                                                <Media object style={sketchStyle} src={DownloadButtonImage.imageURL} alt="Sketch" />
                                           </Media>
-                                          Contents:  hki-library, modules and patterns Sketch files 
+                                          <Media body>
+
+                                                <Media heading>
+                                                      Download Sketch Resources
+                                                </Media>
+                                                Contents:  hki-library, modules and patterns Sketch files 
+                                          </Media>
                                     </Media>
-                              </Media>
                               </a>
                         </Container>
 

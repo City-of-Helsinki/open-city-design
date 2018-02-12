@@ -47,7 +47,7 @@ export default class BadgesPage extends React.Component {
         </div>
 
         <CodeCollapse>
-          <CodeTabs code={[{code: BadgeExampleSource, language: 'markup'},{code: BadgeExampleJsxSource, language: 'jsx'}]}></CodeTabs>
+          <CodeTabs code={[{code: BadgeExampleSource, language: 'markup', name: 'HTML markup'},{code: BadgeExampleJsxSource, language: 'jsx', name: 'React component'}]}></CodeTabs>
         </CodeCollapse>
 
         <p>Badges can be used as part of links or buttons to provide a counter.</p>
@@ -57,20 +57,16 @@ export default class BadgesPage extends React.Component {
 
 
         <CodeCollapse>
-          <CodeTabs code={[{code: BadgeButtonExampleSource, language: 'markup'},{code: BadgeButtonExampleJsxSource, language: 'jsx'}]}></CodeTabs>
+          <CodeTabs code={[{code: BadgeButtonExampleSource, language: 'markup', name: 'HTML markup'},{code: BadgeButtonExampleJsxSource, language: 'jsx', name: 'React component'}]}></CodeTabs>
         </CodeCollapse>
-        <pre>
-          <PrismCode className="language-jsx">
-            {BadgeButtonExampleSource}
-          </PrismCode>
-        </pre>
+
         <h3>Contextual variations</h3>
         <div className="docs-example">
           <BadgeVariationsExample />
         </div>
 
         <CodeCollapse>
-          <CodeTabs code={[{code: BadgeVariationsExampleSource, language: 'markup'},{code: BadgeVariationsExampleJsxSource, language: 'jsx'}]}></CodeTabs>
+          <CodeTabs code={[{code: BadgeVariationsExampleSource, language: 'markup', name: 'HTML markup'},{code: BadgeVariationsExampleJsxSource, language: 'jsx', name: 'React component'}]}></CodeTabs>
         </CodeCollapse>
 
         <h3>Pills</h3>
@@ -79,18 +75,17 @@ export default class BadgesPage extends React.Component {
         </div>
 
         <CodeCollapse>
-          <CodeTabs code={[{code: BadgePillsExampleSource, language: 'markup'},{code: BadgePillsExampleJsxSource, language: 'jsx'}]}></CodeTabs>
+          <CodeTabs code={[{code: BadgePillsExampleSource, language: 'markup', name: 'HTML markup'},{code: BadgePillsExampleJsxSource, language: 'jsx', name: 'React component'}]}></CodeTabs>
         </CodeCollapse>
 
         
         <h3>Links</h3>
-        <p>Adding the <code>href</code> prop (without specifying a <code>tag</code> prop) will default the badge to a link.</p>
         <div className="docs-example">
           <BadgeLinksExample />
         </div>
 
         <CodeCollapse>
-          <CodeTabs code={[{code: BadgeLinksExampleSource, language: 'markup'},{code: BadgeLinksExampleJsxSource, language: 'jsx'}]}></CodeTabs>
+          <CodeTabs code={[{code: BadgeLinksExampleSource, language: 'markup', name: 'HTML markup'},{code: BadgeLinksExampleJsxSource, language: 'jsx', name: 'React component'}]}></CodeTabs>
           <p>Adding the <code>href</code> prop (without specifying a <code>tag</code> prop) will default the badge to a link.</p>
         </CodeCollapse>
       </div>
