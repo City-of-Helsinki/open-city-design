@@ -1,5 +1,7 @@
 {
       "github": "https://github.com/City-of-Helsinki/open-city-design/",
+      "brandMaterial": "https://www.hel.fi/static/public/hela/vipa11010VH1J_Kaupunginjohtaja-J/Suomi/Paatos/2017/Kanslia_2017-04-05_Kj_29_Pk/E996F993-1037-C3CC-A565-5A8EA5900003/Liite.pdf",
+      "sketchMaterial": "https://github.com/City-of-Helsinki/open-city-design/tree/master/hki-sketch",
       "cities": [
             {
                   "name": "Helsinki",

@@ -58,18 +58,21 @@ class DesignOverview extends Component {
 
 
         <Container style={mediaObject}>
-          <Media className="sketch-thumbnail" >
-            <Media left href="#">
-              <Media object style={sketchStyle} src={DownloadButtonImage.imageURL} alt="Sketch" />
-            </Media>
-            <Media body>
 
-              <Media heading>
-                Download Sketch
-                </Media>
-                "Sketch is built for designers like you. With useful features, an intuitive interface and powerful plugins built by a community of developers, it helps you focus on what you do best."
-             </Media>
-          </Media>
+          <a href="https://sketchapp.com" target="_blank" style={linkStyle}>
+            <Media className="sketch-thumbnail" >
+              <Media left href="#">
+                <Media object style={sketchStyle} src={DownloadButtonImage.imageURL} alt="Sketch" />
+              </Media>
+              <Media body>
+
+                <Media heading>
+                  Download Sketch
+                  </Media>
+                  "Sketch is built for designers like you. With useful features, an intuitive interface and powerful plugins built by a community of developers, it helps you focus on what you do best."
+              </Media>
+            </Media>
+          </a>
         </Container>
         <Container>
           <article >
@@ -104,6 +107,9 @@ const sketchStyle = {
 const mediaObject = {
   marginTop: 50,
   marginBottom: 50
+}
+const linkStyle = {
+  textDecoration: 'none'
 }
 export default DesignOverview;
 

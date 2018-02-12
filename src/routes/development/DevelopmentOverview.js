@@ -56,7 +56,7 @@ class DevelopmentOverview extends Component {
         <Container>
 
         <Container style={mediaObject}>
-          <a href={globals.github} target="_blank" className="download-btn">
+          <a href={globals.github} target="_blank" style={linkStyle}>
             <Media className="media-thumbnail" >
               <Media left href="#">
                 <Media object style={sketchStyle} src={DownloadButtonImage.imageURL} alt="Github" />
@@ -121,6 +121,9 @@ const contentStyle = {
 }
 const rowStyle = {
   paddingBottom: '5%',
+}
+const linkStyle = {
+  textDecoration: 'none'
 }
 export default DevelopmentOverview;
 
