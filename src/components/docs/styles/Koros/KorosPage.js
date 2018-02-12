@@ -16,7 +16,7 @@ const css = require('!!raw-loader!../../../../scss/helsinki/_custom-styles.scss'
 
 const welcome = {
   heading: 'Koros',
-  paragraph: 'Koros are the shapes interlacing two colored sections. They are a focal point of the Helsinki brand, both in printed and in digital environments.'
+  paragraph: 'Koros are the shapes interlacing two colored sections.'
   
 }
 
