@@ -79,7 +79,6 @@ export default class Overview extends React.Component {
      <WelcomeSmall welcome={welcome}/>
      <Container>
        <h3>These are the components</h3>
-       <p>Using the components is good</p>
      <Row >
            {cards.cards.map((card, i) =>
                  <Col xs='12' lg='6' >
