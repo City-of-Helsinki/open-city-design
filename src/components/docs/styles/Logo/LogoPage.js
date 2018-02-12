@@ -49,9 +49,6 @@ export default class LogoPage extends React.Component {
                         </PrismCode>
                   </pre>
 
-                  <div className="docs-example">
-                  </div>
-
             </div>
       );
   }
