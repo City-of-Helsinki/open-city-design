@@ -22,7 +22,7 @@ class Footer extends Component {
                         {
                               key: 1,
                               header: 'Sketch',
-                              paragraph: 'Download the Skecth Library to design applications using the Sketch Library (note: you should have the latest Sketch Beta installed. View Sketch documentation for more information)',
+                              paragraph: 'Download the Sketch library to design applications in Sketch. (Note: you should have Sketch 47 or later installed to take advantage of the libraries. View Sketch documentation for more information.)',
                               imageURL: 'https://www.sketchapp.com/images/press/sketch-press-kit/app-icons/sketch-mac-icon@2x.png',
                               buttonURL: '#',
                               buttonText: 'Download Sketch Library'
@@ -30,7 +30,7 @@ class Footer extends Component {
                         {
                               key: 2,
                               header: 'NPM',
-                              paragraph: 'We have build a set of styles for you to download from NPM. Please view the NPM doocumentation for further information regarding The NPM usage.',
+                              paragraph: 'When ready to use in production the styles and tools will be made available for your project via npmjs.',
                               imageURL: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Npm-logo.svg/640px-Npm-logo.svg.png',
                               buttonURL: '#',
                               buttonText: 'Download Styles Using NPM'
@@ -38,19 +38,19 @@ class Footer extends Component {
                         },
                         {
                               key: 2,
-                              header: 'Github',
-                              paragraph: 'The styles alongside with design tools -can be downloaded from Gil Hub. Use the repositoies to add styles to your projects.',
+                              header: 'GitHub',
+                              paragraph: 'The styles and design tools can be downloaded from GitHub. Use the repositories to add styles to your projects.',
                               imageURL: 'https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png',
-                              buttonURL: '#',
+                              buttonURL: 'https://github.com/City-of-Helsinki/open-city-design',
                               buttonText: 'Go to OCDS GitHub'
 
                         },
                         {
                               key: 2,
                               header: 'Slack',
-                              paragraph: 'There is a slack discussion on going abput the development of the Design System. Please participate and give feedback or show your creations. Request a slack invitation by pressing the link.',
-                              imageURL: 'https://cdn.worldvectorlogo.com/logos/slack-1.svg',
-                              buttonURL: '#',
+                              paragraph: 'We use Slack for discussion. Please participate and give feedback or show your creations. You may request a Slack invitation by pressing the link.',
+                              imageURL: 'https://upload.wikimedia.org/wikipedia/commons/7/76/Slack_Icon.png',
+                              buttonURL: 'https://join.slack.com/t/opencitydesignsystem/signup',
                               buttonText: 'Take part in Slack'
 
                         },

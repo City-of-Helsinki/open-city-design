@@ -30,8 +30,8 @@ class DevelopmentOverview extends Component {
 
     const welcome = {
       heading: <span style={{ color: 'white' }}>Getting started</span>,
-      paragraph: <div><p style={{ color: '#D2C5FF' }}>Ahoy there Developer! This is the Development guide for Helsinki City Design System.</p></div>,
-      buttonText: 'Explore Components',
+      paragraph: <div><p style={{ color: '#D2C5FF' }}>Hi there Developer! This is the Development guide for Helsinki City Design System.</p></div>,
+      buttonText: 'Explore components',
       buttonUrl: '/development/components/overview',
     }
 
@@ -63,7 +63,7 @@ class DevelopmentOverview extends Component {
               <Media heading>
                 Go to Helsinki City GitHub
                 </Media>
-                Download all resources needed for Designing, contributing and Developing from GitHub
+                Download all resources needed for designing, contributing and developing from GitHub
              </Media>
           </Media>
         </Container>

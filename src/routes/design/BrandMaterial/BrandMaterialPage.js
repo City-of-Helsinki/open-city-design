@@ -20,7 +20,7 @@ class DesignKit extends Component {
             const image = { url: 'https://www.sketchapp.com/images/press/sketch-press-kit/app-icons/sketch-mac-icon@2x.png' };
             const welcome = {
                   heading: "Brand material",
-                  paragraph: "Use brand material wisely"
+                  paragraph: ""
             };
             const DownloadButtonImage = { imageURL: 'https://vignette2.wikia.nocookie.net/logopedia/images/0/00/Helsinki-logo-2017.png/revision/latest?cb=20170619092244' };
             const text = { text: 'Download Sketch Resources' }
