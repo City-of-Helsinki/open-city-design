@@ -4,7 +4,7 @@
 
 .code-copy {
       position: absolute;
-      top: 0;
+      top: 2px;
       right: 2px;
       z-index: 2;
       padding: 0.3rem 0.7rem !important;
@@ -14,6 +14,8 @@
             opacity: 1;
       }
 }
+
+
 
 .code-container {
       position: relative;
@@ -36,9 +38,9 @@
 }
 
 .code-showmore {
-      height: 70px;
-      background-image: linear-gradient(180deg, transparent, rgba(255,255,255,0.5));
-      margin-top: -90px;
+      height: 73px;
+      background-image: linear-gradient(180deg, transparent, rgba(255,255,255,0.7));
+      margin: -90px 2px 0;
       position: relative;
       text-align: center;
       padding: 10px;

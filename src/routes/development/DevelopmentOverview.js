@@ -20,6 +20,8 @@ import Section from '../../components/Section';
 import ContentText from '../../components/ContentText';
 import Footer from '../../components/Footer';
 
+import globals from '../../globals.json';
+
 
 
 const Documentation = require('!!raw-loader!./DevelopmentOverview.md');
@@ -54,18 +56,20 @@ class DevelopmentOverview extends Component {
         <Container>
 
         <Container style={mediaObject}>
-          <Media className="media-thumbnail" >
-            <Media left href="#">
-              <Media object style={sketchStyle} src={DownloadButtonImage.imageURL} alt="Sketch" />
-            </Media>
-            <Media body>
+          <a href={globals.github} target="_blank" className="download-btn">
+            <Media className="media-thumbnail" >
+              <Media left href="#">
+                <Media object style={sketchStyle} src={DownloadButtonImage.imageURL} alt="Github" />
+              </Media>
+              <Media body>
 
-              <Media heading>
-                Go to Helsinki City GitHub
-                </Media>
-                Download all resources needed for designing, contributing and developing from GitHub
-             </Media>
-          </Media>
+                <Media heading>
+                  Go to Helsinki City GitHub
+                  </Media>
+                  Download all resources needed for designing, contributing and developing from GitHub
+              </Media>
+            </Media>
+          </a>
         </Container>
 
 
