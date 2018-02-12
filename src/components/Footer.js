@@ -24,7 +24,7 @@ class Footer extends Component {
                               header: 'Sketch',
                               paragraph: 'Download the Sketch library to design applications in Sketch. (Note: you should have Sketch 47 or later installed to take advantage of the libraries. View Sketch documentation for more information.)',
                               imageURL: 'https://www.sketchapp.com/images/press/sketch-press-kit/app-icons/sketch-mac-icon@2x.png',
-                              buttonURL: '#',
+                              buttonURL: 'https://github.com/City-of-Helsinki/open-city-design/tree/master/hki-sketch',
                               buttonText: 'Download Sketch Library'
                         },
                         {
@@ -32,12 +32,12 @@ class Footer extends Component {
                               header: 'NPM',
                               paragraph: 'When ready to use in production the styles and tools will be made available for your project via npmjs.',
                               imageURL: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Npm-logo.svg/640px-Npm-logo.svg.png',
-                              buttonURL: '#',
+                              buttonURL: '',
                               buttonText: 'Download Styles Using NPM'
 
                         },
                         {
-                              key: 2,
+                              key: 3,
                               header: 'GitHub',
                               paragraph: 'The styles and design tools can be downloaded from GitHub. Use the repositories to add styles to your projects.',
                               imageURL: 'https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png',
@@ -46,7 +46,7 @@ class Footer extends Component {
 
                         },
                         {
-                              key: 2,
+                              key: 4,
                               header: 'Slack',
                               paragraph: 'We use Slack for discussion. Please participate and give feedback or show your creations. You may request a Slack invitation by pressing the link.',
                               imageURL: 'https://upload.wikimedia.org/wikipedia/commons/7/76/Slack_Icon.png',
@@ -71,7 +71,6 @@ class Footer extends Component {
 
             ]
 
-
             return (
                   <div style={footerStyle}>
                         <footer style={footerLinkSectionStyle}>
@@ -80,19 +79,22 @@ class Footer extends Component {
                                           {cards.cards.map((card, i) =>
                                                 <Col style={rowStyle} xs='12' lg='6' >
 
-                                                      <Media className="footer-thumbnail" key={i} card={card} >
-                                                            <Media left href="#">
-                                                                  <Media className="media-img" object style={sketchStyle} src={card.imageURL} alt="Sketch" />
-                                                            </Media>
-                                                            <Media body>
+                                                      <a {...(card.buttonURL ? {href: card.buttonURL} : {})} style={linkStyle} target="_blank">
 
-                                                                  <Media  className="footer-text" heading>
-                                                                        {card.header}
+                                                            <Media className="footer-thumbnail" key={i} card={card}>
+                                                                  <Media left href="#">
+                                                                        <Media className="media-img" object style={sketchStyle} src={card.imageURL} alt={card.header} />
                                                                   </Media>
-                                                                  {card.paragraph}
-                                                            </Media>
-                                                      </Media>
+                                                                  <Media body>
 
+                                                                        <Media  className="footer-text" heading>
+                                                                              {card.header}
+                                                                        </Media>
+                                                                        {card.paragraph}
+                                                                  </Media>
+                                                            </Media>
+
+                                                      </a>
 
 
 
@@ -138,6 +140,12 @@ const rowStyle = {
       marginBottom: 25
 
 }
+const linkStyle = {
+      color: 'white',
+      textDecoration: 'none',
+      display: 'block'
+}
+
 
 
 
