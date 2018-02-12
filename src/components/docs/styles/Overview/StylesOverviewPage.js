@@ -15,7 +15,7 @@ const css = require('!!raw-loader!../../../../scss/helsinki/_custom-styles.scss'
 
 const welcome = {
       heading: 'Styles',
-      paragraph: 'Styles are displayed here & they is essential'
+      paragraph: ''
 
 }
 
