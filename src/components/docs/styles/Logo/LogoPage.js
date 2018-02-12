@@ -49,11 +49,7 @@ export default class LogoPage extends React.Component {
                         </PrismCode>
                   </pre>
 
-
-                  <h2>Examples of misusage of the logo </h2>
-                  <p>These examples are explained in a detailed way in the brand material. In case you are in doubt chech the documentatont from the brand material page.</p>
                   <div className="docs-example">
-                          <Image imageStyle={imageStyle} image={image2} />
                   </div>
 
             </div>
