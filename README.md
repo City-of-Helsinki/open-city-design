@@ -1,4 +1,4 @@
-[Browse the Open City Design System](https://opencity.design/)
+[Browse the Open City Design System](http://opencity.design/)
 
 # Open City Design System
 
