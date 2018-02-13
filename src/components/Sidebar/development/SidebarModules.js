@@ -22,8 +22,15 @@ class SidebarModules extends Component {
     const linkStyle = {
       border: 'none',
       backgroundColor: 'transparent',
-      padding: 5,
-      paddingLeft: 25
+      padding: '5px',
+      paddingLeft: '25px',
+    }
+    const passiveStyle = {
+      border: 'none',
+      backgroundColor: 'transparent',
+      padding: '5px',
+      paddingLeft: '25px',
+      opacity: 0.4
     }
 
     const sidebarLinks = {
@@ -31,31 +38,38 @@ class SidebarModules extends Component {
    
         {
           link: 'Navbar',
-          URL: '/development/modules/navbar/'
+          URL: '/development/modules/navbar/',
+          active: false
         },
         {
           link: 'Footer',
-          URL: '/development/modules/footer/'
+          URL: '/development/modules/footer/',
+          active: false
         },
         {
           link: 'Login modal',
-          URL: '/development/modules/loginmodal/'
+          URL: '/development/modules/loginmodal/',
+          active: false
         },
         {
           link: 'Koro section',
-          URL: '/development/modules/korosection/'
+          URL: '/development/modules/korosection/',
+          active: true
         },
         {
           link: 'Tables',
-          URL: '/development/modules/TablesPage/'
+          URL: '/development/modules/TablesPage/',
+          active: false
         },
         {
           link: 'Hero',
-          URL: '/development/modules/Hero/'
+          URL: '/development/modules/Hero/',
+          active: false
         },
         {
           link: 'Cards',
-          URL: '/development/modules/CardPage/'
+          URL: '/development/modules/CardPage/',
+          active: false
         },
         
       ],
@@ -67,7 +81,7 @@ class SidebarModules extends Component {
       <div className="list-group">
        <h4 style={sidebarStyles} className="list-group-item" onClick={this.toggle} ><a href="#">Modules</a></h4>
        <Collapse isOpen={this.state.modules}>
-          {sidebarLinks.modules.map((sidebarLink, i) => <a key={i} href="#" style={sidebarStyles && linkStyle} className="list-group-item">
+          {sidebarLinks.modules.map((sidebarLink, i) => <a key={i} href="#" style={sidebarLink.active ? linkStyle : passiveStyle } className="list-group-item">
             <NavLink to={sidebarLink.URL} activeStyle={{
               color: 'red'
             }}>{sidebarLink.link}</NavLink>

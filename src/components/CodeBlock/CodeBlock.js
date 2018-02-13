@@ -30,7 +30,10 @@ export default class CodeBlock extends React.Component {
                               <CopyToClipboard text={this.props.code}
                                     onCopy={() => this.setState({copied: true})}>
                                     <Button small className="code-copy">
-                                          {this.state.copied ? 'Copied!' : 'Copy'}
+                                          <span class="focused">
+                                                {this.state.copied ? 'Copied!' : 'Copy'}
+                                          </span>
+                                          <span class="unfocused">Copy</span>
                                     </Button>
                               </CopyToClipboard>
                               <div className={classnames(['code-container', {'code-container--closed': !this.state.expanded && codeLength > 15}])}>

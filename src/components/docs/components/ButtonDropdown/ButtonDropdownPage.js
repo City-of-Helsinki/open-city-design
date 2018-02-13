@@ -8,10 +8,26 @@ import {
   DropdownToggle,
   DropdownItem,
   DropdownMenu } from 'reactstrap';
+import WelcomeSmall from '../../../WelcomeSmall';
+import CodeBlock from '../../../CodeBlock/CodeBlock';
+import CodeTabs from '../../../CodeTabs/CodeTabs';
+import CodeCollapse from '../../../CodeCollapse/CodeCollapse';
+
 import Example from './ButtonDropdownMulti';
 import ExampleSplit from './ButtonDropdownMultiSplit';
 import ButtonDropdownExample from './ButtonDropdown';
-const ButtonDropdownExampleSource = require('!!raw-loader!./ButtonDropdown');
+
+const ButtonDropdownExampleSource = require('!!raw-loader!./ButtonDropdown.html');
+const ButtonDropdownExampleJsxSource = require('!!raw-loader!./ButtonDropdown');
+
+const ButtonDropdownMultiExampleSource = require('!!raw-loader!./ButtonDropdownMulti.html');
+const ButtonDropdownMultiSplitExampleSource = require('!!raw-loader!./ButtonDropdownMultiSplit.html');
+
+const welcome = {
+  heading: 'Button dropdown',
+  paragraph: 'Button dropdowns hide a second-level menu so they are useful in complex interactions. They require Bootstrap Javascript to function correctly.',
+}
+
 
 export default class ButtonDropdownPage extends React.Component {
   constructor(props) {
@@ -33,37 +49,38 @@ export default class ButtonDropdownPage extends React.Component {
     return (
       <div>
         <Helmet title="Button Dropdown" />
-        <h3>Button Dropdown</h3>
+        <WelcomeSmall welcome={welcome} />
+
         <div className="docs-example">
           <ButtonDropdownExample />
         </div>
-        <pre>
-          <PrismCode className="language-jsx">
-            {ButtonDropdownExampleSource}
-          </PrismCode>
-        </pre>
-        <h4>Properties</h4>
-        <pre>
-          <PrismCode className="language-jsx">
-{`ButtonDropdown.propTypes = {
-  disabled: PropTypes.bool,
-  dropup: PropTypes.bool,
-  group: PropTypes.bool,
-  isOpen: PropTypes.bool,
-  tag: PropTypes.string,
-  toggle: PropTypes.func
-};
 
-DropdownToggle.propTypes = {
-  caret: PropTypes.bool,
-  color: PropTypes.string,
-  disabled: PropTypes.bool,
-  onClick: PropTypes.func,
-  'data-toggle': PropTypes.string,
-  'aria-haspopup': PropTypes.bool
-};`}
-          </PrismCode>
-        </pre>
+        <CodeCollapse>
+          <CodeTabs code={[{code: ButtonDropdownExampleSource, language: 'markup', name: 'HTML markup'},{code: ButtonDropdownExampleJsxSource, language: 'jsx', name: 'React component'}]}></CodeTabs>
+          <p>Button Dropdown needs Bootstrap jQuery additions or React to work properly.</p>
+
+          <h4>React properties</h4>
+          <CodeBlock code={`ButtonDropdown.propTypes = {
+            disabled: PropTypes.bool,
+            dropup: PropTypes.bool,
+            group: PropTypes.bool,
+            isOpen: PropTypes.bool,
+            tag: PropTypes.string,
+            toggle: PropTypes.func
+          };
+
+          DropdownToggle.propTypes = {
+            caret: PropTypes.bool,
+            color: PropTypes.string,
+            disabled: PropTypes.bool,
+            onClick: PropTypes.func,
+            'data-toggle': PropTypes.string,
+            'aria-haspopup': PropTypes.bool
+          };`} language="jsx">
+
+          </CodeBlock>
+        </CodeCollapse>
+
         <h3>Single button dropdowns</h3>
         <div className="docs-example">
           <div>
@@ -75,9 +92,9 @@ DropdownToggle.propTypes = {
             <Example color="danger" text="Danger" />
           </div>
         </div>
-        <pre>
-          <PrismCode className="language-jsx">
-{`<ButtonDropdown isOpen={isOpen} toggle={toggle}>
+
+        <CodeCollapse>
+          <CodeTabs code={[{code: ButtonDropdownMultiExampleSource, language: 'markup', name: 'HTML markup'},{code: `<ButtonDropdown isOpen={isOpen} toggle={toggle}>
   <DropdownToggle caret color="primary">
     Text
   </DropdownToggle>
@@ -88,9 +105,9 @@ DropdownToggle.propTypes = {
     <DropdownItem divider/>
     <DropdownItem>Another Action</DropdownItem>
   </DropdownMenu>
-</ButtonDropdown>`}
-          </PrismCode>
-        </pre>
+</ButtonDropdown>`, language: 'jsx', name: 'React component'}]}></CodeTabs>
+        </CodeCollapse>
+
         <h3>Split button dropdowns</h3>
         <div className="docs-example">
           <div>
@@ -102,9 +119,8 @@ DropdownToggle.propTypes = {
             <ExampleSplit color="danger" text="Danger" />
           </div>
         </div>
-        <pre>
-          <PrismCode className="language-jsx">
-{`<ButtonDropdown isOpen={isOpen} toggle={toggle}>
+        <CodeCollapse>
+          <CodeTabs code={[{code: ButtonDropdownMultiSplitExampleSource, language: 'markup', name: 'HTML markup'},{code: `<ButtonDropdown isOpen={isOpen} toggle={toggle}>
   <Button id="caret" color="primary">{this.props.text}</Button>
   <DropdownToggle caret color="primary" />
   <DropdownMenu>
@@ -114,9 +130,9 @@ DropdownToggle.propTypes = {
     <DropdownItem divider/>
     <DropdownItem>Another Action</DropdownItem>
   </DropdownMenu>
-</ButtonDropdown>`}
-          </PrismCode>
-        </pre>
+</ButtonDropdown>`, language: 'jsx', name: 'React component'}]}></CodeTabs>
+        </CodeCollapse>
+{/*
         <h3>Sizing</h3>
         <div className="docs-example">
           <div>
@@ -192,6 +208,7 @@ DropdownToggle.propTypes = {
 </ButtonDropdown>`}
           </PrismCode>
         </pre>
+*/}
       </div>
     );
   }
