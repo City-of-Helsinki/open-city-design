@@ -2,12 +2,23 @@
 import React from 'react';
 import { PrismCode } from 'react-prism';
 import Helmet from 'react-helmet';
+import Markdown from 'react-remarkable';
+import WelcomeSmall from '../../../WelcomeSmall';
+import CodeBlock from '../../../CodeBlock/CodeBlock';
+import CodeTabs from '../../../CodeTabs/CodeTabs';
+import CodeCollapse from '../../../CodeCollapse/CodeCollapse';
+
 import ModalExample from './Modal';
 import ModalBackdropExample from './ModalBackdrop';
 import ModalNestedExample from './ModalNested';
 import ModalCustomTimeoutExample from './ModalCustomTimeout';
 import ModalFadelessExample from './ModalFadeless';
-const ModalExampleSource = require('!!raw-loader!./Modal');
+
+
+const Documentation = require('!!raw-loader!./Modal.md');
+
+const ModalExampleSource = require('!!raw-loader!./Modal.html');
+const ModalExampleJsxSource = require('!!raw-loader!./Modal');
 
 const ModalBackdropExampleSource = require('!!raw-loader!./ModalBackdrop');
 
@@ -17,34 +28,45 @@ const ModalCustomTimeoutExampleSource = require('!!raw-loader!./ModalCustomTimeo
 
 const ModalFadelessExampleSource = require('!!raw-loader!./ModalFadeless');
 
+const welcome = {
+  heading: 'Modal',
+  paragraph: 'Modal provides a box hovering over other content. It can be a good way to grab the focus and close off any other decisions from the user. They require Javascript to function properly.',
+  
+}
+const ModalExampleCode = [
+  {
+    name: 'HTML markup',
+    language: 'markup',
+    code: ModalExampleSource
+  },
+  {
+    name: 'React component',
+    language: 'jsx',
+    code: ModalExampleJsxSource
+  }
+]
+
 export default class ModalsPage extends React.Component {
   render() {
     return (
       <div>
         <Helmet title="Modals" />
-        <h3>Modals</h3>
+        <WelcomeSmall welcome={welcome} />
         <div className="docs-example">
-          <div className="btn-group">
-            <div className="btn">
-              <ModalExample buttonLabel="Launch Modal" />
-            </div>
-            <div className="btn">
-              <ModalExample
-                buttonLabel="Launch Modal with custom className"
-                className="my-custom-modal"
-              />
-            </div>
-          </div>
+            <ModalExample buttonLabel="Launch Modal"/>
+            <ModalExample
+              buttonLabel="Launch Modal with custom className"
+              className="my-custom-modal"
+            />
         </div>
-        <pre>
-          <PrismCode className="language-jsx">
-            {ModalExampleSource}
-          </PrismCode>
-        </pre>
-        <h4>Properties</h4>
-        <pre>
-          <PrismCode className="language-jsx">
-{`Modal.propTypes = {
+        <article className="docs-markdown">
+                  <Markdown source={Documentation} />
+            </article>
+
+        <CodeCollapse>
+          <CodeTabs code={ModalExampleCode}></CodeTabs>
+          <h3>React Properties</h3>
+          <CodeBlock code={`Modal.propTypes = {
   // boolean to control the state of the popover
   isOpen:  PropTypes.bool,
   autoFocus: PropTypes.bool,
@@ -89,10 +111,11 @@ export default class ModalsPage extends React.Component {
   // timeout is 300ms by default to match bootstrap
   // see [Fade](/components/fade/) for more details
   modalTransition: PropTypes.shape(Fade.propTypes),
-}`}
-          </PrismCode>
-        </pre>
-
+}`} language="jsx">
+          </CodeBlock>
+        </CodeCollapse>
+        
+{/*
         <h4>Backdrop</h4>
         <div className="docs-example">
           <div className="btn-group">
@@ -148,6 +171,7 @@ export default class ModalsPage extends React.Component {
             {ModalFadelessExampleSource}
           </PrismCode>
         </pre>
+         */}
       </div>
     );
   }
