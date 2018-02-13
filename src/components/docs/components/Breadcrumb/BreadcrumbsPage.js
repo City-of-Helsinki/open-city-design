@@ -6,15 +6,19 @@ import Helmet from 'react-helmet';
 import BreadcrumbExample from './Breadcrumb';
 import BreadcrumbNoListExample from './BreadcrumbNoList';
 import WelcomeSmall from '../../../WelcomeSmall';
+import CodeTabs from '../../../CodeTabs/CodeTabs';
+import CodeCollapse from '../../../CodeCollapse/CodeCollapse';
 
 
 const welcome = {
   heading: 'Breadcrumb',
   paragraph: 'Indicate the current page location within a navigational hierarchy that automatically adds separators via CSS ',
 }
-const BreadcrumbExampleSource = require('!!raw-loader!./Breadcrumb');
+const BreadcrumbExampleSource = require('!!raw-loader!./Breadcrumb.html');
+const BreadcrumbExampleJsxSource = require('!!raw-loader!./Breadcrumb');
 
-const BreadcrumbNoListExampleSource = require('!!raw-loader!./BreadcrumbNoList');
+const BreadcrumbNoListExampleSource = require('!!raw-loader!./BreadcrumbNoList.html');
+const BreadcrumbNoListExampleJsxSource = require('!!raw-loader!./BreadcrumbNoList');
 
 export default class BreadcrumbsPage extends React.Component {
   render() {
@@ -25,22 +29,19 @@ export default class BreadcrumbsPage extends React.Component {
         <div className="docs-example">
           <BreadcrumbExample />
         </div>
-        <pre>
-          <PrismCode className="language-jsx">
-            {BreadcrumbExampleSource}
-          </PrismCode>
-        </pre>
+        <CodeCollapse>
+          <CodeTabs code={[{code: BreadcrumbExampleSource, language: 'markup', name: 'HTML markup'},{code: BreadcrumbExampleJsxSource, language: 'jsx', name: 'React component'}]}></CodeTabs>
+        </CodeCollapse>
+
         <h3>No list</h3>
         <hr />
         <p>Breadcrumbs can work without the usage of list markup.</p>
         <div className="docs-example">
           <BreadcrumbNoListExample />
         </div>
-        <pre>
-          <PrismCode className="language-jsx">
-            {BreadcrumbNoListExampleSource}
-          </PrismCode>
-        </pre>
+        <CodeCollapse>
+          <CodeTabs code={[{code: BreadcrumbNoListExampleSource, language: 'markup', name: 'HTML markup'},{code: BreadcrumbNoListExampleJsxSource, language: 'jsx', name: 'React component'}]}></CodeTabs>
+        </CodeCollapse>
       </div>
     );
   }

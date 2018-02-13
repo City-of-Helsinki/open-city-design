@@ -7,6 +7,7 @@ import Markdown from 'react-remarkable';
 
 import WelcomeSmall from '../../../WelcomeSmall';
 import CodeBlock from '../../../CodeBlock/CodeBlock';
+import CodeCollapse from '../../../CodeCollapse/CodeCollapse';
 
 import Component from './KoroSection';
 // import Documentation from './KoroSection.md'
@@ -51,29 +52,22 @@ export default class KoroSectionPage extends React.Component {
             <h3>Sources</h3>
             <h4>HTML</h4>
 
-            <CodeBlock code={html}>
-            <pre>
-                  <PrismCode className="language-html">
-                  {html}
-                  </PrismCode>
-            </pre>
-            </CodeBlock>
-            <CodeBlock code={css}>
+            <CodeCollapse>
+              <CodeBlock code={html} language="markup">
+              </CodeBlock>
+            </CodeCollapse>
+
             <h4>CSS</h4>
-            <pre>
-                  <PrismCode className="language-css">
-                  {css}
-                  </PrismCode>
-            </pre>
-            </CodeBlock>
-            <CodeBlock code={source}>
+            <CodeCollapse>
+              <CodeBlock code={css} language="css">
+              </CodeBlock>
+            </CodeCollapse>
+
             <h4>React</h4>
-            <pre>
-                  <PrismCode className="language-jsx">
-                  {source}
-                  </PrismCode>
-            </pre>
-            </CodeBlock>
+            <CodeCollapse>
+              <CodeBlock code={source} language="jsx">
+              </CodeBlock>
+            </CodeCollapse>
       </div>
     );
   }

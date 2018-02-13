@@ -70,3 +70,16 @@ $input-form-btn-padding-x-lg:    1rem;
   }
     
 }
+
+.dropdown-toggle-split {
+
+  padding: $input-btn-padding-y $input-form-btn-padding-x;
+  // Sizing
+  &.btn-sm {
+    padding: $input-btn-padding-y-sm $input-form-btn-padding-x-sm;
+  }
+  
+  &.btn-lg {
+    padding: $input-btn-padding-y-lg $input-form-btn-padding-x-lg;
+  }
+}

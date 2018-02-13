@@ -13,6 +13,8 @@ import image3 from '../../../images/sketch-how-to/3-open-resources.png';
 import image4 from '../../../images/sketch-how-to/4-modify-symbol.png';
 import image5 from '../../../images/sketch-how-to/5-accept-changes.png';
 
+import globals from '../../../globals.json';
+
 const Documentation = require('!!raw-loader!./DesignKit.md');
 
 const Image1 = { url: image1 }
@@ -52,19 +54,20 @@ class DesignKit extends Component {
                               <div className="docs-example">
                                     <Image imageStyle={imageStyle} image={Image3} />
                               </div>
+                              <a href={globals.sketchMaterial} target="_blank" style={linkStyle}>
+                                    <Media className="sketch-thumbnail" >
+                                          <Media left href="#">
+                                                <Media object style={sketchStyle} src={DownloadButtonImage.imageURL} alt="Sketch" />
+                                          </Media>
+                                          <Media body>
 
-                              <Media className="sketch-thumbnail" >
-                                    <Media left href="#">
-                                          <Media object style={sketchStyle} src={DownloadButtonImage.imageURL} alt="Sketch" />
+                                                <Media heading>
+                                                      Download Sketch Resources
+                                                </Media>
+                                                Contents:  hki-library, modules and patterns Sketch files 
+                                          </Media>
                                     </Media>
-                                    <Media body>
-
-                                          <Media heading>
-                                                Download Sketch Resources (hki.sketch.zip)
-                </Media>
-                                          Contents:  hki-library, modules and patterns Sketch files 
-             </Media>
-                              </Media>
+                              </a>
                         </Container>
 
                   </div>
@@ -90,5 +93,9 @@ const sketchStyle = {
       maxHeight: 60,
       marginLeft: 40,
       marginRight: 40
+}
+
+const linkStyle = {
+      textDecoration: 'none'
 }
 export default DesignKit;

@@ -2,6 +2,10 @@
 import React from 'react';
 import { PrismCode } from 'react-prism';
 import Helmet from 'react-helmet';
+import WelcomeSmall from '../../../WelcomeSmall';
+import CodeBlock from '../../../CodeBlock/CodeBlock';
+import CodeTabs from '../../../CodeTabs/CodeTabs';
+import CodeCollapse from '../../../CodeCollapse/CodeCollapse';
 
 import FormExample from './Form';
 import FormGridExample from './FormGrid';
@@ -12,7 +16,8 @@ import InlineCheckboxesExample from './InlineCheckboxes';
 import InputSizingExample from './InputSizing';
 import InputGridSizingExample from './InputGridSizing';
 import LabelHiddenExample from './LabelHidden';
-const FormExampleSource = require('!!raw-loader!./Form');
+const FormExampleSource = require('!!raw-loader!./Form.html');
+const FormExampleJsxSource = require('!!raw-loader!./Form');
 
 const FormGridExampleSource = require('!!raw-loader!./FormGrid');
 
@@ -30,25 +35,40 @@ const InputGridSizingExampleSource = require('!!raw-loader!./InputGridSizing');
 
 const LabelHiddenExampleSource = require('!!raw-loader!./LabelHidden');
 
+const welcome = {
+  heading: 'Form',
+  paragraph: 'Form is the primary user data input method for complex queries. The usability of forms makes or breaks the web service.',
+  
+}
+
+const FormExampleCode = [
+  {
+    name: 'HTML markup',
+    language: 'markup',
+    code: FormExampleSource
+  },
+  {
+    name: 'React component',
+    language: 'jsx',
+    code: FormExampleJsxSource
+  }
+]
+
+
 export default class FormPage extends React.Component {
   render() {
     return (
       <div>
         <Helmet title="Form" />
-        <h3>Form</h3>
+        <WelcomeSmall welcome={welcome} />
         <div className="docs-example">
           <FormExample />
         </div>
-        <pre>
-          <PrismCode className="language-jsx">
-            {FormExampleSource}
-          </PrismCode>
-        </pre>
 
-        <h3>Properties</h3>
-        <pre>
-          <PrismCode className="language-jsx">
-{`Input.propTypes = {
+        <CodeCollapse>
+          <CodeTabs code={FormExampleCode}></CodeTabs>
+          <h3>React Properties</h3>
+          <CodeBlock code={`Input.propTypes = {
   children: PropTypes.node,
   // type can be things like text, password, (typical input types) as well as select and textarea, providing children as you normally would to those.
   type: PropTypes.string,
@@ -64,9 +84,11 @@ export default class FormPage extends React.Component {
   addon: PropTypes.bool,
   className: PropTypes.string,
   cssModule: PropTypes.object,
-};`}
-          </PrismCode>
-        </pre>
+};`} language="jsx">
+          </CodeBlock>
+        </CodeCollapse>
+
+{/*
 
         <h3>Form Grid</h3>
         <div className="docs-example">
@@ -147,6 +169,7 @@ export default class FormPage extends React.Component {
             {LabelHiddenExampleSource}
           </PrismCode>
         </pre>
+         */}
       </div>
     );
   }

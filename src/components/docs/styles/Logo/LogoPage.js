@@ -6,6 +6,9 @@ import Helmet from 'react-helmet';
 import Markdown from 'react-remarkable';
 import Image from '../../../../components/Image';
 import WelcomeSmall from '../../../WelcomeSmall';
+import CodeBlock from '../../../CodeBlock/CodeBlock';
+import CodeTabs from '../../../CodeTabs/CodeTabs';
+import CodeCollapse from '../../../CodeCollapse/CodeCollapse';
 import Logo from './Logo';
 
 import logo from './logo-hki.svg';
@@ -34,20 +37,17 @@ export default class LogoPage extends React.Component {
                         <Markdown source={Documentation} />
                   </article>
                   <h4>Basic example of including the logo</h4>
-                  <pre>
-                        <PrismCode className="language-css">
-                        {logoUse}
-                        </PrismCode>
-                  </pre>
+                  <CodeCollapse>
+                        <CodeBlock code={logoUse} language="css"></CodeBlock>
+                  </CodeCollapse>
                   <div className="docs-example">
                           <Image imageStyle={imageStyle} image={image1} />
                   </div>
                   <h4>Inline svg logo</h4>
-                  <pre>
-                        <PrismCode className="language-svg">
-                        {svgLogo}
-                        </PrismCode>
-                  </pre>
+
+                  <CodeCollapse>
+                        <CodeBlock code={svgLogo} language="svg"></CodeBlock>
+                  </CodeCollapse>
 
             </div>
       );

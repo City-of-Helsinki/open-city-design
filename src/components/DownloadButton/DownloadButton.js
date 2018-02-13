@@ -9,7 +9,7 @@ class DownloadButton extends Component {
             const image = { url: this.props.DownloadButtonImage.imageURL };
             
             return (
-                  <div className="download-btn">
+                  <a className="download-btn" href={this.props.url}>
                         <Col xs="12" lg="12">
                               <Col  xs="2">
                                <Image image={image} imageStyle={imageStyle}/>
@@ -18,7 +18,7 @@ class DownloadButton extends Component {
                                      {this.props.text.text}
                               </Col>
                         </Col>
-                  </div>
+                  </a>
 
             );
       }

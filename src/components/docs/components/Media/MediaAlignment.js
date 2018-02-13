@@ -6,7 +6,7 @@ const Example = () => {
     <div>
       <Media>
         <Media left top href="#">
-          <Media object data-src="holder.js/64x64" alt="Generic placeholder image" />
+          <Media object src="https://placeholdit.imgix.net/~text?txtsize=15&txt=64x64&w=64&h=64" alt="Generic placeholder image" />
         </Media>
         <Media body>
           <Media heading>
@@ -17,7 +17,7 @@ const Example = () => {
       </Media>
       <Media className="mt-1">
         <Media left middle href="#">
-          <Media object data-src="holder.js/64x64" alt="Generic placeholder image" />
+          <Media object src="https://placeholdit.imgix.net/~text?txtsize=15&txt=64x64&w=64&h=64" alt="Generic placeholder image" />
         </Media>
         <Media body>
           <Media heading>
@@ -28,7 +28,7 @@ const Example = () => {
       </Media>
       <Media className="mt-1">
         <Media left bottom href="#">
-          <Media object data-src="holder.js/64x64" alt="Generic placeholder image" />
+          <Media object src="https://placeholdit.imgix.net/~text?txtsize=15&txt=64x64&w=64&h=64" alt="Generic placeholder image" />
         </Media>
         <Media body>
           <Media heading>

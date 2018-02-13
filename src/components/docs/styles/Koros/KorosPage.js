@@ -7,6 +7,7 @@ import Markdown from 'react-remarkable';
 
 import WelcomeSmall from '../../../WelcomeSmall';
 import CodeBlock from '../../../CodeBlock/CodeBlock';
+import CodeCollapse from '../../../CodeCollapse/CodeCollapse';
 import Koros from './Koros';
 
 
@@ -41,14 +42,10 @@ export default class KorosPage extends React.Component {
 
                   <h3>Sources</h3>
                   <h4>SCSS</h4>
-
-                  <CodeBlock code={css}>
-                        <pre>
-                              <PrismCode className="language-css">
-                              {css}
-                              </PrismCode>
-                        </pre>
-                  </CodeBlock>
+                  <CodeCollapse>
+                        <CodeBlock code={css} language="css">
+                        </CodeBlock>
+                  </CodeCollapse>
             </div>
       );
   }

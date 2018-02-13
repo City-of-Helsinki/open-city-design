@@ -11,6 +11,8 @@ import image3 from '../../../images/sketch-how-to/3-open-resources.png';
 import image4 from '../../../images/sketch-how-to/4-modify-symbol.png';
 import image5 from '../../../images/sketch-how-to/5-accept-changes.png';
 
+import globals from '../../../globals.json';
+
 
 
 class DesignKit extends Component {
@@ -71,9 +73,9 @@ class DesignKit extends Component {
                   <div>
                         <Container>
                               <WelcomeSmall welcome={welcome} />
-                              <DownloadButton DownloadButtonImage={DownloadButtonImage} text={text} />
+                              <DownloadButton DownloadButtonImage={DownloadButtonImage} text={text} url={globals.sketchMaterial} />
                               <h1>Instructions</h1>
-                              <p>Download the resources and follow these instructions in order to activate the Sektch Library fro your project</p>
+                              <p>Download the resources and follow these instructions in order to activate the Sketch Library for your project</p>
                               <Row>
                               {cards.cards.map((card, i) =>
 
@@ -82,7 +84,7 @@ class DesignKit extends Component {
                                     </Col>
                               )}
                               </Row>
-</Container>
+                        </Container>
 
                   </div>
 

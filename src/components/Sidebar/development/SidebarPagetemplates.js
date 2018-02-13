@@ -24,7 +24,14 @@ class SidebarPagetemplates extends Component {
       border: 'none',
       backgroundColor: 'transparent',
       padding: '5px',
-      paddingLeft: '25px'
+      paddingLeft: '25px',
+    }
+    const passiveStyle = {
+      border: 'none',
+      backgroundColor: 'transparent',
+      padding: '5px',
+      paddingLeft: '25px',
+      opacity: 0.4
     }
 
     const sidebarLinks = {
@@ -32,11 +39,13 @@ class SidebarPagetemplates extends Component {
    
         {
           link: 'Todo Page',
-          URL: 'development/components/alerts'
+          URL: '/development/pagetemplates/todo',
+          active: false
         },
         {
           link: 'Card View page',
-          URL: 'development/components/alerts'
+          URL: '/development/pagetemplates/alerts',
+          active: false
         }
       ],
     
@@ -47,7 +56,7 @@ class SidebarPagetemplates extends Component {
       <div className="list-group">
        <h4 style={sidebarStyles} className="list-group-item" onClick={this.toggle} ><a href="#">Page Templates</a></h4>
        <Collapse isOpen={this.state.pageTemplates}>
-       {sidebarLinks.pageTemplates.map((sidebarLink, i) => <a key={i} href="#" style={sidebarStyles && linkStyle} className="list-group-item">
+       {sidebarLinks.pageTemplates.map((sidebarLink, i) => <a key={i} href="#" style={sidebarLink.active ? linkStyle : passiveStyle } className="list-group-item">
        <NavLink to={sidebarLink.URL} activeStyle={{
               color: 'red'
             }}>{sidebarLink.link}</NavLink>

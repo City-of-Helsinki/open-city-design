@@ -9,6 +9,8 @@ import Image from '../../../components/Image';
 import ContentTextWithImage from '../../../components/ContentTextWithImage';
 import image1 from './brand-identity.png';
 
+import globals from '../../../globals.json';
+
 const Documentation = require('!!raw-loader!./BrandMaterial.md');
 
 const Image1 = { url: image1 }
@@ -36,18 +38,19 @@ class DesignKit extends Component {
                               <article className="docs-markdown">
                                     <Markdown source={Documentation} />
                               </article>
-                              <Media className="sketch-thumbnail" >
-                                    <Media left href="#">
-                                          <Media object style={sketchStyle} src={DownloadButtonImage.imageURL} alt="Sketch" />
+                              <a href={globals.brandMaterial} target="_blank" style={linkStyle}>
+                                    <Media className="sketch-thumbnail" >
+                                          <Media left href="#">
+                                                <Media object style={sketchStyle} src={DownloadButtonImage.imageURL} alt="Sketch" />
+                                          </Media>
+                                          <Media body>
+                                                <Media heading>
+                                                      Download Helsinki City Brand Material
+                                                </Media>
+                                                Helsinki Brand
+                                          </Media>
                                     </Media>
-                                    <Media body>
-
-                                          <Media heading>
-                                                Download Helsinki City Brand Material
-                </Media>
-                                          Helsinki Brand
-             </Media>
-                              </Media>
+                              </a>
 
 
 
@@ -83,5 +86,8 @@ const sketchStyle = {
       maxHeight: 60,
       marginLeft: 40,
       marginRight: 40
+}
+const linkStyle = {
+      textDecoration: "none"
 }
 export default DesignKit;

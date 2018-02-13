@@ -26,24 +26,35 @@ class SidebarStyles extends Component {
       padding: '5px',
       paddingLeft: '25px',
     }
+    const passiveStyle = {
+      border: 'none',
+      backgroundColor: 'transparent',
+      padding: '5px',
+      paddingLeft: '25px',
+      opacity: 0.4
+    }
 
     const sidebarLinks = {
       'styles': [
         {
           link: 'Colors',
-          URL: '/development/styles/colors/'
+          URL: '/development/styles/colors/',
+          active: true
         },
         {
           link: 'Typography',
-          URL: '/development/styles/typography/'
+          URL: '/development/styles/typography/',
+          active: true
         },
         {
           link: 'Logo',
-          URL: '/development/styles/logo/'
+          URL: '/development/styles/logo/',
+          active: true
         },
         {
           link: 'Koros',
-          URL: '/development/styles/koros/'
+          URL: '/development/styles/koros/',
+          active: true
         },
        
       ],
@@ -55,7 +66,7 @@ class SidebarStyles extends Component {
       <div className="list-group">
        <h4 style={sidebarStyles} className="list-group-item" onClick={this.toggle} ><NavLink to="/development/styles/overview">Styles</NavLink></h4>
         <Collapse  isOpen={this.state.components}>
-          {sidebarLinks.styles.map((sidebarLink, i) => <a key={i}  style={sidebarStyles && linkStyle} className="list-group-item">
+          {sidebarLinks.styles.map((sidebarLink, i) => <a key={i}  style={sidebarLink.active ? linkStyle : passiveStyle } className="list-group-item">
            <NavLink caret to={sidebarLink.URL} activeStyle={{
               color: '#fd4f00'
             }}>{sidebarLink.link}                                    

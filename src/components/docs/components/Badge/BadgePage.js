@@ -9,17 +9,24 @@ import BadgePillsExample from './BadgePills';
 import BadgeVariationsExample from './BadgeVariations';
 import BadgeLinksExample from './BadgeLinks';
 import WelcomeSmall from '../../../WelcomeSmall';
+import CodeTabs from '../../../CodeTabs/CodeTabs';
+import CodeCollapse from '../../../CodeCollapse/CodeCollapse';
 
 
-const BadgeExampleSource = require('!!raw-loader!./Badge');
+const BadgeExampleSource = require('!!raw-loader!./Badge.html');
+const BadgeExampleJsxSource = require('!!raw-loader!./Badge');
 
-const BadgeButtonExampleSource = require('!!raw-loader!./BadgeButton');
+const BadgeButtonExampleSource = require('!!raw-loader!./BadgeButton.html');
+const BadgeButtonExampleJsxSource = require('!!raw-loader!./BadgeButton');
 
-const BadgePillsExampleSource = require('!!raw-loader!./BadgePills');
+const BadgePillsExampleSource = require('!!raw-loader!./BadgePills.html');
+const BadgePillsExampleJsxSource = require('!!raw-loader!./BadgePills');
 
-const BadgeVariationsExampleSource = require('!!raw-loader!./BadgeVariations');
+const BadgeVariationsExampleSource = require('!!raw-loader!./BadgeVariations.html');
+const BadgeVariationsExampleJsxSource = require('!!raw-loader!./BadgeVariations');
 
-const BadgeLinksExampleSource = require('!!raw-loader!./BadgeLinks');
+const BadgeLinksExampleSource = require('!!raw-loader!./BadgeLinks.html');
+const BadgeLinksExampleJsxSource = require('!!raw-loader!./BadgeLinks');
 
 
 const welcome = {
@@ -38,48 +45,49 @@ export default class BadgesPage extends React.Component {
         <div className="docs-example">
           <BadgeExample />
         </div>
-        <pre>
-          <PrismCode className="language-jsx">
-            {BadgeExampleSource}
-          </PrismCode>
-        </pre>
+
+        <CodeCollapse>
+          <CodeTabs code={[{code: BadgeExampleSource, language: 'markup', name: 'HTML markup'},{code: BadgeExampleJsxSource, language: 'jsx', name: 'React component'}]}></CodeTabs>
+        </CodeCollapse>
+
         <p>Badges can be used as part of links or buttons to provide a counter.</p>
         <div className="docs-example">
           <BadgeButtonExample />
         </div>
-        <pre>
-          <PrismCode className="language-jsx">
-            {BadgeButtonExampleSource}
-          </PrismCode>
-        </pre>
+
+
+        <CodeCollapse>
+          <CodeTabs code={[{code: BadgeButtonExampleSource, language: 'markup', name: 'HTML markup'},{code: BadgeButtonExampleJsxSource, language: 'jsx', name: 'React component'}]}></CodeTabs>
+        </CodeCollapse>
+
         <h3>Contextual variations</h3>
         <div className="docs-example">
           <BadgeVariationsExample />
         </div>
-        <pre>
-          <PrismCode className="language-jsx">
-            {BadgeVariationsExampleSource}
-          </PrismCode>
-        </pre>
+
+        <CodeCollapse>
+          <CodeTabs code={[{code: BadgeVariationsExampleSource, language: 'markup', name: 'HTML markup'},{code: BadgeVariationsExampleJsxSource, language: 'jsx', name: 'React component'}]}></CodeTabs>
+        </CodeCollapse>
+
         <h3>Pills</h3>
         <div className="docs-example">
           <BadgePillsExample />
         </div>
-        <pre>
-          <PrismCode className="language-jsx">
-            {BadgePillsExampleSource}
-          </PrismCode>
-        </pre>
+
+        <CodeCollapse>
+          <CodeTabs code={[{code: BadgePillsExampleSource, language: 'markup', name: 'HTML markup'},{code: BadgePillsExampleJsxSource, language: 'jsx', name: 'React component'}]}></CodeTabs>
+        </CodeCollapse>
+
+        
         <h3>Links</h3>
-        <p>Adding the <code>href</code> prop (without specifying a <code>tag</code> prop) will default the badge to a link.</p>
         <div className="docs-example">
           <BadgeLinksExample />
         </div>
-        <pre>
-          <PrismCode className="language-jsx">
-            {BadgeLinksExampleSource}
-          </PrismCode>
-        </pre>
+
+        <CodeCollapse>
+          <CodeTabs code={[{code: BadgeLinksExampleSource, language: 'markup', name: 'HTML markup'},{code: BadgeLinksExampleJsxSource, language: 'jsx', name: 'React component'}]}></CodeTabs>
+          <p>Adding the <code>href</code> prop (without specifying a <code>tag</code> prop) will default the badge to a link.</p>
+        </CodeCollapse>
       </div>
     );
   }

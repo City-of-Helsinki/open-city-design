@@ -4,6 +4,9 @@ import React from 'react';
 import { PrismCode } from 'react-prism';
 import Helmet from 'react-helmet';
 import Markdown from 'react-remarkable';
+import CodeBlock from '../../../CodeBlock/CodeBlock';
+import CodeTabs from '../../../CodeTabs/CodeTabs';
+import CodeCollapse from '../../../CodeCollapse/CodeCollapse';
 
 import WelcomeSmall from '../../../WelcomeSmall';
 
@@ -196,11 +199,9 @@ export default class ColorsPage extends React.Component {
 
                   <h3>Sources</h3>
                   <h4>SCSS</h4>
-                  <pre>
-                        <PrismCode className="language-css">
-                        {css}
-                        </PrismCode>
-                  </pre>
+                  <CodeCollapse>
+                        <CodeBlock language="css" code={css}></CodeBlock>
+                  </CodeCollapse>
             </div>
       );
   }

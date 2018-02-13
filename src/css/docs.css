@@ -115,7 +115,7 @@ h1,h2,h3,h4,h5,h6,strong,b {
 .docs-example {
       position: relative;
       padding: 3em 1em 1em;
-      margin: 3rem 0rem 5rem 0rem;
+      margin: 2rem 0rem 2rem 0rem;
       border: 2px solid rgba(52, 52, 52, 0.1);
 }
 
