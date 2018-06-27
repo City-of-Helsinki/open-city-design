@@ -1,17 +1,14 @@
 /* eslint react/no-multi-comp: 0, react/prop-types: 0, import/no-webpack-loader-syntax: off */
 
 import React from 'react';
-import { PrismCode } from 'react-prism';
+
 import Helmet from 'react-helmet';
 import Markdown from 'react-remarkable';
-
 import WelcomeSmall from '../../../WelcomeSmall';
-import CodeBlock from '../../../CodeBlock/CodeBlock';
-import CodeTabs from '../../../CodeTabs/CodeTabs';
-import CodeCollapse from '../../../CodeCollapse/CodeCollapse';
-import TaskList from './TaskList';
 
-import globals from '../../../../globals.json';
+import CodeTabs from '../../../CodeTabs/CodeTabs';
+
+import TaskList from './TaskList';
 
 const Documentation = require('!!raw-loader!./TaskList.md');
 
@@ -19,12 +16,10 @@ const TaskListSource = require('!!raw-loader!./TaskList.html');
 const TaskListJsxSource = require('!!raw-loader!./TaskList');
 const TaskListCSSSource = require('!!raw-loader!./TaskList.scss');
 
-const githubUrl = globals.githubUrl + 'tree/master/src/components/docs/patterns/TaskList'
-
 const welcome = {
   heading: 'Task list',
   paragraph: 'One of the major use of the city services is for users to complete certain tasks. Task list pattern provides a way to bundle the tasks together in user-friendly manner with a view to the whole process.',
-  
+
 }
 
 const TaskListCode = [

@@ -21,7 +21,7 @@ export default class Example extends React.Component {
   render() {
     return (
       <div>
-        <p>Somewhere in here is a <a href="#" id="TooltipExample">tooltip</a>.</p>
+        <p>Somewhere in here is a <a href="#tooltip" id="TooltipExample">tooltip</a>.</p>
         <Tooltip placement="right" isOpen={this.state.tooltipOpen} target="TooltipExample" toggle={this.toggle}>
           Hello world!
         </Tooltip>

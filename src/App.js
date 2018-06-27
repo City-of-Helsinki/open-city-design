@@ -1,27 +1,25 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Prism from './utility/prism.js';
 import classnames from 'classnames';
 import './css/docs.css';
 import './css/prism.css';
-import { Container, Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar, NavDropdown, NavItem, MenuItem } from 'reactstrap';
+import { Container } from 'reactstrap';
 import ScrollToTop from './components/ScrollToTop';
 
 import Home from './routes/Home';
-import Development from './routes/development/Development';
+
 import Modules from './routes/development/Modules';
 import Patterns from './routes/development/Patterns';
 import PageTemplates from './routes/development/PageTemplates';
 import DevelopmentOverview from './routes/development/DevelopmentOverview';
 import ComponentOverview from './components/docs/components/Overview';
-import Navigation from './components/Navigation';
+
 import Sidebar from './components/Sidebar/Sidebar';
 import SidebarDevelopment from './components/Sidebar/development/SidebarDevelopment';
 import SidebarDesign from './components/Sidebar/design/SidebarDesign';
 import Footer from './components/Footer';
 
-// Design 
-import Design from './routes/design/Design';
+// Design
 import DesignOverview from './routes/design/DesignOverview';
 import DesignKitPage from './routes/design/DesignKit/DesignKitPage';
 import BrandMaterialPage from './routes/design/BrandMaterial/BrandMaterialPage';
@@ -90,7 +88,7 @@ class App extends Component {
       menuOpen: !this.state.menuOpen
     });
   }
-  
+
   render() {
 
     return (
@@ -118,7 +116,7 @@ class App extends Component {
 
 
                 {/* Development routes */}
-        
+
                 <Route path="/development/overview/" component={DevelopmentOverview} />
 
                 <Container className="docs-page">
@@ -171,7 +169,7 @@ class App extends Component {
                 {/* Patterns routes  */}
                 <Route path="/development/patterns" exact component={Patterns} />
                 <Route path="/development/patterns/tasklist/" component={TaskListPage} />
-                
+
                 </Container>
 
               <Footer />
@@ -185,16 +183,6 @@ class App extends Component {
     );
   }
 
-}
-
-const sidebarStyle = {
-  borderRight: 'solid 1px #343434',
-  maxHeight: '100vh ',
-  overflow: 'true',
-  position: 'fixed',
-  height: '100%',
-  overflow: 'show'
-  
 }
 
 export default App;

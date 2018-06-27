@@ -2,24 +2,12 @@
 
 
 import React, { Component } from 'react';
-import { Container, Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Media, Nav, Navbar, CardColumns } from 'reactstrap';
+import { Container, Row, Media } from 'reactstrap';
 import Markdown from 'react-remarkable';
 
 import Welcome from '../../components/Welcome';
-import WelcomeSmall from '../../components/WelcomeSmall';
-import './DesignOverview.scss';
 
-import Hero from '../../components/Hero';
-import HorizontalCard from '../../components/HorizontalCard';
-import Section from '../../components/Section';
-import typography from '../../images/typography.png';
-import colors from '../../images/colors.png';
-import brand from '../../images/brand.png';
-import logo from '../../images/logo.png';
-import sketch from '../../images/sketch.png';
-import ContentText from '../../components/ContentText';
-import Footer from '../../components/Footer';
-import DownloadButton from '../../components/DownloadButton/DownloadButton'
+import './DesignOverview.scss';
 
 const Documentation = require('!!raw-loader!./DesignOverview.md');
 
@@ -35,11 +23,6 @@ class DesignOverview extends Component {
       buttonText: 'Explore Sketch Documentation'
     }
     const DownloadButtonImage = { imageURL: 'https://upload.wikimedia.org/wikipedia/commons/7/73/Sketch_logo_frame.svg' };
-    const text = { text: 'Download' }
-
-
-
-
 
 
     return (
@@ -59,7 +42,7 @@ class DesignOverview extends Component {
 
         <Container style={mediaObject}>
 
-          <a href="https://sketchapp.com" target="_blank" style={linkStyle}>
+          <a href="https://sketchapp.com" target="_blank" rel="noopener noreferrer" style={linkStyle}>
             <Media className="sketch-thumbnail" >
               <Media left href="#">
                 <Media object style={sketchStyle} src={DownloadButtonImage.imageURL} alt="Sketch" />
@@ -112,4 +95,3 @@ const linkStyle = {
   textDecoration: 'none'
 }
 export default DesignOverview;
-

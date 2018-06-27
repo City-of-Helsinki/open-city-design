@@ -1,24 +1,17 @@
 /* eslint react/no-multi-comp: 0, react/prop-types: 0, import/no-webpack-loader-syntax: off */
 
 import React from 'react';
-import { PrismCode } from 'react-prism';
 import Helmet from 'react-helmet';
 import Markdown from 'react-remarkable';
-import Image from '../../../Image';
 import WelcomeSmall from '../../../WelcomeSmall';
 import CodeBlock from '../../../CodeBlock/CodeBlock';
-import CodeTabs from '../../../CodeTabs/CodeTabs';
 import CodeCollapse from '../../../CodeCollapse/CodeCollapse';
 import Typography from './Typography';
 import Cuts from './Cuts';
 
-import Type from '../../../../images/type.png'
-
 const Documentation = require('!!raw-loader!./Typography.md');
 const css = require('!!raw-loader!./TypoExample.scss')
 const cssImport = require('!!raw-loader!./Typography.scss')
-
-const image = { url: Type }
 
 const welcome = {
       heading: 'Typography',
@@ -50,7 +43,7 @@ export default class TypographyPage extends React.Component {
                         <div className="docs-example">
                               <Cuts />
                         </div>
-                                                
+
                         <h2>Typography details</h2>
                         <h4>Importing the font</h4>
                         <p>Please note that the font lisence is restricted to Helsinki City domains.</p>
@@ -66,7 +59,4 @@ export default class TypographyPage extends React.Component {
                   </div>
             );
       }
-}
-const imageStyle = {
-maxWidth: '100%',
 }

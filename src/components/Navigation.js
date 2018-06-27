@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
-import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, Dropdown, DropdownButton, NavDropdown, NavItem, ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem, Button } from 'reactstrap';
+import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem, Button } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 
 class Navigation extends Component {
   constructor(props) {
     super(props);
-    this.toggle = this.toggle.bind(this);    
+    this.toggle = this.toggle.bind(this);
     this.toggleNavbar = this.toggleNavbar.bind(this);
     this.state = {
       collapsed: true,
       dropdownOpen: false
-      
+
     };
   }
   toggle() {
@@ -39,7 +39,7 @@ class Navigation extends Component {
                      Chose city
                    </DropdownToggle>
                    <DropdownMenu>
-    
+
                      <DropdownItem>Helsinki</DropdownItem>
                      <DropdownItem divider />
                      <DropdownItem>Turku</DropdownItem>

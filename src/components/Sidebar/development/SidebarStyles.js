@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import { Collapse, Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar, NavItem } from 'reactstrap';
-import { NavLink, Link } from 'react-router-dom';
-import FontAwesome from 'react-fontawesome';
+import { Collapse } from 'reactstrap';
+import { NavLink } from 'react-router-dom';
+
 import 'font-awesome/css/font-awesome.min.css';
 
 class SidebarStyles extends Component {
@@ -56,9 +56,9 @@ class SidebarStyles extends Component {
           URL: '/development/styles/koros/',
           active: true
         },
-       
+
       ],
-    
+
     };
 
     return (
@@ -69,7 +69,7 @@ class SidebarStyles extends Component {
           {sidebarLinks.styles.map((sidebarLink, i) => <a key={i}  style={sidebarLink.active ? linkStyle : passiveStyle } className="list-group-item">
            <NavLink caret to={sidebarLink.URL} activeStyle={{
               color: '#fd4f00'
-            }}>{sidebarLink.link}                                    
+            }}>{sidebarLink.link}
             </NavLink>
           </a>)}
         </Collapse>

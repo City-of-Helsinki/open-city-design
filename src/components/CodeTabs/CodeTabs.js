@@ -1,19 +1,19 @@
 import React from 'react';
 import classnames from 'classnames';
-import { Button, Nav, NavItem, NavLink, TabContent, TabPane } from 'reactstrap';
+import { Nav, NavItem, NavLink, TabContent, TabPane } from 'reactstrap';
 import './CodeTabs.scss';
 import CodeBlock from '../CodeBlock/CodeBlock';
 
 export default class CodeTabs extends React.Component {
       constructor(props) {
             super(props);
-        
+
             this.state = {
               expanded: false,
               copied: false,
               activeTab: 0
             };
-        
+
             this.toggle = this.toggle.bind(this);
             this.onExpand = this.onExpand.bind(this);
       }
@@ -24,7 +24,7 @@ export default class CodeTabs extends React.Component {
                   });
             }
       }
-        
+
       onExpand() {
             this.setState({ expanded: true });
       }

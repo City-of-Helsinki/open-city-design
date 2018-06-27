@@ -2,7 +2,6 @@
 import React from 'react';
 import { PrismCode } from 'react-prism';
 import Helmet from 'react-helmet';
-import { Card, CardText } from 'reactstrap';
 import ProgressExample from './Progress';
 import ProgressColorExample from './ProgressColor';
 import ProgressLabelsExample from './ProgressLabels';

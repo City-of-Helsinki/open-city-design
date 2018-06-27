@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Container, Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar } from 'reactstrap';
+import { Col, Row } from 'reactstrap';
 import Image from './Image';
 import { NavLink } from 'react-router-dom';
 
@@ -23,7 +23,7 @@ class HorizontalCard extends Component {
 
             return (
                 <div >
-                        <Row style={this.props.rowStyle} style={cardStyle}>
+                        <Row style={{...this.props.rowStyle, ...cardStyle}}>
                               <Col xs='4' lg='4'>
                                     <Image image={image} imageStyle={imageStyle} />
                               </Col>

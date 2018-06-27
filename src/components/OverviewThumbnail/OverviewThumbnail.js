@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Container, Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar, Badge } from 'reactstrap';
+import { Col } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import './OverviewThumbnail.scss';
 

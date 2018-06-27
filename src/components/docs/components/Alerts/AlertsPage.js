@@ -30,11 +30,10 @@ const AlertDismissExampleJsxSource = require('!!raw-loader!./AlertDismiss');
 const AlertUncontrolledDismissExampleSource = require('!!raw-loader!./AlertUncontrolledDismiss.html');
 const AlertUncontrolledDismissExampleJsxSource = require('!!raw-loader!./AlertUncontrolledDismiss');
 
-
 const welcome = {
   heading: 'Alerts',
   paragraph: 'Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.',
-  
+
 }
 
 const AlertExampleCode = [

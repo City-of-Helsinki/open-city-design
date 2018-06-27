@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
-import { Container, Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar, Badge } from 'reactstrap';
-import { NavLink } from 'react-router-dom';
+import { Col } from 'reactstrap';
 import './DownloadButton.scss';
 import Image from '../Image'
 
 class DownloadButton extends Component {
       render() {
             const image = { url: this.props.DownloadButtonImage.imageURL };
-            
+
             return (
                   <a className="download-btn" href={this.props.url}>
                         <Col xs="12" lg="12">

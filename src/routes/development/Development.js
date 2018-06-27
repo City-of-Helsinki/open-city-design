@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar } from 'reactstrap';
-import Footer from '../../components/Footer';
 
 class Development extends Component {
       render() {
@@ -12,4 +10,3 @@ class Development extends Component {
       }
 }
 export default Development;
-

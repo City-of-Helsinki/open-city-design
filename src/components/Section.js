@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import LazyHero from 'react-lazy-hero';
-import { NavLink } from 'react-router-dom';
-import { Button, Row, Container, Badge } from 'reactstrap';
+
+import { Row } from 'reactstrap';
 
 
 class Section extends Component {

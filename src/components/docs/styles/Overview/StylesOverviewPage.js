@@ -6,7 +6,6 @@ import Helmet from 'react-helmet';
 import Markdown from 'react-remarkable';
 
 import WelcomeSmall from '../../../WelcomeSmall';
-import StylesOverview from './StylesOverview';
 
 
 const Documentation = require('!!raw-loader!./StylesOverview.md');

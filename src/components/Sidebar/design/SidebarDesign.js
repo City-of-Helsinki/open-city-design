@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { Collapse, Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar, NavItem } from 'reactstrap';
-import { NavLink, Link } from 'react-router-dom';
+
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -14,15 +14,6 @@ class SidebarDesign extends Component {
                   backgroundColor: 'transparent',
                   marginLeft: 20
             }
-            const linkStyle = {
-                  border: 'none',
-                  backgroundColor: 'transparent',
-                  padding: 4,
-                  paddingLeft: 45,
-            }
-
-
-      
 
       return(
                   <div className="list-group">
@@ -36,6 +27,3 @@ class SidebarDesign extends Component {
 }
 
 export default SidebarDesign;
-
-
-

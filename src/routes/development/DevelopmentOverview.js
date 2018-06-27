@@ -2,26 +2,13 @@
 
 
 import React, { Component } from 'react';
-import { Container, Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar, CardColumns, Media } from 'reactstrap';
+import { Container, Media, Row } from 'reactstrap';
 import Markdown from 'react-remarkable';
-
-import typography from '../../images/typography.png';
-import colors from '../../images/colors.png';
-import brand from '../../images/brand.png';
-import logo from '../../images/logo.png';
-import sketch from '../../images/sketch.png';
-import button from '../../images/components-thumbs/button.png';
 import './DevelopmentOverview.scss';
 
 import Welcome from '../../components/Welcome';
-import Hero from '../../components/Hero';
-import HorizontalCard from '../../components/HorizontalCard';
-import Section from '../../components/Section';
-import ContentText from '../../components/ContentText';
-import Footer from '../../components/Footer';
 
 import globals from '../../globals.json';
-
 
 
 const Documentation = require('!!raw-loader!./DevelopmentOverview.md');
@@ -37,10 +24,10 @@ class DevelopmentOverview extends Component {
       buttonUrl: '/development/components/overview',
     }
 
-  
+
     const DownloadButtonImage = { imageURL: 'https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png' };
-    
-  
+
+
 
 
     return (
@@ -94,14 +81,6 @@ const sectionStyle_1 = {
   borderBottom: 'solid #343434 1px',
   marginBottom: 20,
 }
-const sectionStyle_2 = {
-  height: 600,
-  backgroundColor: '#ffe977'
-}
-const sectionStyle_3 = {
-  height: 600,
-  backgroundColor: '#dedfe1'
-}
 
 const sketchStyle = {
   maxHeight: 60,
@@ -114,16 +93,7 @@ const mediaObject = {
   marginBottom: 50
 }
 
-const contentStyle = {
-  width: '100%',
-  marginLeft: 'auto',
-  marginRight: 'auto'
-}
-const rowStyle = {
-  paddingBottom: '5%',
-}
 const linkStyle = {
   textDecoration: 'none'
 }
 export default DevelopmentOverview;
-

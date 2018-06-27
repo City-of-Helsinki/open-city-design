@@ -1,6 +1,6 @@
 /* eslint react/no-multi-comp: 0, react/prop-types: 0, import/no-webpack-loader-syntax: off */
 import React from 'react';
-import { PrismCode } from 'react-prism';
+
 import Helmet from 'react-helmet';
 import Markdown from 'react-remarkable';
 import WelcomeSmall from '../../../WelcomeSmall';
@@ -9,29 +9,16 @@ import CodeTabs from '../../../CodeTabs/CodeTabs';
 import CodeCollapse from '../../../CodeCollapse/CodeCollapse';
 
 import ModalExample from './Modal';
-import ModalBackdropExample from './ModalBackdrop';
-import ModalNestedExample from './ModalNested';
-import ModalCustomTimeoutExample from './ModalCustomTimeout';
-import ModalFadelessExample from './ModalFadeless';
-
 
 const Documentation = require('!!raw-loader!./Modal.md');
 
 const ModalExampleSource = require('!!raw-loader!./Modal.html');
 const ModalExampleJsxSource = require('!!raw-loader!./Modal');
 
-const ModalBackdropExampleSource = require('!!raw-loader!./ModalBackdrop');
-
-const ModalNestedExampleSource = require('!!raw-loader!./ModalNested');
-
-const ModalCustomTimeoutExampleSource = require('!!raw-loader!./ModalCustomTimeout');
-
-const ModalFadelessExampleSource = require('!!raw-loader!./ModalFadeless');
-
 const welcome = {
   heading: 'Modal',
   paragraph: 'Modal provides a box hovering over other content. It can be a good way to grab the focus and close off any other decisions from the user. They require Javascript to function properly.',
-  
+
 }
 const ModalExampleCode = [
   {
@@ -107,14 +94,14 @@ export default class ModalsPage extends React.Component {
   // timeout is 150ms by default to match bootstrap
   // see [Fade](/components/fade/) for more details
   backdropTransition: PropTypes.shape(Fade.propTypes),
-  // modalTransition - controls modal transition 
+  // modalTransition - controls modal transition
   // timeout is 300ms by default to match bootstrap
   // see [Fade](/components/fade/) for more details
   modalTransition: PropTypes.shape(Fade.propTypes),
 }`} language="jsx">
           </CodeBlock>
         </CodeCollapse>
-        
+
 {/*
         <h4>Backdrop</h4>
         <div className="docs-example">

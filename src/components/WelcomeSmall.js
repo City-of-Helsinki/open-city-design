@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar, Container } from 'reactstrap';
+import { Jumbotron } from 'reactstrap';
 
 
 class WelcomeSmall extends Component {

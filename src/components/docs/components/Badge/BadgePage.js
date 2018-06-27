@@ -1,6 +1,5 @@
 /* eslint react/no-multi-comp: 0, react/prop-types: 0, import/no-webpack-loader-syntax: off */
 import React from 'react';
-import { PrismCode } from 'react-prism';
 import Helmet from 'react-helmet';
 
 import BadgeExample from './Badge';
@@ -32,7 +31,7 @@ const BadgeLinksExampleJsxSource = require('!!raw-loader!./BadgeLinks');
 const welcome = {
   heading: 'Badges',
   paragraph: 'Documentation and examples for badges, our small count and labeling component.',
-  
+
 }
 
 
@@ -78,7 +77,7 @@ export default class BadgesPage extends React.Component {
           <CodeTabs code={[{code: BadgePillsExampleSource, language: 'markup', name: 'HTML markup'},{code: BadgePillsExampleJsxSource, language: 'jsx', name: 'React component'}]}></CodeTabs>
         </CodeCollapse>
 
-        
+
         <h3>Links</h3>
         <div className="docs-example">
           <BadgeLinksExample />
