@@ -64,10 +64,10 @@ class Navigation extends Component {
            <div class="ml-auto navbar-collapse collapse nav-content order-3 order-md-3">
                <ul class="ml-auto nav navbar-nav">
                    <li class="nav-item">
-                       <a class="nav-link" href="#">Language</a>
+                       <a class="nav-link" href="#language">Language</a>
                    </li>
                    <li class="nav-item">
-                       <a class="nav-link" href="#">Contact</a>
+                       <a class="nav-link" href="#contact">Contact</a>
                    </li>
                </ul>
            </div>

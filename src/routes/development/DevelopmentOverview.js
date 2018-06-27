@@ -33,7 +33,7 @@ class DevelopmentOverview extends Component {
     return (
       <div>
 
-        <div style={sectionStyle_1}>
+        <div className="section-jumbo--development">
           <Container>
             <Row>
               <Welcome welcome={welcome} />
@@ -68,18 +68,6 @@ class DevelopmentOverview extends Component {
       </div>
     );
   }
-}
-
-const sectionStyle_1 = {
-  height: '100%',
-  width: '100%',
-  background: 'red', /* For browsers that do not support gradients */
-  background: '-webkit-linear-gradient(#0000BF, #0072C6)', /* For Safari 5.1 to 6.0 */
-  background: '-o-linear-gradient(red, yellow)', /* For Opera 11.1 to 12.0 */
-  background: '-moz-linear-gradient(red, yellow)', /* For Firefox 3.6 to 15 */
-  background: 'linear-gradient(#3a2099, #1A0D49)',/* Standard syntax */
-  borderBottom: 'solid #343434 1px',
-  marginBottom: 20,
 }
 
 const sketchStyle = {

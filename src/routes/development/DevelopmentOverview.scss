@@ -1,4 +1,14 @@
-
+.section-jumbo--development {
+    height: 100%;
+    width: 100%;
+    background: #3a2099; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#0000BF, #0072C6); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#3a2099, #0072C6); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#3a2099, #0072C6); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#3a2099, #0072C6);/* Standard syntax */
+    borderBottom: solid #343434 1px;
+    marginBottom: 20;
+}
 
 .media-thumbnail {
       position: relative;
@@ -8,6 +18,7 @@
       margin-top: 50;
       margin-bottom: 50;
 }
+
 .media-thumbnail:hover {
       cursor: pointer;
       background-color: rgba(52, 52, 52, 0.06);
