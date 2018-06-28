@@ -78,11 +78,11 @@ export default class ButtonDropdownPage extends React.Component {
         <h3>Single button dropdowns</h3>
         <div className="docs-example">
           <div>
-            <Example color="primary" text="Primary" />
-            <Example color="secondary" text="Secondary" />
-            <Example color="success" text="Success" />
-            <Example color="info" text="Info" />
-            <Example color="warning" text="Warning" />
+            <Example color="primary" text="Primary" />{' '}
+            <Example color="secondary" text="Secondary" />{' '}
+            <Example color="success" text="Success" />{' '}
+            <Example color="info" text="Info" />{' '}
+            <Example color="warning" text="Warning" />{' '}
             <Example color="danger" text="Danger" />
           </div>
         </div>
@@ -105,11 +105,11 @@ export default class ButtonDropdownPage extends React.Component {
         <h3>Split button dropdowns</h3>
         <div className="docs-example">
           <div>
-            <ExampleSplit color="primary" text="Primary" />
-            <ExampleSplit color="secondary" text="Secondary" />
-            <ExampleSplit color="success" text="Success" />
-            <ExampleSplit color="info" text="Info" />
-            <ExampleSplit color="warning" text="Warning" />
+            <ExampleSplit color="primary" text="Primary" />{' '}
+            <ExampleSplit color="secondary" text="Secondary" />{' '}
+            <ExampleSplit color="success" text="Success" />{' '}
+            <ExampleSplit color="info" text="Info" />{' '}
+            <ExampleSplit color="warning" text="Warning" />{' '}
             <ExampleSplit color="danger" text="Danger" />
           </div>
         </div>

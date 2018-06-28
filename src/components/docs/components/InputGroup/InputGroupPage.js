@@ -6,13 +6,11 @@ import OverviewExample from './InputGroupOverview';
 import AddonExample from './InputGroupAddon';
 import AddonSizingExample from './InputGroupSizing';
 import ButtonExample from './InputGroupButton';
-import ButtonShorthandExample from './InputGroupButtonShorthand';
 
 const OverviewExampleSource = require('!!raw-loader!./InputGroupOverview');
 const AddonExampleSource = require('!!raw-loader!./InputGroupAddon');
 const AddonSizingExampleSource = require('!!raw-loader!./InputGroupSizing');
 const ButtonExampleSource = require('!!raw-loader!./InputGroupButton');
-const ButtonShorthandExampleSource = require('!!raw-loader!./InputGroupButtonShorthand');
 
 export default class InputGroupPage extends React.Component {
   constructor(props) {
@@ -99,26 +97,6 @@ InputGroupButton.propTypes = {
         <pre>
           <PrismCode className="language-jsx">
             {ButtonExampleSource}
-          </PrismCode>
-        </pre>
-
-        <h3>Button Shorthand</h3>
-        <p>
-          Button shorthand is a convenience method for adding just a button. It is triggered when only a single string
-          is the child. A Button will be created and all of the props will be passed to it with the exception of
-          <code>groupClassName</code> and <code>groupAttributes</code>, which are used to added classes and attributes
-          to the wrapping container. This means you can add your <code>onClick</code> and other handlers directly to
-          <code>InputGroupButton</code>. If you want your string to not be wrapped in a button, then you really want to
-          use <code>InputGroupAddon</code> (see Addons above for that).
-        </p>
-        <div className="docs-example">
-          <div>
-            <ButtonShorthandExample />
-          </div>
-        </div>
-        <pre>
-          <PrismCode className="language-jsx">
-            {ButtonShorthandExampleSource}
           </PrismCode>
         </pre>
       </div>

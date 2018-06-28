@@ -14,8 +14,8 @@ export default class CodeCollapse extends React.Component {
 
   render() {
     return (
-      <div>
-        <Button color="primary" outline onClick={this.toggle} style={{ }} block>{this.state.collapse ?  'Hide' : 'Show'} code</Button>
+      <div className="mb-5 text-center">
+        <Button color="primary" outline onClick={this.toggle} style={{ }} className="mb-3">{this.state.collapse ?  'Hide' : 'Show'} code</Button>
         <Collapse isOpen={this.state.collapse}>
           {this.props.children}
         </Collapse>

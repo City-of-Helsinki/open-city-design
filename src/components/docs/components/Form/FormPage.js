@@ -8,9 +8,12 @@ import CodeTabs from '../../../CodeTabs/CodeTabs';
 import CodeCollapse from '../../../CodeCollapse/CodeCollapse';
 
 import FormExample from './Form';
+import CustomFormExample from './CustomInputs';
+import FormValidation from './FormValidation';
 
 const FormExampleSource = require('!!raw-loader!./Form.html');
 const FormExampleJsxSource = require('!!raw-loader!./Form');
+const CustomFormExampleJsxSource = require('!!raw-loader!./CustomInputs');
 
 const welcome = {
   heading: 'Form',
@@ -38,6 +41,8 @@ export default class FormPage extends React.Component {
       <div>
         <Helmet title="Form" />
         <WelcomeSmall welcome={welcome} />
+
+        <h3>Basic Form elements</h3>
         <div className="docs-example">
           <FormExample />
         </div>
@@ -65,88 +70,16 @@ export default class FormPage extends React.Component {
           </CodeBlock>
         </CodeCollapse>
 
-{/*
-
-        <h3>Form Grid</h3>
+        <h3>Custom Form Inputs</h3>
         <div className="docs-example">
-          <FormGridExample />
+          <CustomFormExample />
         </div>
-        <pre>
-          <PrismCode className="language-jsx">
-            {FormGridExampleSource}
-          </PrismCode>
-        </pre>
-
-        <h3>Inline Form</h3>
-        <div className="docs-example">
-          <FormInlineExample />
-        </div>
-        <pre>
-          <PrismCode className="language-jsx">
-            {FormInlineExampleSource}
-          </PrismCode>
-        </pre>
 
         <h3>Form Validation</h3>
         <div className="docs-example">
-          <FormFeedbackExample />
+          <FormValidation />
         </div>
-        <pre>
-          <PrismCode className="language-jsx">
-            {FormFeedbackExampleSource}
-          </PrismCode>
-        </pre>
 
-        <h3>Input Types</h3>
-        <div className="docs-example">
-          <InputTypeExample />
-        </div>
-        <pre>
-          <PrismCode className="language-jsx">
-            {InputTypeExampleSource}
-          </PrismCode>
-        </pre>
-
-        <h3>Inline checkboxes</h3>
-        <div className="docs-example">
-          <InlineCheckboxesExample />
-        </div>
-        <pre>
-          <PrismCode className="language-jsx">
-            {InlineCheckboxesExampleSource}
-          </PrismCode>
-        </pre>
-
-        <h3>Input Sizing</h3>
-        <div className="docs-example">
-          <InputSizingExample />
-        </div>
-        <pre>
-          <PrismCode className="language-jsx">
-            {InputSizingExampleSource}
-          </PrismCode>
-        </pre>
-
-        <h3>Input Grid Sizing</h3>
-        <div className="docs-example">
-          <InputGridSizingExample />
-        </div>
-        <pre>
-          <PrismCode className="language-jsx">
-            {InputGridSizingExampleSource}
-          </PrismCode>
-        </pre>
-
-        <h3>Hidden Labels</h3>
-        <div className="docs-example">
-          <LabelHiddenExample />
-        </div>
-        <pre>
-          <PrismCode className="language-jsx">
-            {LabelHiddenExampleSource}
-          </PrismCode>
-        </pre>
-         */}
       </div>
     );
   }
