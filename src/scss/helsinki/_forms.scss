@@ -1,0 +1,41 @@
+// Forms
+
+$label-margin-bottom:                   0;
+
+$input-bg:                              transparent;
+$input-disabled-bg:                     rgba($hel-black, 0.1);
+
+$input-border-color:                    $hel-black;
+$input-box-shadow:                      0;
+
+$input-placeholder-color:               lighten($hel-black, 40%);
+
+$form-group-margin-bottom:              2rem;
+$custom-control-gutter:                 1.75rem;
+$custom-control-spacer-x:               1.5rem;
+
+$custom-control-indicator-size:         1.25rem;
+
+$custom-control-indicator-bg:           transparent;
+
+$custom-control-indicator-bg-size:      60% 60%;
+$custom-control-indicator-box-shadow:   none;
+
+$custom-control-indicator-disabled-bg:    transparent;
+$custom-control-label-disabled-color:     lighten($hel-black,40%);
+
+$custom-control-indicator-checked-color:        $hel-black;
+
+$custom-control-indicator-checked-bg:           #ffffff;
+$custom-control-indicator-checked-disabled-bg:  #ffffff;
+$custom-control-indicator-checked-box-shadow:   none;
+
+$custom-checkbox-indicator-indeterminate-color: $hel-black;
+
+$custom-select-indicator-color:     $hel-black;
+
+$custom-file-text: (
+  en: "Browse",
+  fi: "Valitse",
+  sv: "Bläddra"
+);

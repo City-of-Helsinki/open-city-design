@@ -94,7 +94,7 @@ class SidebarComponents extends Component {
         {
           link: 'Input Group',
           URL: '/development/components/input-group/',
-          active: false
+          active: true
         },
         {
           link: 'Jumbotron',
