@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { Collapse, Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar, NavItem } from 'reactstrap';
-import { NavLink, Link } from 'react-router-dom'
+import { Collapse } from 'reactstrap';
+import { NavLink } from 'react-router-dom'
 
 class SidebarPatterns extends Component {
       constructor(props) {
@@ -32,9 +32,6 @@ class SidebarPatterns extends Component {
       paddingLeft: '25px',
       opacity: 0.4
     }
-    const caretStyle = {
-      marginRight: 30
-    }
     const sidebarLinks = {
       'patterns': [
         {
@@ -43,15 +40,15 @@ class SidebarPatterns extends Component {
           active: true
         }
       ],
-    
+
     };
 
     return (
 
       <div className="list-group">
-       <h4 style={sidebarStyles} className="list-group-item" onClick={this.toggle} ><a href="#">Patterns</a></h4>
+       <h4 style={sidebarStyles} className="list-group-item" onClick={this.toggle} ><a href="#link">Patterns</a></h4>
        <Collapse isOpen={this.state.patterns}>
-       {sidebarLinks.patterns.map((sidebarLink, i) => <a key={i} href="#" style={sidebarLink.active ? linkStyle : passiveStyle } className="list-group-item">
+       {sidebarLinks.patterns.map((sidebarLink, i) => <a key={i} href="#link" style={sidebarLink.active ? linkStyle : passiveStyle } className="list-group-item">
        <NavLink to={sidebarLink.URL} activeStyle={{
               color: 'red'
             }}>{sidebarLink.link}</NavLink>

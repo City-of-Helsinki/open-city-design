@@ -1,7 +1,5 @@
 /* eslint react/no-multi-comp: 0, react/prop-types: 0, import/no-webpack-loader-syntax: off */
 import React from 'react';
-import { PrismCode } from 'react-prism';
-import classnames from 'classnames';
 import { Button } from 'reactstrap';
 import Helmet from 'react-helmet';
 import ButtonExample from './Button';
@@ -29,13 +27,13 @@ const welcome = {
 
 export default class ButtonsPage extends React.Component {
 
- 
+
   render() {
     return (
       <div>
         <Helmet title="Buttons" />
         <WelcomeSmall welcome={welcome} />
-        
+
         <div className="docs-example">
           <ButtonExample />
         </div>
@@ -77,7 +75,7 @@ export default class ButtonsPage extends React.Component {
           <Button color="secondary" size="lg">Large Button</Button>
         </div>
         <CodeCollapse>
-          <CodeTabs code={[{code: `<button class="btn btn-primary btn-lg">Large Button</button> 
+          <CodeTabs code={[{code: `<button class="btn btn-primary btn-lg">Large Button</button>
 <button class="btn btn-secondary btn-lg">Large Button</button>`, language: 'markup', name: 'HTML markup'},{code: `<Button color="primary" size="lg">Large Button</Button>{' '}
 <Button color="secondary" size="lg">Large Button</Button>`, language: 'jsx', name: 'React component'}]}></CodeTabs>
         </CodeCollapse>
@@ -87,7 +85,7 @@ export default class ButtonsPage extends React.Component {
           <Button color="secondary" size="sm">Small Button</Button>
         </div>
         <CodeCollapse>
-          <CodeTabs code={[{code: `<button class="btn btn-primary btn-sm">Small Button</button> 
+          <CodeTabs code={[{code: `<button class="btn btn-primary btn-sm">Small Button</button>
 <button class="btn btn-secondary btn-sm">Small Button</button>`, language: 'markup', name: 'HTML markup'},{code: `<Button color="primary" size="sm">Small Button</Button>{' '}
 <Button color="secondary" size="sm">Small Button</Button>`, language: 'jsx', name: 'React component'}]}></CodeTabs>
         </CodeCollapse>
@@ -97,7 +95,7 @@ export default class ButtonsPage extends React.Component {
           <Button color="secondary" size="lg" block>Block level button</Button>
         </div>
         <CodeCollapse>
-          <CodeTabs code={[{code: `<button class="btn btn-primary btn-lg btn-block">Block level button</button> 
+          <CodeTabs code={[{code: `<button class="btn btn-primary btn-lg btn-block">Block level button</button>
 <button class="btn btn-secondary btn-lg btn-block">Block level button</button>`, language: 'markup', name: 'HTML markup'},{code: `<Button color="primary" size="lg" block>Block level button</Button>
 <Button color="secondary" size="lg" block>Block level button</Button>`, language: 'jsx', name: 'React component'}]}></CodeTabs>
         </CodeCollapse>

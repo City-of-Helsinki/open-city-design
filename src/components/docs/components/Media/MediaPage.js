@@ -7,7 +7,7 @@ import MediaExample from './Media';
 import MediaNestedExample from './MediaNested';
 import MediaAlignmentExample from './MediaAlignment';
 import MediaListExample from './MediaList';
-import CodeBlock from '../../../CodeBlock/CodeBlock'
+
 const MediaExampleSource = require('!!raw-loader!./Media');
 
 const MediaNestedExampleSource = require('!!raw-loader!./MediaNested');

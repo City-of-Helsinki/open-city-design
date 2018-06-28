@@ -1,5 +1,5 @@
 import React from 'react';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, InputGroup, InputGroupAddon, Button, Input } from 'reactstrap';
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, InputGroup, Button, Input } from 'reactstrap';
 import Logo from '../../../../images/logo-white-hki.svg';
 
 export default class Example extends React.Component {
@@ -21,7 +21,7 @@ export default class Example extends React.Component {
       <div>
         <Navbar color="dark" light expand="md">
           <NavbarBrand src={Logo}href="/"></NavbarBrand>
-          <img src={Logo} width='80px' />
+          <img src={Logo} width='80px' alt="logo"/>
           <Button outline size="sm" color="light">Login</Button>
           <Button outline size="sm" color="light">Login</Button>
 

@@ -2,10 +2,9 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import Colors from './Colors';
-import HexRgb from 'hex-rgb';
 
 export default class ColorDisplay extends React.Component {
-      
+
       render() {
             return (
                   <div>

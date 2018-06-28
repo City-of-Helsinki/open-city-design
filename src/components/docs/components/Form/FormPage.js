@@ -1,6 +1,6 @@
 /* eslint react/no-multi-comp: 0, react/prop-types: 0, import/no-webpack-loader-syntax: off */
 import React from 'react';
-import { PrismCode } from 'react-prism';
+
 import Helmet from 'react-helmet';
 import WelcomeSmall from '../../../WelcomeSmall';
 import CodeBlock from '../../../CodeBlock/CodeBlock';
@@ -8,37 +8,14 @@ import CodeTabs from '../../../CodeTabs/CodeTabs';
 import CodeCollapse from '../../../CodeCollapse/CodeCollapse';
 
 import FormExample from './Form';
-import FormGridExample from './FormGrid';
-import FormInlineExample from './FormInline';
-import FormFeedbackExample from './FormFeedback';
-import InputTypeExample from './InputType';
-import InlineCheckboxesExample from './InlineCheckboxes';
-import InputSizingExample from './InputSizing';
-import InputGridSizingExample from './InputGridSizing';
-import LabelHiddenExample from './LabelHidden';
+
 const FormExampleSource = require('!!raw-loader!./Form.html');
 const FormExampleJsxSource = require('!!raw-loader!./Form');
-
-const FormGridExampleSource = require('!!raw-loader!./FormGrid');
-
-const FormInlineExampleSource = require('!!raw-loader!./FormInline');
-
-const FormFeedbackExampleSource = require('!!raw-loader!./FormFeedback');
-
-const InputTypeExampleSource = require('!!raw-loader!./InputType');
-
-const InlineCheckboxesExampleSource = require('!!raw-loader!./InlineCheckboxes');
-
-const InputSizingExampleSource = require('!!raw-loader!./InputSizing');
-
-const InputGridSizingExampleSource = require('!!raw-loader!./InputGridSizing');
-
-const LabelHiddenExampleSource = require('!!raw-loader!./LabelHidden');
 
 const welcome = {
   heading: 'Form',
   paragraph: 'Form is the primary user data input method for complex queries. The usability of forms makes or breaks the web service.',
-  
+
 }
 
 const FormExampleCode = [

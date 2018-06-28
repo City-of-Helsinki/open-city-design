@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Container } from 'reactstrap';
 import SixAikaColorSvg from '../images/6aika-color.svg';
 import SixAikaMonochromeSvg from '../images/6aika-white.svg';
 import EuLocationDevelopmentSvg from '../images/eu-aluekehitys-color.svg';
@@ -42,10 +41,10 @@ class Sponsors extends Component {
 
                         {sponsors.sponsors.map((sponsor, i) =>
                               <div className="partner-banner__logo">
-                                    { this.props.placement === 'top' && 
+                                    { this.props.placement === 'top' &&
                                           <img alt={sponsor.header} src={sponsor.imageURL} className="partner-logo" aria-hidden="true"></img>
                                     }
-                                    { this.props.placement === 'footer' && 
+                                    { this.props.placement === 'footer' &&
                                           <a href={sponsor.URL} target="_blank">
                                                 <img alt={sponsor.header} src={sponsor.imageURLMonochrome} className="partner-logo" aria-hidden="true"></img>
                                           </a>

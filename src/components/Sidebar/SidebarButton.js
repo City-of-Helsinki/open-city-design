@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Button } from 'reactstrap';
-import { NavLink } from 'react-router-dom';
 
 class SidebarButton extends Component {
       render() {
@@ -11,18 +10,18 @@ class SidebarButton extends Component {
                   paddingLeft: 10,
                   textAlign: 'left'          }
             return(
-                        <Button 
-                        
-                        outline color="primary" 
-                        style={navButtonStyle} 
+                        <Button
+
+                        outline color="primary"
+                        style={navButtonStyle}
                         size='sm'>
                         {this.props.buttonText}
-                        </Button> 
+                        </Button>
             );
       }
 }
 
 
-                       
+
 
   export default SidebarButton;

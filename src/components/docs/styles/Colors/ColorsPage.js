@@ -1,11 +1,9 @@
 /* eslint react/no-multi-comp: 0, react/prop-types: 0, import/no-webpack-loader-syntax: off */
 
 import React from 'react';
-import { PrismCode } from 'react-prism';
 import Helmet from 'react-helmet';
 import Markdown from 'react-remarkable';
 import CodeBlock from '../../../CodeBlock/CodeBlock';
-import CodeTabs from '../../../CodeTabs/CodeTabs';
 import CodeCollapse from '../../../CodeCollapse/CodeCollapse';
 
 import WelcomeSmall from '../../../WelcomeSmall';
@@ -19,7 +17,7 @@ const css = require('!!raw-loader!../../../../scss/helsinki/_colors.scss');
 const welcome = {
   heading: 'Colors',
   paragraph: 'Helsinki Brand is filled with colors. The brand colors and the UI colors create a way to personalise different services while still keeping the user interface consistent.',
-  
+
 }
 
 

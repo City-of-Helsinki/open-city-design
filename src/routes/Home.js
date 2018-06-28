@@ -1,25 +1,17 @@
 import React, { Component } from 'react';
-import { Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar,} from 'reactstrap';
 import Hero from '../components/Hero';
-import Welcome from '../components/Welcome';
 import Sponsors from '../components/Sponsors';
 
 class Home extends Component {
- 
+
   render() {
-    const welcome = {
-      heading: 'Collaborative Network',
-      paragraph: 'Welcome to the open City design System – a system built to collect City Designs from Helsnki, Tuku, Tampere etc. to one collaborative network.'
-    }
-    const button = {
-      button: true
-    }
+
     const hero = {
       hero: '<div>Open City Design System<span className="label label-primary">Alpha</span></div>',
       header: 'Helsinki',
       paragraph: 'Start creating your best designs and collaborate with developers to create best solutions for your city',
-      
-    
+
+
     }
     const heroStyle = {
     }
@@ -27,14 +19,13 @@ class Home extends Component {
 
     return (
       <div>
-     
+
             <Sponsors placement="top" />
             <Hero hero={hero} style={heroStyle} heroHeight={'100vh'} />
-            
+
       </div>
 
-    ); 
+    );
   }
-} 
+}
 export default Home;
-

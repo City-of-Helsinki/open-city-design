@@ -1,8 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
-import { Card, Button } from 'reactstrap';
-import HexRgb from 'hex-rgb';
+import { Button } from 'reactstrap';
+
 
 export default class Colors extends React.Component {
 
@@ -42,7 +41,7 @@ export default class Colors extends React.Component {
                         <div className="color-name" style={colorName}>
                               <strong>{this.props.name}</strong>
                               <p>{this.props.hex}</p>
-                        
+
                         </div>
                   </a>
             );

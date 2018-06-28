@@ -1,13 +1,7 @@
 /* eslint react/no-multi-comp: 0, react/prop-types: 0, import/no-webpack-loader-syntax: off */
 import React from 'react';
-import { PrismCode } from 'react-prism';
 import Helmet from 'react-helmet';
-import {
-  Button,
-  ButtonDropdown,
-  DropdownToggle,
-  DropdownItem,
-  DropdownMenu } from 'reactstrap';
+
 import WelcomeSmall from '../../../WelcomeSmall';
 import CodeBlock from '../../../CodeBlock/CodeBlock';
 import CodeTabs from '../../../CodeTabs/CodeTabs';

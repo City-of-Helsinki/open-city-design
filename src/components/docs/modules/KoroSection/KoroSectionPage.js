@@ -1,7 +1,6 @@
 /* eslint react/no-multi-comp: 0, react/prop-types: 0, import/no-webpack-loader-syntax: off */
 
 import React from 'react';
-import { PrismCode } from 'react-prism';
 import Helmet from 'react-helmet';
 import Markdown from 'react-remarkable';
 
@@ -21,7 +20,7 @@ const html = require('!!raw-loader!./KoroSection.html');
 const welcome = {
   heading: 'Koro section',
   paragraph: 'Helsinki Brand is filled with colors. Koro shapes help you distance sections from each other with various brand-specific border styles.',
-  
+
 }
 
 

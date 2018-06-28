@@ -1,9 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { Container, Row, Col, Card, Button } from 'reactstrap';
+import { Container, Row, Col, Button } from 'reactstrap';
 import classnames from 'classnames';
 import './TaskList.scss';
-import KoroSection from '../../modules/KoroSection/KoroSection'; 
+import KoroSection from '../../modules/KoroSection/KoroSection';
 
 export default class TaskList extends React.Component {
 
@@ -24,12 +23,12 @@ export default class TaskList extends React.Component {
                                           {this.props.tasks.map((task, i) =>
                                                 <div className="task" onClick={() => { this.setState({selected: i}); }}>
                                                       <div className={classnames(["task__icon", {"task__icon--first" : i === 0}, {"task__icon--done" : i < this.state.selected}, {"task__icon--active" : i === this.state.selected}, {"task__icon--last": i === this.props.tasks.length - 1 }])}>
-                                                            {task.icon && 
+                                                            {task.icon &&
                                                                   <div className="task__icon__container">
                                                                         <i class={classnames(['fa', 'fa-' + task.icon])}></i>
                                                                   </div>
                                                             }
-                                                            {!task.icon && 
+                                                            {!task.icon &&
                                                                   <div className="task__step" />
                                                             }
                                                             <div className="task__name">

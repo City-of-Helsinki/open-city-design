@@ -1,7 +1,6 @@
 /* eslint react/no-multi-comp: 0, react/prop-types: 0, import/no-webpack-loader-syntax: off */
 import React from 'react';
 import { PrismCode } from 'react-prism';
-import { Alert } from 'reactstrap';
 import Helmet from 'react-helmet';
 
 import FadeExample from './Fade';
@@ -28,7 +27,7 @@ export default class FadePage extends React.Component {
           <PrismCode className="language-jsx">
 {`Fade.propTypes = {
     // Controls if the fade is currently showing or not (default: true)
-    in: PropTypes.bool, 
+    in: PropTypes.bool,
 
     // All of these match [react-transition-group/Transition](https://reactcommunity.org/react-transition-group/#Transition) props
     mountOnEnter: PropTypes.bool,

@@ -11,7 +11,7 @@ class SidebarDevelopment extends Component {
 
             return(
                   <div style={styles}>
-                        <NavLink to='/development/overview' ><h4 style={sidebarStyles} className="list-group-item" ><a href="#">Getting started</a></h4></NavLink>
+                        <NavLink to='/development/overview' ><h4 style={sidebarStyles} className="list-group-item" ><a href="#getting-started">Getting started</a></h4></NavLink>
                         <SidebarStyles />
                         <SidebarComponents />
                         <SidebarModules />
@@ -30,6 +30,3 @@ const sidebarStyles = {
       backgroundColor: 'transparent',
 }
 export default SidebarDevelopment;
-
-
-

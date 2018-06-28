@@ -1,15 +1,9 @@
 import React, { Component } from 'react'
-import LazyHero from 'react-lazy-hero';
-import { NavLink } from 'react-router-dom';
-import { Col, Button, Row, Container, Media, Badge } from 'reactstrap';
-import ContentTextWithButton from './ContentTextWithButton';
-import ContentText from './ContentText';
+
+import { Col, Row, Container, Media  } from 'reactstrap';
+
 import Sponsors from './Sponsors.js';
-import sketch from '../images/sketch_narrow.png';
-import git from '../images/git.png';
-import NPM from '../images/NPM.png';
-import slack from '../images/slack.png';
-import globals from '../globals.json';
+
 
 import './Footer.scss'
 
@@ -58,19 +52,6 @@ class Footer extends Component {
 
                   ]
             }
-            const footerText = [
-                  {
-                        key: 1,
-                        header: 'Latest update 13.12.2017',
-                        paragraph: 'View Licenses'
-                  },
-                  {
-                        key: 2,
-                        header: 'Questions about the site visit www.helsinki.fi',
-                        paragraph: 'Take a look at this link'
-                  },
-
-            ]
 
             return (
                   <div style={footerStyle}>
@@ -121,6 +102,7 @@ const footerStyle = {
       bottom: 0,
 
 }
+
 const sketchStyle = {
       maxHeight: 60,
       marginLeft: 40,
@@ -131,11 +113,7 @@ const footerLinkSectionStyle = {
       backgroundColor: '#343434',
       minHeight: 700,
 }
-const footerBottomSectionStyle = {
-      backgroundColor: '#9fc9eb',
-      height: 350,
-      padding: 100
-}
+
 const rowStyle = {
       paddingTop: 25,
       marginBottom: 25

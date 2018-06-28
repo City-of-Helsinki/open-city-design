@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { Collapse, Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar, NavItem } from 'reactstrap';
-import { NavLink, Link } from 'react-router-dom'
+import { Collapse } from 'reactstrap';
+import { NavLink } from 'react-router-dom'
 
 class SidebarModules extends Component {
       constructor(props) {
@@ -35,7 +35,7 @@ class SidebarModules extends Component {
 
     const sidebarLinks = {
       'modules': [
-   
+
         {
           link: 'Navbar',
           URL: '/development/modules/navbar/',
@@ -71,17 +71,17 @@ class SidebarModules extends Component {
           URL: '/development/modules/CardPage/',
           active: false
         },
-        
+
       ],
-    
+
     };
 
     return (
 
       <div className="list-group">
-       <h4 style={sidebarStyles} className="list-group-item" onClick={this.toggle} ><a href="#">Modules</a></h4>
+       <h4 style={sidebarStyles} className="list-group-item" onClick={this.toggle} ><a href="#modules">Modules</a></h4>
        <Collapse isOpen={this.state.modules}>
-          {sidebarLinks.modules.map((sidebarLink, i) => <a key={i} href="#" style={sidebarLink.active ? linkStyle : passiveStyle } className="list-group-item">
+          {sidebarLinks.modules.map((sidebarLink, i) => <a key={i} href="#link" style={sidebarLink.active ? linkStyle : passiveStyle } className="list-group-item">
             <NavLink to={sidebarLink.URL} activeStyle={{
               color: 'red'
             }}>{sidebarLink.link}</NavLink>

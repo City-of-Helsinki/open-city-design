@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
-import { NavLink } from 'react-router-dom';
-
 
 class SidebarButton extends Component {
       constructor(props) {

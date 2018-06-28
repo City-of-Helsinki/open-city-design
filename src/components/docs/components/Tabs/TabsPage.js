@@ -1,10 +1,8 @@
 /* eslint react/no-multi-comp: 0, react/prop-types: 0, import/no-webpack-loader-syntax: off */
 import React from 'react';
-import { PrismCode } from 'react-prism';
 import Helmet from 'react-helmet';
 import TabsExample from './Tabs';
 import WelcomeSmall from '../../../WelcomeSmall';
-import CodeBlock from '../../../CodeBlock/CodeBlock';
 import CodeTabs from '../../../CodeTabs/CodeTabs';
 import CodeCollapse from '../../../CodeCollapse/CodeCollapse';
 
@@ -15,7 +13,7 @@ const TabsExampleJsxSource = require('!!raw-loader!./Tabs');
 const welcome = {
   heading: 'Tabs',
   paragraph: 'Tabs are handy inner-page navigation element when you need have a lot of parallel content.',
-  
+
 }
 
 const TabsExampleCode = [

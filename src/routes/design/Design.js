@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Grid, Jumbotron, Col, Row, ButtonToolbar, Nav, Navbar } from 'reactstrap';
-import Hero from '../../components/Hero';
-import Welcome from '../../components/Welcome';
-import helsinki from '../../images/helsinki.png';
-import Footer from '../../components/Footer';
+
 
 class Design extends Component {
   render() {
@@ -17,4 +13,3 @@ class Design extends Component {
   }
 }
 export default Design;
-

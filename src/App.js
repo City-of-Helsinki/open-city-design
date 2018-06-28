@@ -20,7 +20,7 @@ import SidebarDevelopment from './components/Sidebar/development/SidebarDevelopm
 import SidebarDesign from './components/Sidebar/design/SidebarDesign';
 import Footer from './components/Footer';
 
-// Design 
+// Design
 import Design from './routes/design/Design';
 import DesignOverview from './routes/design/DesignOverview';
 import DesignKitPage from './routes/design/DesignKit/DesignKitPage';
@@ -90,7 +90,7 @@ class App extends Component {
       menuOpen: !this.state.menuOpen
     });
   }
-  
+
   render() {
 
     return (
@@ -118,7 +118,7 @@ class App extends Component {
 
 
                 {/* Development routes */}
-        
+
                 <Route path="/development/overview/" component={DevelopmentOverview} />
 
                 <Container className="docs-page">
@@ -171,7 +171,7 @@ class App extends Component {
                 {/* Patterns routes  */}
                 <Route path="/development/patterns" exact component={Patterns} />
                 <Route path="/development/patterns/tasklist/" component={TaskListPage} />
-                
+
                 </Container>
 
               <Footer />
@@ -185,16 +185,6 @@ class App extends Component {
     );
   }
 
-}
-
-const sidebarStyle = {
-  borderRight: 'solid 1px #343434',
-  maxHeight: '100vh ',
-  overflow: 'true',
-  position: 'fixed',
-  height: '100%',
-  overflow: 'show'
-  
 }
 
 export default App;
