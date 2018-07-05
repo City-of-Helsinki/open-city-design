@@ -1,4 +1,4 @@
-@import '../../../../scss/helsinki/custom-styles';
+@import '../../../../scss/helsinki/mixins';
 
 .section-koro {
       display: block;
@@ -54,7 +54,7 @@
 
 
 .section-koro.hel-metro.koro-wave-bottom:after {
-      
+
 }
 
 .section-koro.hel-black, .section-koro.hel-black:before, .section-koro.hel-black:after {
@@ -99,9 +99,3 @@ $koro-sizes: (
       x4: 400,
       x5: 500
 );
-
-@mixin koro-size($_shape, $_color, $_size) {
-      .section-koro.#{$_color} {
-
-      }
-}

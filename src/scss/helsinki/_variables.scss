@@ -4,9 +4,14 @@
 //
 // You can find variable files (in sake for good documentation) split in the helsinki/ folder.
 
+$border-radius:          0;
+$border-radius-lg:       0;
+$border-radius-sm:       0;
+
 @import 'fonts';
 @import 'colors';
 @import 'buttons';
+@import 'navs';
 @import 'forms';
 @import 'misc';
 
