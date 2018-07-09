@@ -79,7 +79,7 @@ class SidebarComponents extends Component {
         {
           link: 'Dropdowns',
           URL: '/development/components/dropdowns/',
-          active: false
+          active: true
         },
         {
           link: 'Fade',

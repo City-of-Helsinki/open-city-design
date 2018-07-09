@@ -14,6 +14,11 @@ label {
   font-weight: 400;
 }
 
+.custom-file-label:after {
+    height: 2.1rem;
+    font-weight: 500;
+}
+
 // Boxed input fields into underlined
 .form-control {
   border-width: 0 0 2px 0;
@@ -31,9 +36,6 @@ label {
 textarea.form-control {
   border-width: 2px;
   padding: 6px 12px;
-  &:focus {
-    //border-color: $theme-highlight-dark;
-  }
 }
 
 // form element focus style
@@ -54,7 +56,7 @@ input[type="tel"]:focus,
 input[type="color"]:focus,
 .form-control:focus,
 .uneditable-input:focus {
-  border-bottom-color: theme-color("secondary");
+  border-color: theme-color("secondary");
   background: rgba($white, 0.3);
   box-shadow: none;
 }
@@ -101,7 +103,21 @@ input[type="password"] {
   border-width: 2px;
 }
 
-.input-group-prepend .btn + .btn, .input-group-prepend .btn + .input-group-text, .input-group-prepend .input-group-text + .input-group-text, .input-group-prepend .input-group-text + .btn, .input-group-append .btn + .btn, .input-group-append .btn + .input-group-text, .input-group-append .input-group-text + .input-group-text, .input-group-append .input-group-text + .btn {
+.input-group > input:not(:first-child) {
+    border-left: 0;
+}
+
+.input-group > input:not(:last-child) {
+    border-right: 0;
+}
+
+.input-group-prepend .btn + .btn,
+.input-group-prepend .btn + .input-group-text,
+.input-group-prepend .input-group-text + .input-group-text,
+.input-group-prepend .input-group-text + .btn, .input-group-append .btn + .btn,
+.input-group-append .btn + .input-group-text,
+.input-group-append .input-group-text + .input-group-text,
+.input-group-append .input-group-text + .btn {
   margin-left: -2px;
 }
 
@@ -176,4 +192,10 @@ input[type="password"] {
 
 .card {
   box-shadow: 2px 2px 8px rgba($hel-dark, .1);
+}
+
+// Make sure dropdown menus have box-shadow
+
+.dropdown-menu {
+  box-shadow: 0 .5rem 1rem rgba($hel-black, .175);
 }
