@@ -125,7 +125,7 @@ class SidebarComponents extends Component {
         {
           link: 'Pagination',
           URL: '/development/components/pagination/',
-          active: false
+          active: true
         },
         {
           link: 'Popovers',

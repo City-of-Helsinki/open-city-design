@@ -1,3 +1,21 @@
 $enable-rounded: false;
 
 $card-border-width: 0;
+
+// Pagination
+
+$pagination-color:                  $link-color;
+$pagination-border-width:           1px;
+$pagination-border-color:           $gray-200;
+
+$pagination-hover-color:            $hel-black;
+$pagination-hover-bg:               $brand-light;
+$pagination-hover-border-color:     $pagination-border-color;
+
+$pagination-active-color:           $white;
+$pagination-active-bg:              $component-active-bg;
+$pagination-active-border-color:    $pagination-active-bg;
+
+$pagination-disabled-color:         $gray-500;
+$pagination-disabled-bg:            $white;
+$pagination-disabled-border-color:  $pagination-border-color;
