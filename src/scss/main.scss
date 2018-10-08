@@ -15,9 +15,10 @@
  */
 
 @import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/_variables";
 
-// Import ocds specific variable overrides:
-@import "6aika/variables";
+// Ocds specific variable overrides are not currently in use
+
 // Import city specific bootstrap variable overrides:
 @import "helsinki/variables";
 
