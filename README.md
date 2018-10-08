@@ -25,7 +25,7 @@ Go to [Open City Design System website](https://opencity.design/) and browse the
 
 Install or add Bootstrap sass theme to your application
 ```
-npm install open-city-design
+yarn add open-city-design
 ```
 
 See the scss files how the import hierarchy works. You might need to create your own scss file with appropriate import paths for your environment.
@@ -38,8 +38,8 @@ You can get it running by cloning the repository locally, and running the follow
 
 `cd open-city-design`
 
-`npm install`
+`yarn install`
 
-`npm start`
+`yarn start`
 
 We welcome pull requests on the respective parts of this repository. There's a [Slack channel](https://join.slack.com/t/opencitydesignsystem/signup) available for discussion.
