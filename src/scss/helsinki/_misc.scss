@@ -1,3 +1,18 @@
 $enable-rounded: false;
 
 $card-border-width: 0;
+
+// Alerts
+//
+// Define alert colors, border radius, and padding.
+
+$alert-padding-y:                   1.5rem;
+$alert-padding-x:                   2rem;
+$alert-margin-bottom:               1.5rem;
+$alert-border-radius:               $border-radius !default;
+$alert-link-font-weight:            $font-weight-bold !default;
+$alert-border-width:                0;
+
+$alert-bg-level:                    -10 !default;
+$alert-border-level:                -9 !default;
+$alert-color-level:                 9;

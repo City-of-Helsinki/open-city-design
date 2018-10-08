@@ -16,7 +16,10 @@
     "email": "dev@hel.fi",
     "url": "http://dev.hel.fi/"
   },
-  "files": ["/src/scss/*","/src/assets/*"],
+  "files": [
+    "/src/scss/*",
+    "/src/assets/*"
+  ],
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "7.1.6",
@@ -26,7 +29,7 @@
     "babel-loader": "7.1.2",
     "babel-preset-react-app": "^3.1.2",
     "babel-runtime": "6.26.0",
-    "bootstrap": "^4.1.1",
+    "bootstrap": "4.1.3",
     "case-sensitive-paths-webpack-plugin": "2.1.1",
     "chalk": "1.1.3",
     "classnames": "^2.2.6",
@@ -98,10 +101,10 @@
     "deploy": "npm run build&&gh-pages -d build"
   },
   "dependencies": {
-    "bootstrap": "^4.1.1"
+    "bootstrap": "4.1.3"
   },
   "peerDependencies": {
-    "bootstrap": "^4.1.1"
+    "bootstrap": "4.1.3"
   },
   "jest": {
     "collectCoverageFrom": [
