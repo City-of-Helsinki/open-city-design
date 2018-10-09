@@ -115,7 +115,16 @@ input[type="password"] {
   border: 2px solid lighten($hel-black,40%);
 }
 
-// Custom select Multiple
+// Custom Select
+
+.custom-select {
+  border: 2px solid $hel-black;
+
+  &:disabled {
+    border-color: lighten($hel-black,40%);
+  }
+
+}
 
 .custom-select[multiple] {
   padding: 0;
@@ -123,6 +132,25 @@ input[type="password"] {
   option {
     padding: .25rem;
     margin: 2px;
+  }
+}
+
+// Custom File Browser
+
+.custom-file-label {
+  border: 2px solid $hel-black;
+
+  &:after {
+    border-left: 0;
+    border-bottom: 2px solid $hel-black;
+  }
+}
+
+.custom-file-input:disabled ~ .custom-file-label {
+  border-color: lighten($hel-black,40%);
+
+  &:after {
+    border-color: lighten($hel-black,40%);
   }
 }
 
