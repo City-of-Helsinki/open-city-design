@@ -28,7 +28,9 @@ Install or add Bootstrap sass theme to your application
 yarn add open-city-design
 ```
 
-See the scss files how the import hierarchy works. You might need to create your own scss file with appropriate import paths for your environment.
+See the [scss files](https://github.com/City-of-Helsinki/open-city-design/blob/master/src/scss/main.scss) how the import hierarchy works. You might need to create your own scss file with appropriate import paths for your environment.
+
+**NOTE:** 1.0.0-alpha.3 onwards we import Bootstrap default variables directly instead of 6Aika defaults. Note this if you are doing your own style imports.
 
 ## How can I contribute?
 

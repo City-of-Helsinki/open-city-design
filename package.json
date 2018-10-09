@@ -1,6 +1,6 @@
 {
   "name": "open-city-design",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0-alpha.3",
   "private": false,
   "homepage": "http://opencity.design",
   "description": "Themeable Boostrap 4 SASS library with City of Helsinki theme",
@@ -101,10 +101,10 @@
     "deploy": "npm run build&&gh-pages -d build"
   },
   "dependencies": {
-    "bootstrap": "4.1.3"
+    "bootstrap": "^4.1.3"
   },
   "peerDependencies": {
-    "bootstrap": "4.1.3"
+    "bootstrap": "^4.1.3"
   },
   "jest": {
     "collectCoverageFrom": [
