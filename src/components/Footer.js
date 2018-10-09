@@ -18,7 +18,7 @@ class Footer extends Component {
                               key: 1,
                               header: 'Sketch',
                               paragraph: 'Download the Sketch library to design applications in Sketch. (Note: you should have Sketch 47 or later installed to take advantage of the libraries. View Sketch documentation for more information.)',
-                              imageURL: 'https://www.sketchapp.com/images/press/sketch-press-kit/app-icons/sketch-mac-icon@2x.png',
+                              imageURL: 'https://upload.wikimedia.org/wikipedia/commons/7/73/Sketch_logo_frame.svg',
                               buttonURL: 'https://github.com/City-of-Helsinki/open-city-design/tree/master/hki-sketch',
                               buttonText: 'Download Sketch Library'
                         },
